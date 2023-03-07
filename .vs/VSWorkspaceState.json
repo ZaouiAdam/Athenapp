@@ -1,7 +1,10 @@
 {
   "ExpandedNodes": [
     "",
-    "\\ExpeditionHelper_SOL"
+    "\\ExpeditionHelper_SOL",
+    "\\ExpeditionHelper_SOL\\Views",
+    "\\ExpeditionHelper_SOL\\Views\\Calendrier"
   ],
+  "SelectedNode": "\\ExpeditionHelper_SOL\\Views\\Calendrier\\Calendar.cshtml",
   "PreviewInSolutionExplorer": false
 }
