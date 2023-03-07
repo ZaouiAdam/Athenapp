@@ -65,13 +65,11 @@
     <nav class="navbar navbar-default navbar-fixed-top">
         <div class="container-fluid">
             <div class="navbar-header">
-                <img style="float:left; margin-right:10px; border-radius:5px; height: auto; width: auto; max-width: 110px; max-height: 110px;" class="navbar-logo" src="~/Image/logoesic.png" alt="Athenapp" title="" />
-                <a class="navbar-brand"> Athenapp</a>
+                <img style="float:left; margin-right:10px; border-radius:5px; height: auto; width: auto; max-width: 110px; max-height: 110px;" class="navbar-logo" src="~/Image/logo.png" alt="Athenapp" title="" />
             </div>
             <ul class="nav navbar-nav navbar-right">
                 <div class="navbar-collapse collapse">
                     @Html.Partial("_SelectLanguage")
-
                 </div>
             </ul>
         </div>
@@ -79,7 +77,7 @@
                 <ul>
                     <a href=@Url.Action("Index" , "Information")>
                     <li class="item-menu">
-                        <i class="fa fa-list"></i>
+                        <i class="fa fa-info-circle"></i>
                         <span class="menu">Information utiles</span>
                     </li>
                     </a>
@@ -91,103 +89,34 @@
                     </a>
                     <a href=@Url.Action("Index" , "CoursEnLigne")>
                     <li class="item-menu">
-                        <i class="fa fa-list"></i>
+                        <i class="fa fa-clipboard"></i>
                         <span class="menu">Consultation cours</span>
                     </li>
                     </a>
                     <a href=@Url.Action("Index" , "Calendrier")>
                     <li class="item-menu">
-                        <i class="fa fa-list"></i>
+                        <i class="fa fa-calendar"></i>
                         <span class="menu">Calendrier</span>
                     </li>
                     </a>
                     <a href=@Url.Action("Index" , "Competence")>
                     <li class="item-menu">
-                        <i class="fa fa-list"></i>
+                        <i class="fa fa-graduation-cap"></i>
                         <span class="menu">Suivi de compétences</span>
                     </li>
                     </a>
                     <a href=@Url.Action("Template" , "Aide")>
                     <li class="item-menu">
-                        <i class="fa fa-list"></i>
-                        <span class="menu">Templates CV et LDM</span>
+                        <i class="fa fa-paperclip"></i>
+                        <span class="menu">templates CV et LDM</span>
                     </li>
                     </a>
                     <a href=@Url.Action("LiensUtiles" , "LienUtiles")>
                     <li class="item-menu">
-                        <i class="fa fa-list"></i>
+                        <i class="fa fa-link"></i>
                         <span class="menu">Lien utiles</span>
                     </li>
                     </a>
-                    @*<a href=@Url.Action("Index" , "EtapeLecture")>
-        <li class="item-menu">
-            <i class="fa fa-list"></i>
-            <span class="menu">@ExpeditionHelper_SOL.Resources.Views.Shared._Layout.BtnLecture</span>
-        </li>
-        </a>
-        @if ((Session["Type_Connexion"] == "Acces_Digitalisation") || (Session["Type_Connexion"] == "Acces_Admin") || (Session["Type_Connexion"] == "Acces_Expedition"))
-        {
-
-            <a href=@Url.Action("Index" , "EtapeParametrage")>
-            <li class="item-menu">
-                <i class="fa fa-cogs"></i>
-                <span class="menu">@ExpeditionHelper_SOL.Resources.Views.Shared._Layout.BtnParametrage</span>
-            </li>
-            </a>
-
-            <a href=@Url.Action("Index" , "EtapeDefaut")>
-            <li class="item-menu">
-                <i class="fa fa-cog"></i>
-                <span class="menu">@ExpeditionHelper_SOL.Resources.Views.Shared._Layout.BtnParametrageDefaut</span>
-            </li>
-            </a>
-
-            <a href=@Url.Action("Index" , "Incoterm")>
-            <li class="item-menu">
-                <i class="fa fa-truck"></i>
-                <span class="menu">@ExpeditionHelper_SOL.Resources.Views.Shared._Layout.BtnIncoterm</span>
-            </li>
-            </a>
-
-            <a href=@Url.Action("Index" , "Lien")>
-            <li class="item-menu">
-                <i class="fa fa-link"></i>
-                <span class="menu">@ExpeditionHelper_SOL.Resources.Views.Shared._Layout.BtnLien</span>
-            </li>
-            </a>
-
-            <a href=@Url.Action("Index" , "Client")>
-            <li class="item-menu">
-                <i class="fa fa-shopping-cart"></i>
-                <span class="menu">@ExpeditionHelper_SOL.Resources.Views.Shared._Layout.BtnClient</span>
-            </li>
-            </a>
-
-            <a href=@Url.Action("Index" , "Log")>
-            <li class="item-menu">
-                <i class="fa fa-exclamation-triangle"></i>
-                <span class="menu">Logs</span>
-            </li>
-            </a>
-        }
-
-        <a href="@Url.Action("Index" , "Information")">
-        <li class="item-menu">
-            <i class="fa fa-info-circle"></i>
-            <span class="menu">
-                @ExpeditionHelper_SOL.Resources.Views.Shared._Layout.Information
-            </span>
-        </li>
-        </a>
-
-        <a href="@Url.Action("Index" , "Version")">
-        <li class="item-menu">
-            <i class="fa fa-wrench"></i>
-            <span class="menu">
-                @ExpeditionHelper_SOL.Resources.Views.Shared._Layout.BtnVersion @{ Html.RenderAction("GetLastVersion", "Version"); }
-            </span>
-        </li>
-        </a>*@
 
                 </ul>
             </div>

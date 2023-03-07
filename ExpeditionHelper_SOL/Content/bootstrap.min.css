@@ -7216,7 +7216,7 @@ button.close {
 .left {
     width: 50px;
     height: 100%;
-    background: grey;
+    background: #2175BB;
     white-space: nowrap;
     transition: width 0.5s;
     position: fixed;
