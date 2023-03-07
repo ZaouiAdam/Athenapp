@@ -13,5 +13,10 @@ namespace ExpeditionHelper_SOL.Controllers
         {
             return View();
         }
+
+        public ActionResult LiensUtiles()
+        {
+            return View();
+        }
     }
 }

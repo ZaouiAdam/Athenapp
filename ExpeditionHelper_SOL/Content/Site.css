@@ -199,3 +199,15 @@ input:checked + .slider:before {
 #TableEtape tr .taskSingleInline:active {
     cursor: grabbing;
 }
+
+/* CSS pour les images du site */
+.image_office {
+    margin-left:10px;
+    width: 100px;
+    height: 100px;
+    opacity:1;
+}
+
+.image_office:hover{
+    opacity:0.5;
+}
