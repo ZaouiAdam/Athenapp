@@ -211,3 +211,15 @@ input:checked + .slider:before {
 .image_office:hover{
     opacity:0.5;
 }
+
+/* CSS pour les images du site */
+.image_template {
+    margin-left: 20px;
+    width: 100%;
+    opacity: 1;
+    
+}
+
+.image_template:hover {
+   opacity: 0.5;
+}

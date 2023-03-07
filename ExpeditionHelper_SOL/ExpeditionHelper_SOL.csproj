@@ -451,10 +451,14 @@
     <Content Include="fonts\fontawesome-webfont.svg" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
+    <Content Include="Image\CV_template1.png" />
+    <Content Include="Image\CV_Template2.png" />
     <Content Include="Image\Excel.png" />
     <Content Include="Image\favicon.ico" />
     <Content Include="Image\France_campus.png" />
     <Content Include="Image\Incoterm.png" />
+    <Content Include="Image\Lettre_template1.png" />
+    <Content Include="Image\Lettre_template2.png" />
     <Content Include="Image\logoesic.png" />
     <Content Include="Image\logo.jpg" />
     <Content Include="Image\Office365.png" />
@@ -601,6 +605,11 @@
     <Content Include="Scripts\jquery.validate.unobtrusive.js" />
     <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
     <Content Include="Scripts\modernizr-2.8.3.js" />
+    <Content Include="Templates_word\TemplateCV1.docx" />
+    <Content Include="Templates_word\TemplateCV2.docx" />
+    <Content Include="Templates_word\TemplateLettre1.docx" />
+    <Content Include="Templates_word\TemplateLettre2.docx" />
+    <None Include="Views\Aide\Template.cshtml" />
     <Content Include="Views\Calendrier\Calendar.js" />
     <None Include="Views\LienUtiles\LiensUtiles.cshtml" />
     <Content Include="Views\LienUtiles\LiensUtiles.js" />
