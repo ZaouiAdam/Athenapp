@@ -107,13 +107,13 @@
                         <span class="menu">Suivi de compétences</span>
                     </li>
                     </a>
-                    <a href=@Url.Action("Index" , "Aide")>
+                    <a href=@Url.Action("Template" , "Aide")>
                     <li class="item-menu">
                         <i class="fa fa-list"></i>
-                        <span class="menu">templates CV et LDM</span>
+                        <span class="menu">Templates CV et LDM</span>
                     </li>
                     </a>
-                    <a href=@Url.Action("Index" , "LienUtiles")>
+                    <a href=@Url.Action("LiensUtiles" , "LienUtiles")>
                     <li class="item-menu">
                         <i class="fa fa-list"></i>
                         <span class="menu">Lien utiles</span>
@@ -194,10 +194,11 @@
     </nav>
 
     <div class="row">
-        <div class="col-lg-2"></div>
+        <div class="col-lg-1"></div>
         <div class="col-lg-10">
             @RenderBody()
         </div>
+        <div class="col-lg-1"></div>
     </div>
 
     <!-- end left -->
