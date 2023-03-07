@@ -1,0 +1,227 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ExpeditionHelper_SOL.Resources.Views.Shared._Layout.Title</title>
+    <link rel="icon" href="~/Image/favicon.ico" />
+
+    @Scripts.Render("~/bundles/modernizr")
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/jqueryui")
+
+    <!-- Css propre au projet -->
+    <link href="~/Content/Site.css" rel="stylesheet" />
+
+    <!-- Include the plugin's CSS and JS -->
+    <script type="text/javascript" src="~/Scripts/bootstrap-select.js"></script>
+    <link rel="stylesheet" href="~/Content/bootstrap-select.css" type="text/css" />
+
+    <!-- Bootstrap Toggle -->
+    <script src="~/Libs/Bootstrap Toggle/bootstrap-toggle.min.js"></script>
+    <link href="~/Libs/Bootstrap Toggle/bootstrap-toggle.min.css" rel="stylesheet" />
+
+    <!-- Include JQuery Ajax -->
+    <script type="text/javascript" src="~/Scripts/jquery.unobtrusive-ajax.min.js"></script>
+
+    <!-- Include OverHang -->
+    <script src="~/Scripts/Overhang.js" charset="UTF-8"></script>
+    <script src="~/Scripts/jquery-ui-1.12.1.min.js"></script>
+
+    <!-- Include Bootstrap Visual -->
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet" />
+    <script src="~/Scripts/bootstrap.min.js"></script>
+
+    <!-- Include Font Awesome -->
+    <link href="~/Content/font-awesome.css" rel="stylesheet" />
+
+    <!-- Include Bootstrap Card -->
+    <link href="~/Content/card.css" rel="stylesheet" />
+
+    <!-- Include Datatable -->
+    <link href="~/Content/dataTables.bootstrap.min.css" rel="stylesheet" />
+
+
+    <!-- Include DataTable -->
+    <link href="~/Libs/DataTable/dataTables.bootstrap.min.css" rel="stylesheet" />
+    <link href="~/Libs/DataTable/bootstrap.min.css" rel="stylesheet" />
+    @{string[] subs = Request.Url.AbsolutePath.Split('/'); }
+    @if ((subs[1] == "fr-FR") || (subs[1] == "fr-fr"))
+    {
+        <script src="~/Libs/DataTable/jquery.dataTables.fr.min.js"></script>
+    }
+    @if ((subs[1] == "en-US") || (subs[1] == "en-us"))
+    {
+        <script src="~/Libs/DataTable/jquery.dataTables.en.min.js"></script>
+    }
+    <script src="~/Libs/DataTable/dataTables.bootstrap.min.js"></script>
+
+    <script src="~/Scripts/notify.min.js"></script>
+
+</head>
+
+<body>
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <img style="float:left; margin-right:10px; border-radius:5px; height: auto; width: auto; max-width: 110px; max-height: 110px;" class="navbar-logo" src="~/Image/logoesic.png" alt="Athenapp" title="" />
+                <a class="navbar-brand"> Athenapp</a>
+            </div>
+            <ul class="nav navbar-nav navbar-right">
+                <div class="navbar-collapse collapse">
+                    @Html.Partial("_SelectLanguage")
+
+                </div>
+            </ul>
+        </div>
+            <div class="left">
+                <ul>
+                    <a href=@Url.Action("Index" , "Information")>
+                    <li class="item-menu">
+                        <i class="fa fa-list"></i>
+                        <span class="menu">Information utiles</span>
+                    </li>
+                    </a>
+                    <a href=@Url.Action("Index" , "SuiviNotation")>
+                    <li class="item-menu">
+                        <i class="fa fa-list"></i>
+                        <span class="menu">Suivi de notes</span>
+                    </li>
+                    </a>
+                    <a href=@Url.Action("Index" , "CoursEnLigne")>
+                    <li class="item-menu">
+                        <i class="fa fa-list"></i>
+                        <span class="menu">Consultation cours</span>
+                    </li>
+                    </a>
+                    <a href=@Url.Action("Index" , "Calendrier")>
+                    <li class="item-menu">
+                        <i class="fa fa-list"></i>
+                        <span class="menu">Calendrier</span>
+                    </li>
+                    </a>
+                    <a href=@Url.Action("Index" , "Competence")>
+                    <li class="item-menu">
+                        <i class="fa fa-list"></i>
+                        <span class="menu">Suivi de compétences</span>
+                    </li>
+                    </a>
+                    <a href=@Url.Action("Index" , "Aide")>
+                    <li class="item-menu">
+                        <i class="fa fa-list"></i>
+                        <span class="menu">templates CV et LDM</span>
+                    </li>
+                    </a>
+                    <a href=@Url.Action("Index" , "LienUtiles")>
+                    <li class="item-menu">
+                        <i class="fa fa-list"></i>
+                        <span class="menu">Lien utiles</span>
+                    </li>
+                    </a>
+                    @*<a href=@Url.Action("Index" , "EtapeLecture")>
+        <li class="item-menu">
+            <i class="fa fa-list"></i>
+            <span class="menu">@ExpeditionHelper_SOL.Resources.Views.Shared._Layout.BtnLecture</span>
+        </li>
+        </a>
+        @if ((Session["Type_Connexion"] == "Acces_Digitalisation") || (Session["Type_Connexion"] == "Acces_Admin") || (Session["Type_Connexion"] == "Acces_Expedition"))
+        {
+
+            <a href=@Url.Action("Index" , "EtapeParametrage")>
+            <li class="item-menu">
+                <i class="fa fa-cogs"></i>
+                <span class="menu">@ExpeditionHelper_SOL.Resources.Views.Shared._Layout.BtnParametrage</span>
+            </li>
+            </a>
+
+            <a href=@Url.Action("Index" , "EtapeDefaut")>
+            <li class="item-menu">
+                <i class="fa fa-cog"></i>
+                <span class="menu">@ExpeditionHelper_SOL.Resources.Views.Shared._Layout.BtnParametrageDefaut</span>
+            </li>
+            </a>
+
+            <a href=@Url.Action("Index" , "Incoterm")>
+            <li class="item-menu">
+                <i class="fa fa-truck"></i>
+                <span class="menu">@ExpeditionHelper_SOL.Resources.Views.Shared._Layout.BtnIncoterm</span>
+            </li>
+            </a>
+
+            <a href=@Url.Action("Index" , "Lien")>
+            <li class="item-menu">
+                <i class="fa fa-link"></i>
+                <span class="menu">@ExpeditionHelper_SOL.Resources.Views.Shared._Layout.BtnLien</span>
+            </li>
+            </a>
+
+            <a href=@Url.Action("Index" , "Client")>
+            <li class="item-menu">
+                <i class="fa fa-shopping-cart"></i>
+                <span class="menu">@ExpeditionHelper_SOL.Resources.Views.Shared._Layout.BtnClient</span>
+            </li>
+            </a>
+
+            <a href=@Url.Action("Index" , "Log")>
+            <li class="item-menu">
+                <i class="fa fa-exclamation-triangle"></i>
+                <span class="menu">Logs</span>
+            </li>
+            </a>
+        }
+
+        <a href="@Url.Action("Index" , "Information")">
+        <li class="item-menu">
+            <i class="fa fa-info-circle"></i>
+            <span class="menu">
+                @ExpeditionHelper_SOL.Resources.Views.Shared._Layout.Information
+            </span>
+        </li>
+        </a>
+
+        <a href="@Url.Action("Index" , "Version")">
+        <li class="item-menu">
+            <i class="fa fa-wrench"></i>
+            <span class="menu">
+                @ExpeditionHelper_SOL.Resources.Views.Shared._Layout.BtnVersion @{ Html.RenderAction("GetLastVersion", "Version"); }
+            </span>
+        </li>
+        </a>*@
+
+                </ul>
+            </div>
+    </nav>
+
+    <div class="row">
+        <div class="col-lg-2"></div>
+        <div class="col-lg-10">
+            @RenderBody()
+        </div>
+    </div>
+
+    <!-- end left -->
+
+</body>
+</html>
+
+
+@* Fonction permettant de gérer l'affichage ou non du sous-menu "Configuration"*@
+<script type="text/javascript">
+    var dropdown = document.getElementsByClassName("dropdown-btn");
+    var i;
+
+    for (i = 0; i < dropdown.length; i++) {
+        dropdown[i].addEventListener("click", function () {
+            this.classList.toggle("active");
+            var dropdownContent = this.nextElementSibling;
+            if (dropdownContent.style.display === "block") {
+                dropdownContent.style.display = "none";
+                document.getElementById("Config_arrow").className = "arrow fa fa-angle-down";
+            } else {
+                dropdownContent.style.display = "block";
+                document.getElementById("Config_arrow").className = "arrow fa fa-angle-up";
+            }
+        });
+    }
+</script>

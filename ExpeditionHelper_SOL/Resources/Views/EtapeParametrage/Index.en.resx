@@ -1,0 +1,282 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Action" xml:space="preserve">
+    <value>Action</value>
+  </data>
+  <data name="AddLinkFunction" xml:space="preserve">
+    <value>Adding the link is a success</value>
+  </data>
+  <data name="AddStepFunction" xml:space="preserve">
+    <value>Adding the step is a success</value>
+  </data>
+  <data name="AdresseClient" xml:space="preserve">
+    <value>Customer address :</value>
+  </data>
+  <data name="BtnAjouter" xml:space="preserve">
+    <value>Add</value>
+  </data>
+  <data name="ChoixClient" xml:space="preserve">
+    <value>Customer's Choice</value>
+  </data>
+  <data name="CodeClient" xml:space="preserve">
+    <value>Customer code :</value>
+  </data>
+  <data name="DefautErrorUpdateOrderFunction" xml:space="preserve">
+    <value>The default order of the steps must remain unchanged!</value>
+  </data>
+  <data name="DeleteFunction" xml:space="preserve">
+    <value>The deletion is a success</value>
+  </data>
+  <data name="DeleteLinkFunction" xml:space="preserve">
+    <value>The removal of the link is a success</value>
+  </data>
+  <data name="EmptyTexte" xml:space="preserve">
+    <value>The text field is empty</value>
+  </data>
+  <data name="ErrorFunction" xml:space="preserve">
+    <value>Function failure</value>
+  </data>
+  <data name="Expert" xml:space="preserve">
+    <value>Skilled</value>
+  </data>
+  <data name="Explication" xml:space="preserve">
+    <value>Explanation</value>
+  </data>
+  <data name="FailAddLinkFunction" xml:space="preserve">
+    <value>Adding the link is a failure</value>
+  </data>
+  <data name="FailAddStepFunction" xml:space="preserve">
+    <value>Adding the step is a failure</value>
+  </data>
+  <data name="FailDeleteFunction" xml:space="preserve">
+    <value>The deletion is a failure</value>
+  </data>
+  <data name="FailDeleteLinkFunction" xml:space="preserve">
+    <value>The removal of the link is a failure</value>
+  </data>
+  <data name="FailUpdateStep" xml:space="preserve">
+    <value>Edit is a failure</value>
+  </data>
+  <data name="Filtre" xml:space="preserve">
+    <value>Filter</value>
+  </data>
+  <data name="Incoterm" xml:space="preserve">
+    <value>Incoterm / Group :</value>
+  </data>
+  <data name="ModalDeleteStepBtnDelete" xml:space="preserve">
+    <value>Delete</value>
+  </data>
+  <data name="ModalDeleteStepTitre" xml:space="preserve">
+    <value>Step Delete</value>
+  </data>
+  <data name="ModalLinkLien" xml:space="preserve">
+    <value>Link</value>
+  </data>
+  <data name="ModalLinkNom" xml:space="preserve">
+    <value>Name</value>
+  </data>
+  <data name="ModalLinkReadTitre" xml:space="preserve">
+    <value>Documentation</value>
+  </data>
+  <data name="ModalLinkUrl" xml:space="preserve">
+    <value>URL</value>
+  </data>
+  <data name="ModalLinkWriteTitre" xml:space="preserve">
+    <value>Documentation settings</value>
+  </data>
+  <data name="ModalUpdateStepBtnEditer" xml:space="preserve">
+    <value>Edit</value>
+  </data>
+  <data name="ModalUpdateStepTitre" xml:space="preserve">
+    <value>Step</value>
+  </data>
+  <data name="NoAction" xml:space="preserve">
+    <value>No Action</value>
+  </data>
+  <data name="NoClient" xml:space="preserve">
+    <value>No customer is selected</value>
+  </data>
+  <data name="NoIncoterm" xml:space="preserve">
+    <value>No Incoterm</value>
+  </data>
+  <data name="None" xml:space="preserve">
+    <value>None</value>
+  </data>
+  <data name="NoStep" xml:space="preserve">
+    <value>No Step</value>
+  </data>
+  <data name="Novice" xml:space="preserve">
+    <value>Beginner</value>
+  </data>
+  <data name="Numero" xml:space="preserve">
+    <value>#</value>
+  </data>
+  <data name="PlaceholderAddStepFake" xml:space="preserve">
+    <value>Please select a client and intorem in the Client choice section</value>
+  </data>
+  <data name="PlaceholderEtape" xml:space="preserve">
+    <value>New Step</value>
+  </data>
+  <data name="SelectAdresseClient" xml:space="preserve">
+    <value>Select Customer Address...</value>
+  </data>
+  <data name="SelectCodeClient" xml:space="preserve">
+    <value>Select Customer Code...</value>
+  </data>
+  <data name="SelectIncoterm" xml:space="preserve">
+    <value>Select an Incoterm to filter or add a new step</value>
+  </data>
+  <data name="Titre" xml:space="preserve">
+    <value>Default steps setting :</value>
+  </data>
+  <data name="TitreCard" xml:space="preserve">
+    <value>Step to follow :</value>
+  </data>
+  <data name="UpdateOrderFunction" xml:space="preserve">
+    <value>The order change is established successfully</value>
+  </data>
+  <data name="UpdateStep" xml:space="preserve">
+    <value>Edit is a success</value>
+  </data>
+  <data name="VueUtilisateur" xml:space="preserve">
+    <value>User view :</value>
+  </data>
+  <data name="ModalDeleteTexte" xml:space="preserve">
+    <value>Are you sure you want to delete this step?</value>
+  </data>
+  <data name="BtnDocument" xml:space="preserve">
+    <value>View documentation</value>
+  </data>
+  <data name="ErreurFiltreIncoterm" xml:space="preserve">
+    <value>Please remove the Incoterm filter before "Drag &amp; Drop" this step</value>
+  </data>
+  <data name="ErreurFiltreMaitrise" xml:space="preserve">
+    <value>Please remove the filter from "User View" before "Drag &amp; Drop" this step</value>
+  </data>
+  <data name="CodeAdresseClient" xml:space="preserve">
+    <value>Address Code :</value>
+  </data>
+  <data name="SelectCodeAdresseClient" xml:space="preserve">
+    <value>Select an Address Code...</value>
+  </data>
+  <data name="FiltreTexte" xml:space="preserve">
+    <value>Please remove the Incoterm filter "User view"</value>
+  </data>
+</root>

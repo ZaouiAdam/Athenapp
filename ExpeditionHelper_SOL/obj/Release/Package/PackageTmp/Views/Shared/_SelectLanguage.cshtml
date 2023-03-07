@@ -1,0 +1,24 @@
+﻿@using ExpeditionHelper_SOL.HTMLHelpers
+
+<div id="btn_connexion" class="dropdown" style="float:right;margin-right:150px;margin-top:15px;">
+    <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+        <span class="fa fa-globe" aria-hidden="true" style="margin-right:10px;"></span>
+        
+        <span class="caret"></span>
+    </button>
+
+    <ul class="dropdown-menu" id="btn-user">
+        <li>
+            @Html.LanguageSelectorLink("en-US", "[English]", "English", null)
+        </li>
+
+        <li>
+            @Html.LanguageSelectorLink("fr-FR", "[Français]", "Français", null)
+        </li>
+    </ul>
+
+</div>
+
+
+
+

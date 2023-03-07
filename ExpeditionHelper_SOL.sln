@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.1321
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExpeditionHelper_SOL", "ExpeditionHelper_SOL\ExpeditionHelper_SOL.csproj", "{2BF974B3-3DEC-4783-A57F-2FF95AA36BBB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2BF974B3-3DEC-4783-A57F-2FF95AA36BBB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2BF974B3-3DEC-4783-A57F-2FF95AA36BBB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2BF974B3-3DEC-4783-A57F-2FF95AA36BBB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2BF974B3-3DEC-4783-A57F-2FF95AA36BBB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {90E3BB00-847E-42E6-B04F-93D6C5AD0F9D}
+	EndGlobalSection
+EndGlobal

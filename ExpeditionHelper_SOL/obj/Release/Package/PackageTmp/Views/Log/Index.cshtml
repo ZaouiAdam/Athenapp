@@ -1,0 +1,88 @@
+﻿@model PagedList.IPagedList<ExpeditionHelper_SOL.Models.TB_LOG>
+@using PagedList.Mvc;
+
+@{
+    ViewBag.Title = "Index Log";
+    var i = 0;
+}
+
+<div class="container body-content" style="background-color:white;border-radius:5px;">
+    <br /><br />
+    <h2> @ExpeditionHelper_SOL.Resources.Views.Log.Index.Titre </h2>
+
+    <div class="row">
+        <div class="col-lg-3">
+            @using (Html.BeginForm("Index", "Log", FormMethod.Get, new { @class = "form-inline" }))
+            {
+            <p>
+                @ExpeditionHelper_SOL.Resources.Views.Shared._Layout.SearchByName <br /> @Html.TextBox("SearchString", ViewBag.CurrentFilter as string, new { @class = "form-control text-box" })
+                <button type="submit" class="btn btn-default">
+                    <i class="fa fa-search" aria-hidden="true"></i>
+                </button>
+            </p>
+            }
+        </div>
+    </div>
+
+    <table class="table table-bordered">
+        <tr>
+            <th>
+                @ExpeditionHelper_SOL.Resources.Views.Log.Index.Login
+            </th>
+            <th>
+                @ExpeditionHelper_SOL.Resources.Views.Log.Index.Date
+            </th>
+            <th>
+                @ExpeditionHelper_SOL.Resources.Views.Log.Index.Action
+            </th>
+            <th>
+                @ExpeditionHelper_SOL.Resources.Views.Log.Index.Explication
+            </th>
+        </tr>
+
+        @foreach (var item in Model)
+        {
+            i = i + 1;
+            string[] Separateur = { "/Separation/" };
+            string[] Texte = item.Texte.Split(Separateur, StringSplitOptions.None);
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Login)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Date)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Action)
+                </td>
+                <td>
+                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#@i"><i class="fa fa-search" aria-hidden="true"></i></button>
+                </td>
+            </tr>
+            <div class="modal fade" id="@i" role="dialog">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            <h4 class="modal-title">@ExpeditionHelper_SOL.Resources.Views.Log.Index.Explication_Active <i class="fa fa-arrow-right"></i> @item.Action</h4>
+                        </div>
+                        <div class="modal-body">
+                            @foreach (var TexteItem in Texte)
+                            {
+                                <p>@TexteItem</p>
+                            }
+                        </div>
+                    </div>
+                </div>
+            </div>
+        }
+
+    </table>
+
+    @ExpeditionHelper_SOL.Resources.Views.Shared._Layout.Page @(Model.PageCount < Model.PageNumber ? 0 : Model.PageNumber) / @Model.PageCount
+
+    @Html.PagedListPager(Model, page => Url.Action("Index",
+        new { page, sortOrder = ViewBag.CurrentSort, currentFilter = ViewBag.CurrentFilter }))
+</div>
+
+

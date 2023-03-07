@@ -1,0 +1,201 @@
+﻿
+body {
+    padding-top: 2.5%;
+    padding-bottom: 20px;
+    overflow-x:hidden;
+}
+
+/* Set padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 50px;
+    height: 22.2px;
+}
+
+    .switch input {
+        opacity: 0;
+        width: 0;
+        height: 0;
+    }
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+    .slider:before {
+        position: absolute;
+        content: "";
+        height: 15px;
+        width: 15px;
+        left: 4px;
+        bottom: 15%;
+        background-color: white;
+        -webkit-transition: .4s;
+        transition: .4s;
+    }
+
+input:checked + .slider {
+    background-color: #0090CE;
+}
+
+input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+    border-radius: 15px;
+}
+
+    .slider.round:before {
+        border-radius: 50%;
+    }
+
+.label-link {
+    color: #337AB7;
+}
+
+    .label-link:hover {
+        color: #23527C;
+        text-decoration: underline;
+        cursor:pointer;
+    }
+
+
+/**
+ * overhang.min.css
+ * Paul Krishnamurthy 2016
+ *
+ * https://paulkr.com
+ * paul@paulkr.com
+ */
+
+.overhang {
+    position: fixed;
+    display: none;
+    width: 100%;
+    z-index: 9999;
+    padding: 15px 2px;
+    top: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    box-sizing: border-box
+}
+
+.overhang-message {
+    color: #fff;
+    font-size: 20px
+}
+
+    .overhang-message strong {
+        font-weight: 700
+    }
+
+    .overhang-message a {
+        color: inherit
+    }
+
+        .overhang-message a:hover {
+            text-decoration: none
+        }
+
+.overhang-overlay {
+    position: fixed;
+    display: block;
+    background-color: #000;
+    opacity: .6;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 9998
+}
+
+.overhang-prompt-field {
+    height: 30px;
+    width: 250px;
+    border-radius: 5px;
+    border: none;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 15px;
+    bottom: 7px;
+    position: relative;
+    padding-left: 3px;
+    padding-right: 3px;
+    outline: 0;
+    font-family: Roboto,sans-serif;
+    font-size: 15px
+}
+
+.overhang-no-option, .overhang-yes-option {
+    min-width: 50px;
+    height: 30px;
+    border: none;
+    outline: 0;
+    border-radius: 4px;
+    font-size: 20px;
+    color: #fff;
+    cursor: pointer;
+    margin: 0 6px
+}
+
+.overhang-yes-option {
+    margin-left: 15px
+}
+
+.overhang-close {
+    vertical-align: middle;
+    cursor: pointer;
+    margin-top: -4px;
+    padding-left: 13px;
+    font-size: 2em;
+    font-weight: 700;
+    display: inline-block;
+    line-height: 20px
+}
+
+    .overhang-close:after {
+        content: "\00d7"
+    }
+
+@media (max-width:720px) {
+    .overhang-close {
+        font-size: 2em;
+        line-height: 14px
+    }
+
+    .overhang-message {
+        font-size: 15px
+    }
+}
+
+/* Changement ordre */
+#TableEtape tr .taskSingleInline:hover {
+    cursor: grab;
+}
+
+/* Changement ordre */
+#TableEtape tr .taskSingleInline:active {
+    cursor: grabbing;
+}

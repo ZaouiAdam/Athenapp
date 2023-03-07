@@ -1,0 +1,200 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="ExpeditionHelper_SOLModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityContainer Name="ExpeditionHelper_SOLEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="TB_ADRESSE" EntityType="ExpeditionHelper_SOLModel.TB_ADRESSE" />
+    <EntitySet Name="TB_CLIENT" EntityType="ExpeditionHelper_SOLModel.TB_CLIENT" />
+    <EntitySet Name="TB_ETAPE" EntityType="ExpeditionHelper_SOLModel.TB_ETAPE" />
+    <EntitySet Name="TB_EXPEDITION" EntityType="ExpeditionHelper_SOLModel.TB_EXPEDITION" />
+    <EntitySet Name="TB_INCOTERM" EntityType="ExpeditionHelper_SOLModel.TB_INCOTERM" />
+    <EntitySet Name="TB_Liaison" EntityType="ExpeditionHelper_SOLModel.TB_Liaison" />
+    <EntitySet Name="TB_LIEN" EntityType="ExpeditionHelper_SOLModel.TB_LIEN" />
+    <EntitySet Name="TB_LOG" EntityType="ExpeditionHelper_SOLModel.TB_LOG" />
+    <EntitySet Name="TB_PROCEDURE_EXPEDITION" EntityType="ExpeditionHelper_SOLModel.TB_PROCEDURE_EXPEDITION" />
+    <EntitySet Name="TB_VERSION" EntityType="ExpeditionHelper_SOLModel.TB_VERSION" />
+    <AssociationSet Name="FK_TB_ADRESSE_TB_CLIENT" Association="ExpeditionHelper_SOLModel.FK_TB_ADRESSE_TB_CLIENT">
+      <End Role="TB_CLIENT" EntitySet="TB_CLIENT" />
+      <End Role="TB_ADRESSE" EntitySet="TB_ADRESSE" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TB_ADRESSE_TB_ETAPE" Association="ExpeditionHelper_SOLModel.FK_TB_ADRESSE_TB_ETAPE">
+      <End Role="TB_ADRESSE" EntitySet="TB_ADRESSE" />
+      <End Role="TB_ETAPE" EntitySet="TB_ETAPE" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TB_Liaison_TB_ETAPE" Association="ExpeditionHelper_SOLModel.FK_TB_Liaison_TB_ETAPE">
+      <End Role="TB_ETAPE" EntitySet="TB_ETAPE" />
+      <End Role="TB_Liaison" EntitySet="TB_Liaison" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TB_PROCEDURE_EXPEDITION_TB_EXPEDITION" Association="ExpeditionHelper_SOLModel.FK_TB_PROCEDURE_EXPEDITION_TB_EXPEDITION">
+      <End Role="TB_EXPEDITION" EntitySet="TB_EXPEDITION" />
+      <End Role="TB_PROCEDURE_EXPEDITION" EntitySet="TB_PROCEDURE_EXPEDITION" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TB_Liaison_TB_LIEN" Association="ExpeditionHelper_SOLModel.FK_TB_Liaison_TB_LIEN">
+      <End Role="TB_LIEN" EntitySet="TB_LIEN" />
+      <End Role="TB_Liaison" EntitySet="TB_Liaison" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="TB_ADRESSE">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Nom" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="CodeAdresse" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="IdClient" Type="Int32" />
+    <Property Name="GroupId" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="TB_CLIENT" Relationship="ExpeditionHelper_SOLModel.FK_TB_ADRESSE_TB_CLIENT" FromRole="TB_ADRESSE" ToRole="TB_CLIENT" />
+    <NavigationProperty Name="TB_ETAPE" Relationship="ExpeditionHelper_SOLModel.FK_TB_ADRESSE_TB_ETAPE" FromRole="TB_ADRESSE" ToRole="TB_ETAPE" />
+  </EntityType>
+  <EntityType Name="TB_CLIENT">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Code" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Nom" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="TB_ADRESSE" Relationship="ExpeditionHelper_SOLModel.FK_TB_ADRESSE_TB_CLIENT" FromRole="TB_CLIENT" ToRole="TB_ADRESSE" />
+  </EntityType>
+  <EntityType Name="TB_ETAPE">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Texte" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+    <Property Name="Ordre" Type="Double" />
+    <Property Name="IdClient" Type="Int32" />
+    <Property Name="IdIncoterm" Type="Int32" />
+    <Property Name="IdAdresse" Type="Int32" />
+    <NavigationProperty Name="TB_ADRESSE" Relationship="ExpeditionHelper_SOLModel.FK_TB_ADRESSE_TB_ETAPE" FromRole="TB_ETAPE" ToRole="TB_ADRESSE" />
+    <NavigationProperty Name="TB_Liaison" Relationship="ExpeditionHelper_SOLModel.FK_TB_Liaison_TB_ETAPE" FromRole="TB_ETAPE" ToRole="TB_Liaison" />
+  </EntityType>
+  <EntityType Name="TB_EXPEDITION">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Date" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Avancement" Type="Int32" />
+    <Property Name="Incoterm" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="NumeroBonDeLivraison" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="TB_PROCEDURE_EXPEDITION" Relationship="ExpeditionHelper_SOLModel.FK_TB_PROCEDURE_EXPEDITION_TB_EXPEDITION" FromRole="TB_EXPEDITION" ToRole="TB_PROCEDURE_EXPEDITION" />
+  </EntityType>
+  <EntityType Name="TB_INCOTERM">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Nom" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="Description" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="Defaut" Type="String" MaxLength="2" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="TB_Liaison">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="IdEtape" Type="Int32" />
+    <Property Name="IdLien" Type="Int32" />
+    <NavigationProperty Name="TB_ETAPE" Relationship="ExpeditionHelper_SOLModel.FK_TB_Liaison_TB_ETAPE" FromRole="TB_Liaison" ToRole="TB_ETAPE" />
+    <NavigationProperty Name="TB_LIEN" Relationship="ExpeditionHelper_SOLModel.FK_TB_Liaison_TB_LIEN" FromRole="TB_Liaison" ToRole="TB_LIEN" />
+  </EntityType>
+  <EntityType Name="TB_LIEN">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Url" Type="String" MaxLength="250" FixedLength="false" Unicode="false" />
+    <Property Name="Nom" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="TB_Liaison" Relationship="ExpeditionHelper_SOLModel.FK_TB_Liaison_TB_LIEN" FromRole="TB_LIEN" ToRole="TB_Liaison" />
+  </EntityType>
+  <EntityType Name="TB_LOG">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Action" Type="String" MaxLength="250" FixedLength="false" Unicode="false" />
+    <Property Name="Date" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="Login" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="Texte" Type="String" MaxLength="1000" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="TB_PROCEDURE_EXPEDITION">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Etat" Type="Int32" />
+    <Property Name="TexteLog" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+    <Property Name="DefautLog" Type="Int32" />
+    <Property Name="IdExpedition" Type="Int32" />
+    <NavigationProperty Name="TB_EXPEDITION" Relationship="ExpeditionHelper_SOLModel.FK_TB_PROCEDURE_EXPEDITION_TB_EXPEDITION" FromRole="TB_PROCEDURE_EXPEDITION" ToRole="TB_EXPEDITION" />
+  </EntityType>
+  <EntityType Name="TB_VERSION">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Nom" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="Auteur" Type="String" MaxLength="50" FixedLength="true" Unicode="true" />
+    <Property Name="Description" Type="String" MaxLength="500" FixedLength="true" Unicode="true" />
+    <Property Name="Date_Prod" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="prod" Type="String" MaxLength="1" FixedLength="true" Unicode="true" />
+  </EntityType>
+  <Association Name="FK_TB_ADRESSE_TB_CLIENT">
+    <End Type="ExpeditionHelper_SOLModel.TB_CLIENT" Role="TB_CLIENT" Multiplicity="0..1" />
+    <End Type="ExpeditionHelper_SOLModel.TB_ADRESSE" Role="TB_ADRESSE" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TB_CLIENT">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="TB_ADRESSE">
+        <PropertyRef Name="IdClient" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TB_ADRESSE_TB_ETAPE">
+    <End Type="ExpeditionHelper_SOLModel.TB_ADRESSE" Role="TB_ADRESSE" Multiplicity="0..1" />
+    <End Type="ExpeditionHelper_SOLModel.TB_ETAPE" Role="TB_ETAPE" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TB_ADRESSE">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="TB_ETAPE">
+        <PropertyRef Name="IdAdresse" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TB_Liaison_TB_ETAPE">
+    <End Type="ExpeditionHelper_SOLModel.TB_ETAPE" Role="TB_ETAPE" Multiplicity="0..1" />
+    <End Type="ExpeditionHelper_SOLModel.TB_Liaison" Role="TB_Liaison" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TB_ETAPE">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="TB_Liaison">
+        <PropertyRef Name="IdEtape" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TB_PROCEDURE_EXPEDITION_TB_EXPEDITION">
+    <End Type="ExpeditionHelper_SOLModel.TB_EXPEDITION" Role="TB_EXPEDITION" Multiplicity="0..1" />
+    <End Type="ExpeditionHelper_SOLModel.TB_PROCEDURE_EXPEDITION" Role="TB_PROCEDURE_EXPEDITION" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TB_EXPEDITION">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="TB_PROCEDURE_EXPEDITION">
+        <PropertyRef Name="IdExpedition" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TB_Liaison_TB_LIEN">
+    <End Type="ExpeditionHelper_SOLModel.TB_LIEN" Role="TB_LIEN" Multiplicity="0..1" />
+    <End Type="ExpeditionHelper_SOLModel.TB_Liaison" Role="TB_Liaison" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TB_LIEN">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="TB_Liaison">
+        <PropertyRef Name="IdLien" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>

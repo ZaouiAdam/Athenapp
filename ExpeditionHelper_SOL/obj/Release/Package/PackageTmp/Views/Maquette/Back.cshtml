@@ -1,0 +1,411 @@
+﻿<br />
+<br />
+
+<h2>Parametrage des étapes client :</h2>
+
+<br />
+<br />
+
+<div class="row">
+    <div class="col-lg-5">
+        <div class="card card-default">
+            <div class="card-header"> Choix du client</div>
+            <div class="card-body">
+                <div id="BlockCodeNomClient">
+                    @* Select Code CLient *@
+
+                    <div class="col-lg-1"></div>
+                    <div class="col-lg-10 form-group">
+                        <label>Code client :</label>
+                        <br />
+                        <div style="text-align:center;">
+                            <select class="form-control" id="CodeClientSelect" onchange="ChoixClient(); BLDisabled();">
+                                <option value="0">Code client...</option>
+                                <option value="value">30013</option>
+                                <option value="value">Airbus France</option>
+                                <option value="value">Thales</option>
+                                <option value="value">Dassault</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-lg-12"></div>
+                    <br />
+                    @* Select Adresse CLient *@
+                    <div id="BlockNomClientSelect">
+                        <div class="col-lg-1"></div>
+                        <div class="col-lg-10 form-group">
+                            <label>Adresse du client :</label>
+                            <br />
+                            <div style="text-align:center;">
+                                <select class="form-control" id="NomClientSelect" onchange="ChoixClient()" disabled>
+                                    <option value="0">Nom du client...</option>
+                                    <option value="1">Dassault Aviation</option>
+                                    <option value="2">Airbus UK</option>
+                                    <option value="3">Thales</option>
+                                    <option value="4">Dassault</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-12" id="OrCodeNomBLClient"><label>Ou</label></div><br />
+                <div id="BlockBLClient">
+                    <div class="col-lg-1"></div>
+                    <div class="col-lg-10 form-group">
+                        <label>Numero Bon de livraison :</label>
+                        <br />
+                        <div class="tooltip-wrapper_BL" data-title="Rien" style="text-align:center;">
+                            <input type="text" class="form-control" name="name" value="" id="BLClient" placeholder="Exemple : AWG6384XJF82" onkeyup="ChoixClient()"/>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-1"></div>
+            </div>
+        </div>
+    </div>
+    <div class="col-lg-5">
+        <div class="card card-default">
+            <div class="card-header"> Filtre</div>
+            <div class="card-body">
+                @* Select Mode difficulté  *@
+
+                <div class="col-lg-1"></div>
+                <div class="col-lg-10 form-group">
+                    <label>Vue utilisateur :</label>
+                    <div style="text-align:center;">
+                        <label>
+                            Novice <i class="far fa-star"></i>
+                            <label class="switch">
+                                <input type="checkbox" id="CheckboxDefaut" onclick="StepSwitch()">
+                                <span class="slider round"></span>
+                            </label>
+                            Expert <i class="fas fa-star"></i>
+                        </label>
+                    </div>
+                </div>
+                <div class="col-lg-12"></div>
+                <br />
+
+                @* Select Incoterm *@
+
+                <div class="col-lg-1"></div>
+                <div class="col-lg-10 form-group">
+                    <label>Incoterm :</label>
+                    <br />
+                    <div style="text-align:center;">
+                        <select class="form-control" id="IncotermSelect" onload="StepSwitch()" onchange="StepSwitch()">
+                            <option value="0">Incoterm...</option>
+                            <option value="FCA">FCA</option>
+                            <option value="DAP">DAP</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="col-lg-1"></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<br />
+<br />
+
+
+
+@* Affichage Etape *@
+<div id="BlockClientStep">
+
+    <div class="row">
+        <div class="col-lg-10">
+            <div class="card card-default">
+                <div class="card-header">Etape à suivre :</div>
+                <div class="card-body" style="text-align:center;">
+                    <table class="table table-hover">
+                        <tr>
+                            <th style="text-align:center;">N°</th>
+                            <th style="text-align:center;">Explication</th>
+                            <th style="text-align:center;">Etape</th>
+                            <th style="text-align:center;">Action</th>
+                        </tr>
+                    </table>
+
+                    <br />
+                    <br />
+                    <div class="row">
+                        <div class="col-lg-1"></div>
+                        <div class="col-lg-7">
+                            <input type="text" class="form-control" name="name" value="" placeholder="Nouvelle Etape" />
+                        </div>
+                        <div class="col-lg-2">
+                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal" data-backdrop="static" data-keyboard="false">Suggestion Etape</button>
+                            <div class="modal fade" id="myModal" role="dialog">
+                                <div class="modal-dialog modal-lg">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <div class="row">
+                                                <div class="col-lg-10">
+                                                    <input type="text" class="form-control" name="name" value="" placeholder="Recherche..." />
+                                                </div>
+                                                <div class="col-lg-1">
+                                                    <button class="btn btn-default"><i class="fas fa-search"></i></button>
+                                                </div>
+                                                <div class="col-lg-1">
+                                                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="modal-body">
+                                            <div class="row">
+                                                <div class="col-lg-12">
+                                                    <table class="table table-bordered">
+                                                        <tr>
+                                                            <th>N°</th>
+                                                            <th>Explication</th>
+                                                            <th>Etape</th>
+                                                            <th>Choix</th>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>1</td>
+                                                            <td>Vérifier les documents et le nombre de colis</td>
+                                                            <td>Défaut</td>
+                                                            <td><button class="btn btn-primary"><i class="fas fa-arrow-circle-right"></i></button></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>2</td>
+                                                            <td>Editer l’étiquette adresse	</td>
+                                                            <td>Défaut</td>
+                                                            <td><button class="btn btn-primary"><i class="fas fa-arrow-circle-right"></i></button></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>3</td>
+                                                            <td>Renseigner le transitaire et le n° de tracking en DRS100	</td>
+                                                            <td>Défaut</td>
+                                                            <td><button class="btn btn-primary"><i class="fas fa-arrow-circle-right"></i></button></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>4</td>
+                                                            <td>Faire l’enchaînement en DRS100	</td>
+                                                            <td>Défaut</td>
+                                                            <td><button class="btn btn-primary"><i class="fas fa-arrow-circle-right"></i></button></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>5</td>
+                                                            <td>Traiter une expedition UPS -> Procerdure GQMS</td>
+                                                            <td>DAP</td>
+                                                            <td><button class="btn btn-primary"><i class="fas fa-arrow-circle-right"></i></button></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>6</td>
+                                                            <td>Organiser un retour UPS -> Procerdure GQMS</td>
+                                                            <td>DAP</td>
+                                                            <td><button class="btn btn-primary"><i class="fas fa-arrow-circle-right"></i></button></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>7</td>
+                                                            <td>Faire un Clear It -> Portail</td>
+                                                            <td>Spécial</td>
+                                                            <td><button class="btn btn-primary"><i class="fas fa-arrow-circle-right"></i></button></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>8</td>
+                                                            <td>Joindre l'identifiant DHL dans AIRSUPPLY -> Portail</td>
+                                                            <td>Spécial</td>
+                                                            <td><button class="btn btn-primary"><i class="fas fa-arrow-circle-right"></i></button></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>9</td>
+                                                            <td>Joindre les documents à l'expédition une fois la réception des documents</td>
+                                                            <td>FCA</td>
+                                                            <td><button class="btn btn-primary"><i class="fas fa-arrow-circle-right"></i></button></td>
+                                                        </tr>
+                                                    </table>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-1">
+                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal1" data-backdrop="static" data-keyboard="false">Ajouter Lien</button>
+                            <div class="modal fade" id="myModal1" role="dialog">
+                                <div class="modal-dialog modal-lg">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <div class="row">
+                                                <div class="col-lg-10">
+                                                    <input type="text" class="form-control" name="name" value="" placeholder="Recherche..." />
+                                                </div>
+                                                <div class="col-lg-1">
+                                                    <button class="btn btn-default"><i class="fas fa-search"></i></button>
+                                                </div>
+                                                <div class="col-lg-1">
+                                                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="modal-body">
+                                            <div class="row">
+                                                <div class="col-lg-12">
+                                                    <table class="table table-bordered">
+                                                        <tr>
+                                                            <th>Choix</th>
+                                                            <th>Nom du lien</th>
+                                                            <th>URL du lien</th>
+                                                            <th>Action</th>
+                                                        </tr>
+                                                        <tr>
+                                                            <td><input type="checkbox" name="name" value="" /></td>
+                                                            <td><label>Procedure CONS123</label></td>
+                                                            <td><a href="#" target="_blank">http://gqms.liae.local/Documents/SOL/CONS123.pdf</a><label></label></td>
+                                                            <td><button class="btn btn-primary"><i class="glyphicon glyphicon-pencil"></i></button> <button class="btn btn-danger"><i class="glyphicon glyphicon-trash"></i></button></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td><input type="checkbox" name="name" value="" /></td>
+                                                            <td><label>Portail DHL</label></td>
+                                                            <td><a href="#" target="_blank">https://www.dhl.com/fr-fr/home.html</a><label></label></td>
+                                                            <td><button class="btn btn-primary"><i class="glyphicon glyphicon-pencil"></i></button> <button class="btn btn-danger"><i class="glyphicon glyphicon-trash"></i></button></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td><input type="checkbox" name="name" value="" /></td>
+                                                            <td><label>Portail Airsupply</label></td>
+                                                            <td><a href="#" target="_blank">https://platform.application.prd.supplyon.com/logon/logonServlet</a><label></label></td>
+                                                            <td><button class="btn btn-primary"><i class="glyphicon glyphicon-pencil"></i></button> <button class="btn btn-danger"><i class="glyphicon glyphicon-trash"></i></button></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td><input type="checkbox" name="name" value="" /></td>
+                                                            <td><label>Procerdure GQMS QAS 80.7</label></td>
+                                                            <td><a href="#" target="_blank">http://gqms.liae.local/Documents/SOL/DAQ18.60.pdf</a><label></label></td>
+                                                            <td><button class="btn btn-primary"><i class="glyphicon glyphicon-pencil"></i></button> <button class="btn btn-danger"><i class="glyphicon glyphicon-trash"></i></button></td>
+                                                        </tr>
+                                                    </table>
+                                                </div>
+                                                <br />
+                                                <div class="col-lg-12" style="text-align:center;">
+                                                    <button class="btn btn-success" data-dismiss="modal">Valider</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="modal-footer" style="text-align:center;">
+                                            <div class="row">
+                                                <div class="col-lg-5">
+                                                    <label>Nom du Lien :</label>
+                                                </div>
+                                                <div class="col-lg-5">
+                                                    <label>URL du Lien :</label>
+                                                </div>
+                                                <div class="col-lg-12"></div>
+                                                <br />
+                                                <div class="col-lg-5">
+                                                    <input type="text" class="form-control" name="name" value="" placeholder="Exemple : Procedure CONS123" />
+                                                </div>
+                                                <div class="col-lg-5">
+                                                    <input type="text" class="form-control" name="name" value="" placeholder="Exemple : http://gqms.liae.local/Documents/SOL/CONS123.pdf" />
+                                                </div>
+                                                <div class="col-lg-1">
+                                                    <button class="btn btn-primary">Créer un lien</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <div class="col-lg-5">
+                        </div>
+                        <div class="col-lg-2">
+                            <button class="form-control btn btn-success"> Valider </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+
+    function StepSwitch() {
+        if (document.getElementById("CheckboxDefaut").checked) {
+            document.getElementById("StepDefaut1").style.visibility = "hidden";
+            document.getElementById("StepDefaut1").style.display = "none";
+            document.getElementById("StepDefaut2").style.visibility = "hidden";
+            document.getElementById("StepDefaut2").style.display = "none";
+            document.getElementById("StepDefaut3").style.visibility = "hidden";
+            document.getElementById("StepDefaut3").style.display = "none";
+            document.getElementById("StepDefaut4").style.visibility = "hidden";
+            document.getElementById("StepDefaut4").style.display = "none";
+        } else {
+            document.getElementById("StepDefaut1").style.visibility = "visible";
+            document.getElementById("StepDefaut1").style.display = "table-row";
+            document.getElementById("StepDefaut2").style.visibility = "visible";
+            document.getElementById("StepDefaut2").style.display = "table-row";
+            document.getElementById("StepDefaut3").style.visibility = "visible";
+            document.getElementById("StepDefaut3").style.display = "table-row";
+            document.getElementById("StepDefaut4").style.visibility = "visible";
+            document.getElementById("StepDefaut4").style.display = "table-row";
+        }
+        if (document.getElementById("IncotermSelect").value != "0") {
+            switch (document.getElementById("IncotermSelect").value) {
+                case 'FCA':
+                    document.getElementById("StepFCA").style.visibility = "visible";
+                    document.getElementById("StepFCA").style.display = "table-row";
+                    document.getElementById("StepDAP").style.visibility = "hidden";
+                    document.getElementById("StepDAP").style.display = "none";
+                    break;
+                case 'DAP':
+                    document.getElementById("StepDAP").style.visibility = "visible";
+                    document.getElementById("StepDAP").style.display = "table-row";
+                    document.getElementById("StepFCA").style.visibility = "hidden";
+                    document.getElementById("StepFCA").style.display = "none";
+                    break;
+            }
+        } else {
+            document.getElementById("StepFCA").style.visibility = "hidden";
+            document.getElementById("StepFCA").style.display = "none";
+            document.getElementById("StepDAP").style.visibility = "hidden";
+            document.getElementById("StepDAP").style.display = "none";
+        }
+    }
+    function ChoixClient() {
+        if (document.getElementById("CodeClientSelect").value != "0") {
+            document.getElementById("BlockNomClientSelect").style.visibility = "visible";
+            document.getElementById("BlockNomClientSelect").style.display = "block";
+            document.getElementById("BLClient").disabled = true;
+            document.getElementById("NomClientSelect").disabled = false;
+            if (document.getElementById("NomClientSelect").value != "0") {
+                document.getElementById("NoneClientSelect").style.visibility = "hidden";
+                document.getElementById("NoneClientSelect").style.display = "none";
+                document.getElementById("BlockClientStep").style.visibility = "visible";
+                document.getElementById("BlockClientStep").style.display = "block";
+            }
+            if (document.getElementById("NomClientSelect").value == "0") {
+                document.getElementById("NoneClientSelect").style.visibility = "visible";
+                document.getElementById("NoneClientSelect").style.display = "block";
+                document.getElementById("BlockClientStep").style.visibility = "hidden";
+                document.getElementById("BlockClientStep").style.display = "none";
+            }
+        } else if (document.getElementById("BLClient").value != "") {
+            document.getElementById("CodeClientSelect").disabled = true;
+            document.getElementById("NomClientSelect").disabled = true;
+            document.getElementById("BlockClientStep").style.visibility = "visible";
+            document.getElementById("BlockClientStep").style.display = "block";
+            document.getElementById("NoneClientSelect").style.visibility = "hidden";
+            document.getElementById("NoneClientSelect").style.display = "none";
+        } else {
+            document.getElementById("BLClient").disabled = false;
+            document.getElementById("CodeClientSelect").disabled = false;
+            document.getElementById("NomClientSelect").disabled = true;
+            document.getElementById("NoneClientSelect").style.visibility = "visible";
+            document.getElementById("NoneClientSelect").style.display = "block";
+            document.getElementById("BlockClientStep").style.visibility = "hidden";
+            document.getElementById("BlockClientStep").style.display = "none";
+        }
+    }
+
+</script>

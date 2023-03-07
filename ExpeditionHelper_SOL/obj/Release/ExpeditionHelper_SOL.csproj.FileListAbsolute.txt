@@ -1,0 +1,658 @@
+D:\Users\azaoui\source\repos\Framework Project\ExpeditionHelper_SOL\bin\ExpeditionHelper_SOL.dll.config
+D:\Users\azaoui\source\repos\Framework Project\ExpeditionHelper_SOL\bin\ExpeditionHelper_SOL.dll
+D:\Users\azaoui\source\repos\Framework Project\ExpeditionHelper_SOL\bin\ExpeditionHelper_SOL.pdb
+D:\Users\azaoui\source\repos\Framework Project\ExpeditionHelper_SOL\bin\en\ExpeditionHelper_SOL.resources.dll
+D:\Users\azaoui\source\repos\Framework Project\ExpeditionHelper_SOL\bin\roslyn\csc.exe
+D:\Users\azaoui\source\repos\Framework Project\ExpeditionHelper_SOL\bin\roslyn\csc.exe.config
+D:\Users\azaoui\source\repos\Framework Project\ExpeditionHelper_SOL\bin\roslyn\csc.rsp
+D:\Users\azaoui\source\repos\Framework Project\ExpeditionHelper_SOL\bin\roslyn\csi.exe
+D:\Users\azaoui\source\repos\Framework Project\ExpeditionHelper_SOL\bin\roslyn\csi.exe.config
+D:\Users\azaoui\source\repos\Framework Project\ExpeditionHelper_SOL\bin\roslyn\csi.rsp
+D:\Users\azaoui\source\repos\Framework Project\ExpeditionHelper_SOL\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\Users\azaoui\source\repos\Framework Project\ExpeditionHelper_SOL\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\Users\azaoui\source\repos\Framework Project\ExpeditionHelper_SOL\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\Users\azaoui\source\repos\Framework Project\ExpeditionHelper_SOL\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\Users\azaoui\source\repos\Framework Project\ExpeditionHelper_SOL\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+D:\Users\azaoui\source\repos\Framework Project\ExpeditionHelper_SOL\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\Users\azaoui\source\repos\Framework Project\ExpeditionHelper_SOL\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\Users\azaoui\source\repos\Framework Project\ExpeditionHelper_SOL\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+D:\Users\azaoui\source\repos\Framework Project\ExpeditionHelper_SOL\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+D:\Users\azaoui\source\repos\Framework Project\ExpeditionHelper_SOL\bin\roslyn\Microsoft.Managed.Core.targets
+D:\Users\azaoui\source\repos\Framework Project\ExpeditionHelper_SOL\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\Users\azaoui\source\repos\Framework Project\ExpeditionHelper_SOL\bin\roslyn\System.AppContext.dll
+D:\Users\azaoui\source\repos\Framework Project\ExpeditionHelper_SOL\bin\roslyn\System.Collections.Immutable.dll
+D:\Users\azaoui\source\repos\Framework Project\ExpeditionHelper_SOL\bin\roslyn\System.Console.dll
+D:\Users\azaoui\source\repos\Framework Project\ExpeditionHelper_SOL\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+D:\Users\azaoui\source\repos\Framework Project\ExpeditionHelper_SOL\bin\roslyn\System.Diagnostics.StackTrace.dll
+D:\Users\azaoui\source\repos\Framework Project\ExpeditionHelper_SOL\bin\roslyn\System.IO.Compression.dll
+D:\Users\azaoui\source\repos\Framework Project\ExpeditionHelper_SOL\bin\roslyn\System.IO.FileSystem.dll
+D:\Users\azaoui\source\repos\Framework Project\ExpeditionHelper_SOL\bin\roslyn\System.IO.FileSystem.Primitives.dll
+D:\Users\azaoui\source\repos\Framework Project\ExpeditionHelper_SOL\bin\roslyn\System.IO.Pipes.AccessControl.dll
+D:\Users\azaoui\source\repos\Framework Project\ExpeditionHelper_SOL\bin\roslyn\System.IO.Pipes.dll
+D:\Users\azaoui\source\repos\Framework Project\ExpeditionHelper_SOL\bin\roslyn\System.Reflection.Metadata.dll
+D:\Users\azaoui\source\repos\Framework Project\ExpeditionHelper_SOL\bin\roslyn\System.Security.AccessControl.dll
+D:\Users\azaoui\source\repos\Framework Project\ExpeditionHelper_SOL\bin\roslyn\System.Security.Claims.dll
+D:\Users\azaoui\source\repos\Framework Project\ExpeditionHelper_SOL\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+D:\Users\azaoui\source\repos\Framework Project\ExpeditionHelper_SOL\bin\roslyn\System.Security.Cryptography.Encoding.dll
+D:\Users\azaoui\source\repos\Framework Project\ExpeditionHelper_SOL\bin\roslyn\System.Security.Cryptography.Primitives.dll
+D:\Users\azaoui\source\repos\Framework Project\ExpeditionHelper_SOL\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+D:\Users\azaoui\source\repos\Framework Project\ExpeditionHelper_SOL\bin\roslyn\System.Security.Principal.Windows.dll
+D:\Users\azaoui\source\repos\Framework Project\ExpeditionHelper_SOL\bin\roslyn\System.Text.Encoding.CodePages.dll
+D:\Users\azaoui\source\repos\Framework Project\ExpeditionHelper_SOL\bin\roslyn\System.ValueTuple.dll
+D:\Users\azaoui\source\repos\Framework Project\ExpeditionHelper_SOL\bin\roslyn\System.Xml.ReaderWriter.dll
+D:\Users\azaoui\source\repos\Framework Project\ExpeditionHelper_SOL\bin\roslyn\System.Xml.XmlDocument.dll
+D:\Users\azaoui\source\repos\Framework Project\ExpeditionHelper_SOL\bin\roslyn\System.Xml.XPath.dll
+D:\Users\azaoui\source\repos\Framework Project\ExpeditionHelper_SOL\bin\roslyn\System.Xml.XPath.XDocument.dll
+D:\Users\azaoui\source\repos\Framework Project\ExpeditionHelper_SOL\bin\roslyn\vbc.exe
+D:\Users\azaoui\source\repos\Framework Project\ExpeditionHelper_SOL\bin\roslyn\vbc.exe.config
+D:\Users\azaoui\source\repos\Framework Project\ExpeditionHelper_SOL\bin\roslyn\vbc.rsp
+D:\Users\azaoui\source\repos\Framework Project\ExpeditionHelper_SOL\bin\roslyn\VBCSCompiler.exe
+D:\Users\azaoui\source\repos\Framework Project\ExpeditionHelper_SOL\bin\roslyn\VBCSCompiler.exe.config
+D:\Users\azaoui\source\repos\Framework Project\ExpeditionHelper_SOL\bin\Antlr3.Runtime.dll
+D:\Users\azaoui\source\repos\Framework Project\ExpeditionHelper_SOL\bin\EntityFramework.dll
+D:\Users\azaoui\source\repos\Framework Project\ExpeditionHelper_SOL\bin\EntityFramework.SqlServer.dll
+D:\Users\azaoui\source\repos\Framework Project\ExpeditionHelper_SOL\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\Users\azaoui\source\repos\Framework Project\ExpeditionHelper_SOL\bin\Microsoft.Web.Infrastructure.dll
+D:\Users\azaoui\source\repos\Framework Project\ExpeditionHelper_SOL\bin\Microsoft.Win32.Registry.AccessControl.dll
+D:\Users\azaoui\source\repos\Framework Project\ExpeditionHelper_SOL\bin\Microsoft.Win32.Registry.dll
+D:\Users\azaoui\source\repos\Framework Project\ExpeditionHelper_SOL\bin\Microsoft.Win32.SystemEvents.dll
+D:\Users\azaoui\source\repos\Framework Project\ExpeditionHelper_SOL\bin\Newtonsoft.Json.dll
+D:\Users\azaoui\source\repos\Framework Project\ExpeditionHelper_SOL\bin\Notify.dll
+D:\Users\azaoui\source\repos\Framework Project\ExpeditionHelper_SOL\bin\PagedList.dll
+D:\Users\azaoui\source\repos\Framework Project\ExpeditionHelper_SOL\bin\PagedList.Mvc.dll
+D:\Users\azaoui\source\repos\Framework Project\ExpeditionHelper_SOL\bin\System.CodeDom.dll
+D:\Users\azaoui\source\repos\Framework Project\ExpeditionHelper_SOL\bin\System.Configuration.ConfigurationManager.dll
+D:\Users\azaoui\source\repos\Framework Project\ExpeditionHelper_SOL\bin\System.Data.Odbc.dll
+D:\Users\azaoui\source\repos\Framework Project\ExpeditionHelper_SOL\bin\System.Data.OleDb.dll
+D:\Users\azaoui\source\repos\Framework Project\ExpeditionHelper_SOL\bin\System.Data.SqlClient.dll
+D:\Users\azaoui\source\repos\Framework Project\ExpeditionHelper_SOL\bin\System.Diagnostics.EventLog.dll
+D:\Users\azaoui\source\repos\Framework Project\ExpeditionHelper_SOL\bin\System.Diagnostics.PerformanceCounter.dll
+D:\Users\azaoui\source\repos\Framework Project\ExpeditionHelper_SOL\bin\System.Drawing.Common.dll
+D:\Users\azaoui\source\repos\Framework Project\ExpeditionHelper_SOL\bin\System.IO.FileSystem.AccessControl.dll
+D:\Users\azaoui\source\repos\Framework Project\ExpeditionHelper_SOL\bin\System.IO.FileSystem.Primitives.dll
+D:\Users\azaoui\source\repos\Framework Project\ExpeditionHelper_SOL\bin\System.IO.Packaging.dll
+D:\Users\azaoui\source\repos\Framework Project\ExpeditionHelper_SOL\bin\System.IO.Pipes.AccessControl.dll
+D:\Users\azaoui\source\repos\Framework Project\ExpeditionHelper_SOL\bin\System.IO.Ports.dll
+D:\Users\azaoui\source\repos\Framework Project\ExpeditionHelper_SOL\bin\System.Net.Http.Formatting.dll
+D:\Users\azaoui\source\repos\Framework Project\ExpeditionHelper_SOL\bin\System.Runtime.CompilerServices.Unsafe.dll
+D:\Users\azaoui\source\repos\Framework Project\ExpeditionHelper_SOL\bin\System.Security.AccessControl.dll
+D:\Users\azaoui\source\repos\Framework Project\ExpeditionHelper_SOL\bin\System.Security.Cryptography.Algorithms.dll
+D:\Users\azaoui\source\repos\Framework Project\ExpeditionHelper_SOL\bin\System.Security.Cryptography.Cng.dll
+D:\Users\azaoui\source\repos\Framework Project\ExpeditionHelper_SOL\bin\System.Security.Cryptography.Pkcs.dll
+D:\Users\azaoui\source\repos\Framework Project\ExpeditionHelper_SOL\bin\System.Security.Cryptography.Primitives.dll
+D:\Users\azaoui\source\repos\Framework Project\ExpeditionHelper_SOL\bin\System.Security.Cryptography.ProtectedData.dll
+D:\Users\azaoui\source\repos\Framework Project\ExpeditionHelper_SOL\bin\System.Security.Cryptography.Xml.dll
+D:\Users\azaoui\source\repos\Framework Project\ExpeditionHelper_SOL\bin\System.Security.Permissions.dll
+D:\Users\azaoui\source\repos\Framework Project\ExpeditionHelper_SOL\bin\System.Security.Principal.Windows.dll
+D:\Users\azaoui\source\repos\Framework Project\ExpeditionHelper_SOL\bin\System.ServiceModel.Duplex.dll
+D:\Users\azaoui\source\repos\Framework Project\ExpeditionHelper_SOL\bin\System.ServiceModel.Http.dll
+D:\Users\azaoui\source\repos\Framework Project\ExpeditionHelper_SOL\bin\System.ServiceModel.NetTcp.dll
+D:\Users\azaoui\source\repos\Framework Project\ExpeditionHelper_SOL\bin\System.ServiceModel.Primitives.dll
+D:\Users\azaoui\source\repos\Framework Project\ExpeditionHelper_SOL\bin\System.ServiceModel.Security.dll
+D:\Users\azaoui\source\repos\Framework Project\ExpeditionHelper_SOL\bin\System.ServiceModel.Syndication.dll
+D:\Users\azaoui\source\repos\Framework Project\ExpeditionHelper_SOL\bin\System.ServiceProcess.ServiceController.dll
+D:\Users\azaoui\source\repos\Framework Project\ExpeditionHelper_SOL\bin\System.Text.Encoding.CodePages.dll
+D:\Users\azaoui\source\repos\Framework Project\ExpeditionHelper_SOL\bin\System.Threading.AccessControl.dll
+D:\Users\azaoui\source\repos\Framework Project\ExpeditionHelper_SOL\bin\System.Web.Helpers.dll
+D:\Users\azaoui\source\repos\Framework Project\ExpeditionHelper_SOL\bin\System.Web.Http.dll
+D:\Users\azaoui\source\repos\Framework Project\ExpeditionHelper_SOL\bin\System.Web.Http.WebHost.dll
+D:\Users\azaoui\source\repos\Framework Project\ExpeditionHelper_SOL\bin\System.Web.Mvc.dll
+D:\Users\azaoui\source\repos\Framework Project\ExpeditionHelper_SOL\bin\System.Web.Optimization.dll
+D:\Users\azaoui\source\repos\Framework Project\ExpeditionHelper_SOL\bin\System.Web.Razor.dll
+D:\Users\azaoui\source\repos\Framework Project\ExpeditionHelper_SOL\bin\System.Web.WebPages.Deployment.dll
+D:\Users\azaoui\source\repos\Framework Project\ExpeditionHelper_SOL\bin\System.Web.WebPages.dll
+D:\Users\azaoui\source\repos\Framework Project\ExpeditionHelper_SOL\bin\System.Web.WebPages.Razor.dll
+D:\Users\azaoui\source\repos\Framework Project\ExpeditionHelper_SOL\bin\WebGrease.dll
+D:\Users\azaoui\source\repos\Framework Project\ExpeditionHelper_SOL\bin\EntityFramework.xml
+D:\Users\azaoui\source\repos\Framework Project\ExpeditionHelper_SOL\bin\EntityFramework.SqlServer.xml
+D:\Users\azaoui\source\repos\Framework Project\ExpeditionHelper_SOL\bin\Microsoft.Win32.Registry.xml
+D:\Users\azaoui\source\repos\Framework Project\ExpeditionHelper_SOL\bin\Microsoft.Win32.Registry.AccessControl.xml
+D:\Users\azaoui\source\repos\Framework Project\ExpeditionHelper_SOL\bin\Microsoft.Win32.SystemEvents.xml
+D:\Users\azaoui\source\repos\Framework Project\ExpeditionHelper_SOL\bin\PagedList.xml
+D:\Users\azaoui\source\repos\Framework Project\ExpeditionHelper_SOL\bin\PagedList.Mvc.xml
+D:\Users\azaoui\source\repos\Framework Project\ExpeditionHelper_SOL\bin\System.CodeDom.xml
+D:\Users\azaoui\source\repos\Framework Project\ExpeditionHelper_SOL\bin\System.Configuration.ConfigurationManager.xml
+D:\Users\azaoui\source\repos\Framework Project\ExpeditionHelper_SOL\bin\System.Data.Odbc.xml
+D:\Users\azaoui\source\repos\Framework Project\ExpeditionHelper_SOL\bin\System.Data.OleDb.xml
+D:\Users\azaoui\source\repos\Framework Project\ExpeditionHelper_SOL\bin\System.Data.SqlClient.xml
+D:\Users\azaoui\source\repos\Framework Project\ExpeditionHelper_SOL\bin\System.Diagnostics.EventLog.xml
+D:\Users\azaoui\source\repos\Framework Project\ExpeditionHelper_SOL\bin\System.Diagnostics.PerformanceCounter.xml
+D:\Users\azaoui\source\repos\Framework Project\ExpeditionHelper_SOL\bin\System.IO.FileSystem.AccessControl.xml
+D:\Users\azaoui\source\repos\Framework Project\ExpeditionHelper_SOL\bin\System.IO.Packaging.xml
+D:\Users\azaoui\source\repos\Framework Project\ExpeditionHelper_SOL\bin\System.IO.Ports.xml
+D:\Users\azaoui\source\repos\Framework Project\ExpeditionHelper_SOL\bin\System.Net.Http.Formatting.xml
+D:\Users\azaoui\source\repos\Framework Project\ExpeditionHelper_SOL\bin\System.Runtime.CompilerServices.Unsafe.xml
+D:\Users\azaoui\source\repos\Framework Project\ExpeditionHelper_SOL\bin\System.Security.AccessControl.xml
+D:\Users\azaoui\source\repos\Framework Project\ExpeditionHelper_SOL\bin\System.Security.Cryptography.Cng.xml
+D:\Users\azaoui\source\repos\Framework Project\ExpeditionHelper_SOL\bin\System.Security.Cryptography.Pkcs.xml
+D:\Users\azaoui\source\repos\Framework Project\ExpeditionHelper_SOL\bin\System.Security.Cryptography.ProtectedData.xml
+D:\Users\azaoui\source\repos\Framework Project\ExpeditionHelper_SOL\bin\System.Security.Cryptography.Xml.xml
+D:\Users\azaoui\source\repos\Framework Project\ExpeditionHelper_SOL\bin\System.Security.Permissions.xml
+D:\Users\azaoui\source\repos\Framework Project\ExpeditionHelper_SOL\bin\System.Security.Principal.Windows.xml
+D:\Users\azaoui\source\repos\Framework Project\ExpeditionHelper_SOL\bin\System.ServiceModel.Duplex.pdb
+D:\Users\azaoui\source\repos\Framework Project\ExpeditionHelper_SOL\bin\System.ServiceModel.Http.pdb
+D:\Users\azaoui\source\repos\Framework Project\ExpeditionHelper_SOL\bin\System.ServiceModel.NetTcp.pdb
+D:\Users\azaoui\source\repos\Framework Project\ExpeditionHelper_SOL\bin\System.ServiceModel.Primitives.pdb
+D:\Users\azaoui\source\repos\Framework Project\ExpeditionHelper_SOL\bin\System.ServiceModel.Security.pdb
+D:\Users\azaoui\source\repos\Framework Project\ExpeditionHelper_SOL\bin\System.ServiceModel.Syndication.xml
+D:\Users\azaoui\source\repos\Framework Project\ExpeditionHelper_SOL\bin\System.ServiceProcess.ServiceController.xml
+D:\Users\azaoui\source\repos\Framework Project\ExpeditionHelper_SOL\bin\System.Text.Encoding.CodePages.xml
+D:\Users\azaoui\source\repos\Framework Project\ExpeditionHelper_SOL\bin\System.Threading.AccessControl.xml
+D:\Users\azaoui\source\repos\Framework Project\ExpeditionHelper_SOL\bin\System.Web.Http.xml
+D:\Users\azaoui\source\repos\Framework Project\ExpeditionHelper_SOL\bin\System.Web.Http.WebHost.xml
+D:\Users\azaoui\source\repos\Framework Project\ExpeditionHelper_SOL\bin\System.Web.Helpers.xml
+D:\Users\azaoui\source\repos\Framework Project\ExpeditionHelper_SOL\bin\System.Web.Mvc.xml
+D:\Users\azaoui\source\repos\Framework Project\ExpeditionHelper_SOL\bin\System.Web.Optimization.xml
+D:\Users\azaoui\source\repos\Framework Project\ExpeditionHelper_SOL\bin\System.Web.Razor.xml
+D:\Users\azaoui\source\repos\Framework Project\ExpeditionHelper_SOL\bin\System.Web.WebPages.xml
+D:\Users\azaoui\source\repos\Framework Project\ExpeditionHelper_SOL\bin\System.Web.WebPages.Deployment.xml
+D:\Users\azaoui\source\repos\Framework Project\ExpeditionHelper_SOL\bin\System.Web.WebPages.Razor.xml
+D:\Users\azaoui\source\repos\Framework Project\ExpeditionHelper_SOL\bin\Newtonsoft.Json.xml
+D:\Users\azaoui\source\repos\Framework Project\ExpeditionHelper_SOL\bin\Antlr3.Runtime.pdb
+D:\Users\azaoui\source\repos\Framework Project\ExpeditionHelper_SOL\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\Users\azaoui\source\repos\Framework Project\ExpeditionHelper_SOL\bin\fr\EntityFramework.resources.dll
+D:\Users\azaoui\source\repos\Framework Project\ExpeditionHelper_SOL\bin\fr\EntityFramework.SqlServer.resources.dll
+D:\Users\azaoui\source\repos\Framework Project\ExpeditionHelper_SOL\bin\fr\System.Web.Helpers.resources.dll
+D:\Users\azaoui\source\repos\Framework Project\ExpeditionHelper_SOL\bin\fr\System.Web.Mvc.resources.dll
+D:\Users\azaoui\source\repos\Framework Project\ExpeditionHelper_SOL\bin\fr\System.Web.Optimization.resources.dll
+D:\Users\azaoui\source\repos\Framework Project\ExpeditionHelper_SOL\bin\fr\System.Web.Razor.resources.dll
+D:\Users\azaoui\source\repos\Framework Project\ExpeditionHelper_SOL\bin\fr\System.Web.WebPages.resources.dll
+D:\Users\azaoui\source\repos\Framework Project\ExpeditionHelper_SOL\bin\fr\System.Web.WebPages.Deployment.resources.dll
+D:\Users\azaoui\source\repos\Framework Project\ExpeditionHelper_SOL\bin\fr\System.Web.WebPages.Razor.resources.dll
+D:\Users\azaoui\source\repos\Framework Project\ExpeditionHelper_SOL\obj\Release\ExpeditionHelper_SOL.Resources.Models.User.resources
+D:\Users\azaoui\source\repos\Framework Project\ExpeditionHelper_SOL\obj\Release\ExpeditionHelper_SOL.Resources.Views.EtapeLecture.Index.resources
+D:\Users\azaoui\source\repos\Framework Project\ExpeditionHelper_SOL\obj\Release\ExpeditionHelper_SOL.Resources.Views.EtapeParametrage.Index.resources
+D:\Users\azaoui\source\repos\Framework Project\ExpeditionHelper_SOL\obj\Release\ExpeditionHelper_SOL.Resources.Views.EtapeDefaut.Index.resources
+D:\Users\azaoui\source\repos\Framework Project\ExpeditionHelper_SOL\obj\Release\ExpeditionHelper_SOL.Resources.Views.Incoterm.Create.resources
+D:\Users\azaoui\source\repos\Framework Project\ExpeditionHelper_SOL\obj\Release\ExpeditionHelper_SOL.Resources.Views.Incoterm.Delete.resources
+D:\Users\azaoui\source\repos\Framework Project\ExpeditionHelper_SOL\obj\Release\ExpeditionHelper_SOL.Resources.Views.Incoterm.Edit.resources
+D:\Users\azaoui\source\repos\Framework Project\ExpeditionHelper_SOL\obj\Release\ExpeditionHelper_SOL.Resources.Views.Incoterm.Index.resources
+D:\Users\azaoui\source\repos\Framework Project\ExpeditionHelper_SOL\obj\Release\ExpeditionHelper_SOL.Resources.Views.Connexion.Connexion.resources
+D:\Users\azaoui\source\repos\Framework Project\ExpeditionHelper_SOL\obj\Release\ExpeditionHelper_SOL.Resources.Views.Home.Index.resources
+D:\Users\azaoui\source\repos\Framework Project\ExpeditionHelper_SOL\obj\Release\ExpeditionHelper_SOL.Resources.Views.Client.Create.resources
+D:\Users\azaoui\source\repos\Framework Project\ExpeditionHelper_SOL\obj\Release\ExpeditionHelper_SOL.Resources.Views.Client.Delete.resources
+D:\Users\azaoui\source\repos\Framework Project\ExpeditionHelper_SOL\obj\Release\ExpeditionHelper_SOL.Resources.Views.Client.Edit.resources
+D:\Users\azaoui\source\repos\Framework Project\ExpeditionHelper_SOL\obj\Release\ExpeditionHelper_SOL.Resources.Views.Client.Index.resources
+D:\Users\azaoui\source\repos\Framework Project\ExpeditionHelper_SOL\obj\Release\ExpeditionHelper_SOL.Resources.Views.Lien.Create.resources
+D:\Users\azaoui\source\repos\Framework Project\ExpeditionHelper_SOL\obj\Release\ExpeditionHelper_SOL.Resources.Views.Lien.Delete.resources
+D:\Users\azaoui\source\repos\Framework Project\ExpeditionHelper_SOL\obj\Release\ExpeditionHelper_SOL.Resources.Views.Lien.Edit.resources
+D:\Users\azaoui\source\repos\Framework Project\ExpeditionHelper_SOL\obj\Release\ExpeditionHelper_SOL.Resources.Views.Lien.Index.resources
+D:\Users\azaoui\source\repos\Framework Project\ExpeditionHelper_SOL\obj\Release\ExpeditionHelper_SOL.Resources.Views.Shared.Access_denied.resources
+D:\Users\azaoui\source\repos\Framework Project\ExpeditionHelper_SOL\obj\Release\ExpeditionHelper_SOL.Resources.Views.Shared._Layout.resources
+D:\Users\azaoui\source\repos\Framework Project\ExpeditionHelper_SOL\obj\Release\ExpeditionHelper_SOL.Resources.Views.Version.Delete.resources
+D:\Users\azaoui\source\repos\Framework Project\ExpeditionHelper_SOL\obj\Release\ExpeditionHelper_SOL.Resources.Views.Version.Create.resources
+D:\Users\azaoui\source\repos\Framework Project\ExpeditionHelper_SOL\obj\Release\ExpeditionHelper_SOL.Resources.Views.Version.Edit.resources
+D:\Users\azaoui\source\repos\Framework Project\ExpeditionHelper_SOL\obj\Release\ExpeditionHelper_SOL.Resources.Views.Version.Index.resources
+D:\Users\azaoui\source\repos\Framework Project\ExpeditionHelper_SOL\obj\Release\ExpeditionHelper_SOL.Resources.Models.User.en.resources
+D:\Users\azaoui\source\repos\Framework Project\ExpeditionHelper_SOL\obj\Release\ExpeditionHelper_SOL.Resources.Views.EtapeLecture.Index.en.resources
+D:\Users\azaoui\source\repos\Framework Project\ExpeditionHelper_SOL\obj\Release\ExpeditionHelper_SOL.Resources.Views.EtapeParametrage.Index.en.resources
+D:\Users\azaoui\source\repos\Framework Project\ExpeditionHelper_SOL\obj\Release\ExpeditionHelper_SOL.Resources.Views.EtapeDefaut.Index.en.resources
+D:\Users\azaoui\source\repos\Framework Project\ExpeditionHelper_SOL\obj\Release\ExpeditionHelper_SOL.Resources.Views.Incoterm.Create.en.resources
+D:\Users\azaoui\source\repos\Framework Project\ExpeditionHelper_SOL\obj\Release\ExpeditionHelper_SOL.Resources.Views.Incoterm.Delete.en.resources
+D:\Users\azaoui\source\repos\Framework Project\ExpeditionHelper_SOL\obj\Release\ExpeditionHelper_SOL.Resources.Views.Incoterm.Edit.en.resources
+D:\Users\azaoui\source\repos\Framework Project\ExpeditionHelper_SOL\obj\Release\ExpeditionHelper_SOL.Resources.Views.Incoterm.Index.en.resources
+D:\Users\azaoui\source\repos\Framework Project\ExpeditionHelper_SOL\obj\Release\ExpeditionHelper_SOL.Resources.Views.Connexion.Connexion.en.resources
+D:\Users\azaoui\source\repos\Framework Project\ExpeditionHelper_SOL\obj\Release\ExpeditionHelper_SOL.Resources.Views.Home.Index.en.resources
+D:\Users\azaoui\source\repos\Framework Project\ExpeditionHelper_SOL\obj\Release\ExpeditionHelper_SOL.Resources.Views.Client.Create.en.resources
+D:\Users\azaoui\source\repos\Framework Project\ExpeditionHelper_SOL\obj\Release\ExpeditionHelper_SOL.Resources.Views.Client.Delete.en.resources
+D:\Users\azaoui\source\repos\Framework Project\ExpeditionHelper_SOL\obj\Release\ExpeditionHelper_SOL.Resources.Views.Client.Edit.en.resources
+D:\Users\azaoui\source\repos\Framework Project\ExpeditionHelper_SOL\obj\Release\ExpeditionHelper_SOL.Resources.Views.Client.Index.en.resources
+D:\Users\azaoui\source\repos\Framework Project\ExpeditionHelper_SOL\obj\Release\ExpeditionHelper_SOL.Resources.Views.Lien.Create.en.resources
+D:\Users\azaoui\source\repos\Framework Project\ExpeditionHelper_SOL\obj\Release\ExpeditionHelper_SOL.Resources.Views.Lien.Delete.en.resources
+D:\Users\azaoui\source\repos\Framework Project\ExpeditionHelper_SOL\obj\Release\ExpeditionHelper_SOL.Resources.Views.Lien.Edit.en.resources
+D:\Users\azaoui\source\repos\Framework Project\ExpeditionHelper_SOL\obj\Release\ExpeditionHelper_SOL.Resources.Views.Lien.Index.en.resources
+D:\Users\azaoui\source\repos\Framework Project\ExpeditionHelper_SOL\obj\Release\ExpeditionHelper_SOL.Resources.Views.Shared.Access_denied.en.resources
+D:\Users\azaoui\source\repos\Framework Project\ExpeditionHelper_SOL\obj\Release\ExpeditionHelper_SOL.Resources.Views.Shared._Layout.en.resources
+D:\Users\azaoui\source\repos\Framework Project\ExpeditionHelper_SOL\obj\Release\ExpeditionHelper_SOL.Resources.Views.Version.Delete.en.resources
+D:\Users\azaoui\source\repos\Framework Project\ExpeditionHelper_SOL\obj\Release\ExpeditionHelper_SOL.Resources.Views.Version.Create.en.resources
+D:\Users\azaoui\source\repos\Framework Project\ExpeditionHelper_SOL\obj\Release\ExpeditionHelper_SOL.Resources.Views.Version.Edit.en.resources
+D:\Users\azaoui\source\repos\Framework Project\ExpeditionHelper_SOL\obj\Release\ExpeditionHelper_SOL.Resources.Views.Version.Index.en.resources
+D:\Users\azaoui\source\repos\Framework Project\ExpeditionHelper_SOL\obj\Release\ExpeditionHelper_SOL.csproj.GenerateResource.cache
+D:\Users\azaoui\source\repos\Framework Project\ExpeditionHelper_SOL\obj\Release\ExpeditionHelper_SOL.csproj.CoreCompileInputs.cache
+D:\Users\azaoui\source\repos\Framework Project\ExpeditionHelper_SOL\obj\Release\en\ExpeditionHelper_SOL.resources.dll
+D:\Users\azaoui\source\repos\Framework Project\ExpeditionHelper_SOL\obj\Release\ExpeditionHelper_SOL.csproj.CopyComplete
+D:\Users\azaoui\source\repos\Framework Project\ExpeditionHelper_SOL\obj\Release\ExpeditionHelper_SOL.dll
+D:\Users\azaoui\source\repos\Framework Project\ExpeditionHelper_SOL\obj\Release\ExpeditionHelper_SOL.pdb
+D:\Users\azaoui\source\repos\Framework Project\ExpeditionHelper_SOL\obj\Release\ExpeditionHelper_SOL.csprojAssemblyReference.cache
+D:\Users\azaoui\source\repos\Expedition Helper\ExpeditionHelper_SOL\bin\ExpeditionHelper_SOL.dll.config
+D:\Users\azaoui\source\repos\Expedition Helper\ExpeditionHelper_SOL\bin\ExpeditionHelper_SOL.dll
+D:\Users\azaoui\source\repos\Expedition Helper\ExpeditionHelper_SOL\bin\ExpeditionHelper_SOL.pdb
+D:\Users\azaoui\source\repos\Expedition Helper\ExpeditionHelper_SOL\bin\en\ExpeditionHelper_SOL.resources.dll
+D:\Users\azaoui\source\repos\Expedition Helper\ExpeditionHelper_SOL\bin\roslyn\csc.exe
+D:\Users\azaoui\source\repos\Expedition Helper\ExpeditionHelper_SOL\bin\roslyn\csc.exe.config
+D:\Users\azaoui\source\repos\Expedition Helper\ExpeditionHelper_SOL\bin\roslyn\csc.rsp
+D:\Users\azaoui\source\repos\Expedition Helper\ExpeditionHelper_SOL\bin\roslyn\csi.exe
+D:\Users\azaoui\source\repos\Expedition Helper\ExpeditionHelper_SOL\bin\roslyn\csi.exe.config
+D:\Users\azaoui\source\repos\Expedition Helper\ExpeditionHelper_SOL\bin\roslyn\csi.rsp
+D:\Users\azaoui\source\repos\Expedition Helper\ExpeditionHelper_SOL\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\Users\azaoui\source\repos\Expedition Helper\ExpeditionHelper_SOL\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\Users\azaoui\source\repos\Expedition Helper\ExpeditionHelper_SOL\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\Users\azaoui\source\repos\Expedition Helper\ExpeditionHelper_SOL\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\Users\azaoui\source\repos\Expedition Helper\ExpeditionHelper_SOL\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+D:\Users\azaoui\source\repos\Expedition Helper\ExpeditionHelper_SOL\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\Users\azaoui\source\repos\Expedition Helper\ExpeditionHelper_SOL\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\Users\azaoui\source\repos\Expedition Helper\ExpeditionHelper_SOL\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+D:\Users\azaoui\source\repos\Expedition Helper\ExpeditionHelper_SOL\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+D:\Users\azaoui\source\repos\Expedition Helper\ExpeditionHelper_SOL\bin\roslyn\Microsoft.Managed.Core.targets
+D:\Users\azaoui\source\repos\Expedition Helper\ExpeditionHelper_SOL\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\Users\azaoui\source\repos\Expedition Helper\ExpeditionHelper_SOL\bin\roslyn\System.AppContext.dll
+D:\Users\azaoui\source\repos\Expedition Helper\ExpeditionHelper_SOL\bin\roslyn\System.Collections.Immutable.dll
+D:\Users\azaoui\source\repos\Expedition Helper\ExpeditionHelper_SOL\bin\roslyn\System.Console.dll
+D:\Users\azaoui\source\repos\Expedition Helper\ExpeditionHelper_SOL\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+D:\Users\azaoui\source\repos\Expedition Helper\ExpeditionHelper_SOL\bin\roslyn\System.Diagnostics.StackTrace.dll
+D:\Users\azaoui\source\repos\Expedition Helper\ExpeditionHelper_SOL\bin\roslyn\System.IO.Compression.dll
+D:\Users\azaoui\source\repos\Expedition Helper\ExpeditionHelper_SOL\bin\roslyn\System.IO.FileSystem.dll
+D:\Users\azaoui\source\repos\Expedition Helper\ExpeditionHelper_SOL\bin\roslyn\System.IO.FileSystem.Primitives.dll
+D:\Users\azaoui\source\repos\Expedition Helper\ExpeditionHelper_SOL\bin\roslyn\System.IO.Pipes.AccessControl.dll
+D:\Users\azaoui\source\repos\Expedition Helper\ExpeditionHelper_SOL\bin\roslyn\System.IO.Pipes.dll
+D:\Users\azaoui\source\repos\Expedition Helper\ExpeditionHelper_SOL\bin\roslyn\System.Reflection.Metadata.dll
+D:\Users\azaoui\source\repos\Expedition Helper\ExpeditionHelper_SOL\bin\roslyn\System.Security.AccessControl.dll
+D:\Users\azaoui\source\repos\Expedition Helper\ExpeditionHelper_SOL\bin\roslyn\System.Security.Claims.dll
+D:\Users\azaoui\source\repos\Expedition Helper\ExpeditionHelper_SOL\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+D:\Users\azaoui\source\repos\Expedition Helper\ExpeditionHelper_SOL\bin\roslyn\System.Security.Cryptography.Encoding.dll
+D:\Users\azaoui\source\repos\Expedition Helper\ExpeditionHelper_SOL\bin\roslyn\System.Security.Cryptography.Primitives.dll
+D:\Users\azaoui\source\repos\Expedition Helper\ExpeditionHelper_SOL\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+D:\Users\azaoui\source\repos\Expedition Helper\ExpeditionHelper_SOL\bin\roslyn\System.Security.Principal.Windows.dll
+D:\Users\azaoui\source\repos\Expedition Helper\ExpeditionHelper_SOL\bin\roslyn\System.Text.Encoding.CodePages.dll
+D:\Users\azaoui\source\repos\Expedition Helper\ExpeditionHelper_SOL\bin\roslyn\System.ValueTuple.dll
+D:\Users\azaoui\source\repos\Expedition Helper\ExpeditionHelper_SOL\bin\roslyn\System.Xml.ReaderWriter.dll
+D:\Users\azaoui\source\repos\Expedition Helper\ExpeditionHelper_SOL\bin\roslyn\System.Xml.XmlDocument.dll
+D:\Users\azaoui\source\repos\Expedition Helper\ExpeditionHelper_SOL\bin\roslyn\System.Xml.XPath.dll
+D:\Users\azaoui\source\repos\Expedition Helper\ExpeditionHelper_SOL\bin\roslyn\System.Xml.XPath.XDocument.dll
+D:\Users\azaoui\source\repos\Expedition Helper\ExpeditionHelper_SOL\bin\roslyn\vbc.exe
+D:\Users\azaoui\source\repos\Expedition Helper\ExpeditionHelper_SOL\bin\roslyn\vbc.exe.config
+D:\Users\azaoui\source\repos\Expedition Helper\ExpeditionHelper_SOL\bin\roslyn\vbc.rsp
+D:\Users\azaoui\source\repos\Expedition Helper\ExpeditionHelper_SOL\bin\roslyn\VBCSCompiler.exe
+D:\Users\azaoui\source\repos\Expedition Helper\ExpeditionHelper_SOL\bin\roslyn\VBCSCompiler.exe.config
+D:\Users\azaoui\source\repos\Expedition Helper\ExpeditionHelper_SOL\bin\Antlr3.Runtime.dll
+D:\Users\azaoui\source\repos\Expedition Helper\ExpeditionHelper_SOL\bin\EntityFramework.dll
+D:\Users\azaoui\source\repos\Expedition Helper\ExpeditionHelper_SOL\bin\EntityFramework.SqlServer.dll
+D:\Users\azaoui\source\repos\Expedition Helper\ExpeditionHelper_SOL\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\Users\azaoui\source\repos\Expedition Helper\ExpeditionHelper_SOL\bin\Microsoft.Web.Infrastructure.dll
+D:\Users\azaoui\source\repos\Expedition Helper\ExpeditionHelper_SOL\bin\Microsoft.Win32.Registry.AccessControl.dll
+D:\Users\azaoui\source\repos\Expedition Helper\ExpeditionHelper_SOL\bin\Microsoft.Win32.Registry.dll
+D:\Users\azaoui\source\repos\Expedition Helper\ExpeditionHelper_SOL\bin\Microsoft.Win32.SystemEvents.dll
+D:\Users\azaoui\source\repos\Expedition Helper\ExpeditionHelper_SOL\bin\Newtonsoft.Json.dll
+D:\Users\azaoui\source\repos\Expedition Helper\ExpeditionHelper_SOL\bin\Notify.dll
+D:\Users\azaoui\source\repos\Expedition Helper\ExpeditionHelper_SOL\bin\PagedList.dll
+D:\Users\azaoui\source\repos\Expedition Helper\ExpeditionHelper_SOL\bin\PagedList.Mvc.dll
+D:\Users\azaoui\source\repos\Expedition Helper\ExpeditionHelper_SOL\bin\System.CodeDom.dll
+D:\Users\azaoui\source\repos\Expedition Helper\ExpeditionHelper_SOL\bin\System.Configuration.ConfigurationManager.dll
+D:\Users\azaoui\source\repos\Expedition Helper\ExpeditionHelper_SOL\bin\System.Data.Odbc.dll
+D:\Users\azaoui\source\repos\Expedition Helper\ExpeditionHelper_SOL\bin\System.Data.OleDb.dll
+D:\Users\azaoui\source\repos\Expedition Helper\ExpeditionHelper_SOL\bin\System.Data.SqlClient.dll
+D:\Users\azaoui\source\repos\Expedition Helper\ExpeditionHelper_SOL\bin\System.Diagnostics.EventLog.dll
+D:\Users\azaoui\source\repos\Expedition Helper\ExpeditionHelper_SOL\bin\System.Diagnostics.PerformanceCounter.dll
+D:\Users\azaoui\source\repos\Expedition Helper\ExpeditionHelper_SOL\bin\System.Drawing.Common.dll
+D:\Users\azaoui\source\repos\Expedition Helper\ExpeditionHelper_SOL\bin\System.IO.FileSystem.AccessControl.dll
+D:\Users\azaoui\source\repos\Expedition Helper\ExpeditionHelper_SOL\bin\System.IO.FileSystem.Primitives.dll
+D:\Users\azaoui\source\repos\Expedition Helper\ExpeditionHelper_SOL\bin\System.IO.Packaging.dll
+D:\Users\azaoui\source\repos\Expedition Helper\ExpeditionHelper_SOL\bin\System.IO.Pipes.AccessControl.dll
+D:\Users\azaoui\source\repos\Expedition Helper\ExpeditionHelper_SOL\bin\System.IO.Ports.dll
+D:\Users\azaoui\source\repos\Expedition Helper\ExpeditionHelper_SOL\bin\System.Net.Http.Formatting.dll
+D:\Users\azaoui\source\repos\Expedition Helper\ExpeditionHelper_SOL\bin\System.Runtime.CompilerServices.Unsafe.dll
+D:\Users\azaoui\source\repos\Expedition Helper\ExpeditionHelper_SOL\bin\System.Security.AccessControl.dll
+D:\Users\azaoui\source\repos\Expedition Helper\ExpeditionHelper_SOL\bin\System.Security.Cryptography.Algorithms.dll
+D:\Users\azaoui\source\repos\Expedition Helper\ExpeditionHelper_SOL\bin\System.Security.Cryptography.Cng.dll
+D:\Users\azaoui\source\repos\Expedition Helper\ExpeditionHelper_SOL\bin\System.Security.Cryptography.Pkcs.dll
+D:\Users\azaoui\source\repos\Expedition Helper\ExpeditionHelper_SOL\bin\System.Security.Cryptography.Primitives.dll
+D:\Users\azaoui\source\repos\Expedition Helper\ExpeditionHelper_SOL\bin\System.Security.Cryptography.ProtectedData.dll
+D:\Users\azaoui\source\repos\Expedition Helper\ExpeditionHelper_SOL\bin\System.Security.Cryptography.Xml.dll
+D:\Users\azaoui\source\repos\Expedition Helper\ExpeditionHelper_SOL\bin\System.Security.Permissions.dll
+D:\Users\azaoui\source\repos\Expedition Helper\ExpeditionHelper_SOL\bin\System.Security.Principal.Windows.dll
+D:\Users\azaoui\source\repos\Expedition Helper\ExpeditionHelper_SOL\bin\System.ServiceModel.Duplex.dll
+D:\Users\azaoui\source\repos\Expedition Helper\ExpeditionHelper_SOL\bin\System.ServiceModel.Http.dll
+D:\Users\azaoui\source\repos\Expedition Helper\ExpeditionHelper_SOL\bin\System.ServiceModel.NetTcp.dll
+D:\Users\azaoui\source\repos\Expedition Helper\ExpeditionHelper_SOL\bin\System.ServiceModel.Primitives.dll
+D:\Users\azaoui\source\repos\Expedition Helper\ExpeditionHelper_SOL\bin\System.ServiceModel.Security.dll
+D:\Users\azaoui\source\repos\Expedition Helper\ExpeditionHelper_SOL\bin\System.ServiceModel.Syndication.dll
+D:\Users\azaoui\source\repos\Expedition Helper\ExpeditionHelper_SOL\bin\System.ServiceProcess.ServiceController.dll
+D:\Users\azaoui\source\repos\Expedition Helper\ExpeditionHelper_SOL\bin\System.Text.Encoding.CodePages.dll
+D:\Users\azaoui\source\repos\Expedition Helper\ExpeditionHelper_SOL\bin\System.Threading.AccessControl.dll
+D:\Users\azaoui\source\repos\Expedition Helper\ExpeditionHelper_SOL\bin\System.Web.Helpers.dll
+D:\Users\azaoui\source\repos\Expedition Helper\ExpeditionHelper_SOL\bin\System.Web.Http.dll
+D:\Users\azaoui\source\repos\Expedition Helper\ExpeditionHelper_SOL\bin\System.Web.Http.WebHost.dll
+D:\Users\azaoui\source\repos\Expedition Helper\ExpeditionHelper_SOL\bin\System.Web.Mvc.dll
+D:\Users\azaoui\source\repos\Expedition Helper\ExpeditionHelper_SOL\bin\System.Web.Optimization.dll
+D:\Users\azaoui\source\repos\Expedition Helper\ExpeditionHelper_SOL\bin\System.Web.Razor.dll
+D:\Users\azaoui\source\repos\Expedition Helper\ExpeditionHelper_SOL\bin\System.Web.WebPages.Deployment.dll
+D:\Users\azaoui\source\repos\Expedition Helper\ExpeditionHelper_SOL\bin\System.Web.WebPages.dll
+D:\Users\azaoui\source\repos\Expedition Helper\ExpeditionHelper_SOL\bin\System.Web.WebPages.Razor.dll
+D:\Users\azaoui\source\repos\Expedition Helper\ExpeditionHelper_SOL\bin\WebGrease.dll
+D:\Users\azaoui\source\repos\Expedition Helper\ExpeditionHelper_SOL\bin\EntityFramework.xml
+D:\Users\azaoui\source\repos\Expedition Helper\ExpeditionHelper_SOL\bin\EntityFramework.SqlServer.xml
+D:\Users\azaoui\source\repos\Expedition Helper\ExpeditionHelper_SOL\bin\Microsoft.Win32.Registry.xml
+D:\Users\azaoui\source\repos\Expedition Helper\ExpeditionHelper_SOL\bin\Microsoft.Win32.Registry.AccessControl.xml
+D:\Users\azaoui\source\repos\Expedition Helper\ExpeditionHelper_SOL\bin\Microsoft.Win32.SystemEvents.xml
+D:\Users\azaoui\source\repos\Expedition Helper\ExpeditionHelper_SOL\bin\PagedList.xml
+D:\Users\azaoui\source\repos\Expedition Helper\ExpeditionHelper_SOL\bin\PagedList.Mvc.xml
+D:\Users\azaoui\source\repos\Expedition Helper\ExpeditionHelper_SOL\bin\System.CodeDom.xml
+D:\Users\azaoui\source\repos\Expedition Helper\ExpeditionHelper_SOL\bin\System.Configuration.ConfigurationManager.xml
+D:\Users\azaoui\source\repos\Expedition Helper\ExpeditionHelper_SOL\bin\System.Data.Odbc.xml
+D:\Users\azaoui\source\repos\Expedition Helper\ExpeditionHelper_SOL\bin\System.Data.OleDb.xml
+D:\Users\azaoui\source\repos\Expedition Helper\ExpeditionHelper_SOL\bin\System.Data.SqlClient.xml
+D:\Users\azaoui\source\repos\Expedition Helper\ExpeditionHelper_SOL\bin\System.Diagnostics.EventLog.xml
+D:\Users\azaoui\source\repos\Expedition Helper\ExpeditionHelper_SOL\bin\System.Diagnostics.PerformanceCounter.xml
+D:\Users\azaoui\source\repos\Expedition Helper\ExpeditionHelper_SOL\bin\System.IO.FileSystem.AccessControl.xml
+D:\Users\azaoui\source\repos\Expedition Helper\ExpeditionHelper_SOL\bin\System.IO.Packaging.xml
+D:\Users\azaoui\source\repos\Expedition Helper\ExpeditionHelper_SOL\bin\System.IO.Ports.xml
+D:\Users\azaoui\source\repos\Expedition Helper\ExpeditionHelper_SOL\bin\System.Net.Http.Formatting.xml
+D:\Users\azaoui\source\repos\Expedition Helper\ExpeditionHelper_SOL\bin\System.Runtime.CompilerServices.Unsafe.xml
+D:\Users\azaoui\source\repos\Expedition Helper\ExpeditionHelper_SOL\bin\System.Security.AccessControl.xml
+D:\Users\azaoui\source\repos\Expedition Helper\ExpeditionHelper_SOL\bin\System.Security.Cryptography.Cng.xml
+D:\Users\azaoui\source\repos\Expedition Helper\ExpeditionHelper_SOL\bin\System.Security.Cryptography.Pkcs.xml
+D:\Users\azaoui\source\repos\Expedition Helper\ExpeditionHelper_SOL\bin\System.Security.Cryptography.ProtectedData.xml
+D:\Users\azaoui\source\repos\Expedition Helper\ExpeditionHelper_SOL\bin\System.Security.Cryptography.Xml.xml
+D:\Users\azaoui\source\repos\Expedition Helper\ExpeditionHelper_SOL\bin\System.Security.Permissions.xml
+D:\Users\azaoui\source\repos\Expedition Helper\ExpeditionHelper_SOL\bin\System.Security.Principal.Windows.xml
+D:\Users\azaoui\source\repos\Expedition Helper\ExpeditionHelper_SOL\bin\System.ServiceModel.Duplex.pdb
+D:\Users\azaoui\source\repos\Expedition Helper\ExpeditionHelper_SOL\bin\System.ServiceModel.Http.pdb
+D:\Users\azaoui\source\repos\Expedition Helper\ExpeditionHelper_SOL\bin\System.ServiceModel.NetTcp.pdb
+D:\Users\azaoui\source\repos\Expedition Helper\ExpeditionHelper_SOL\bin\System.ServiceModel.Primitives.pdb
+D:\Users\azaoui\source\repos\Expedition Helper\ExpeditionHelper_SOL\bin\System.ServiceModel.Security.pdb
+D:\Users\azaoui\source\repos\Expedition Helper\ExpeditionHelper_SOL\bin\System.ServiceModel.Syndication.xml
+D:\Users\azaoui\source\repos\Expedition Helper\ExpeditionHelper_SOL\bin\System.ServiceProcess.ServiceController.xml
+D:\Users\azaoui\source\repos\Expedition Helper\ExpeditionHelper_SOL\bin\System.Text.Encoding.CodePages.xml
+D:\Users\azaoui\source\repos\Expedition Helper\ExpeditionHelper_SOL\bin\System.Threading.AccessControl.xml
+D:\Users\azaoui\source\repos\Expedition Helper\ExpeditionHelper_SOL\bin\System.Web.Http.xml
+D:\Users\azaoui\source\repos\Expedition Helper\ExpeditionHelper_SOL\bin\System.Web.Http.WebHost.xml
+D:\Users\azaoui\source\repos\Expedition Helper\ExpeditionHelper_SOL\bin\System.Web.Helpers.xml
+D:\Users\azaoui\source\repos\Expedition Helper\ExpeditionHelper_SOL\bin\System.Web.Mvc.xml
+D:\Users\azaoui\source\repos\Expedition Helper\ExpeditionHelper_SOL\bin\System.Web.Optimization.xml
+D:\Users\azaoui\source\repos\Expedition Helper\ExpeditionHelper_SOL\bin\System.Web.Razor.xml
+D:\Users\azaoui\source\repos\Expedition Helper\ExpeditionHelper_SOL\bin\System.Web.WebPages.xml
+D:\Users\azaoui\source\repos\Expedition Helper\ExpeditionHelper_SOL\bin\System.Web.WebPages.Deployment.xml
+D:\Users\azaoui\source\repos\Expedition Helper\ExpeditionHelper_SOL\bin\System.Web.WebPages.Razor.xml
+D:\Users\azaoui\source\repos\Expedition Helper\ExpeditionHelper_SOL\bin\Newtonsoft.Json.xml
+D:\Users\azaoui\source\repos\Expedition Helper\ExpeditionHelper_SOL\bin\Antlr3.Runtime.pdb
+D:\Users\azaoui\source\repos\Expedition Helper\ExpeditionHelper_SOL\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\Users\azaoui\source\repos\Expedition Helper\ExpeditionHelper_SOL\bin\fr\EntityFramework.resources.dll
+D:\Users\azaoui\source\repos\Expedition Helper\ExpeditionHelper_SOL\bin\fr\EntityFramework.SqlServer.resources.dll
+D:\Users\azaoui\source\repos\Expedition Helper\ExpeditionHelper_SOL\bin\fr\System.Web.Helpers.resources.dll
+D:\Users\azaoui\source\repos\Expedition Helper\ExpeditionHelper_SOL\bin\fr\System.Web.Mvc.resources.dll
+D:\Users\azaoui\source\repos\Expedition Helper\ExpeditionHelper_SOL\bin\fr\System.Web.Optimization.resources.dll
+D:\Users\azaoui\source\repos\Expedition Helper\ExpeditionHelper_SOL\bin\fr\System.Web.Razor.resources.dll
+D:\Users\azaoui\source\repos\Expedition Helper\ExpeditionHelper_SOL\bin\fr\System.Web.WebPages.resources.dll
+D:\Users\azaoui\source\repos\Expedition Helper\ExpeditionHelper_SOL\bin\fr\System.Web.WebPages.Deployment.resources.dll
+D:\Users\azaoui\source\repos\Expedition Helper\ExpeditionHelper_SOL\bin\fr\System.Web.WebPages.Razor.resources.dll
+D:\Users\azaoui\source\repos\Expedition Helper\ExpeditionHelper_SOL\obj\Release\ExpeditionHelper_SOL.csprojAssemblyReference.cache
+D:\Users\azaoui\source\repos\Expedition Helper\ExpeditionHelper_SOL\obj\Release\ExpeditionHelper_SOL.Resources.Models.User.resources
+D:\Users\azaoui\source\repos\Expedition Helper\ExpeditionHelper_SOL\obj\Release\ExpeditionHelper_SOL.Resources.Views.EtapeLecture.Index.resources
+D:\Users\azaoui\source\repos\Expedition Helper\ExpeditionHelper_SOL\obj\Release\ExpeditionHelper_SOL.Resources.Views.EtapeParametrage.Index.resources
+D:\Users\azaoui\source\repos\Expedition Helper\ExpeditionHelper_SOL\obj\Release\ExpeditionHelper_SOL.Resources.Views.EtapeDefaut.Index.resources
+D:\Users\azaoui\source\repos\Expedition Helper\ExpeditionHelper_SOL\obj\Release\ExpeditionHelper_SOL.Resources.Views.Information.Index.resources
+D:\Users\azaoui\source\repos\Expedition Helper\ExpeditionHelper_SOL\obj\Release\ExpeditionHelper_SOL.Resources.Views.Incoterm.Create.resources
+D:\Users\azaoui\source\repos\Expedition Helper\ExpeditionHelper_SOL\obj\Release\ExpeditionHelper_SOL.Resources.Views.Incoterm.Delete.resources
+D:\Users\azaoui\source\repos\Expedition Helper\ExpeditionHelper_SOL\obj\Release\ExpeditionHelper_SOL.Resources.Views.Incoterm.Edit.resources
+D:\Users\azaoui\source\repos\Expedition Helper\ExpeditionHelper_SOL\obj\Release\ExpeditionHelper_SOL.Resources.Views.Incoterm.Index.resources
+D:\Users\azaoui\source\repos\Expedition Helper\ExpeditionHelper_SOL\obj\Release\ExpeditionHelper_SOL.Resources.Views.Connexion.Connexion.resources
+D:\Users\azaoui\source\repos\Expedition Helper\ExpeditionHelper_SOL\obj\Release\ExpeditionHelper_SOL.Resources.Views.Home.Index.resources
+D:\Users\azaoui\source\repos\Expedition Helper\ExpeditionHelper_SOL\obj\Release\ExpeditionHelper_SOL.Resources.Views.Client.Create.resources
+D:\Users\azaoui\source\repos\Expedition Helper\ExpeditionHelper_SOL\obj\Release\ExpeditionHelper_SOL.Resources.Views.Client.Delete.resources
+D:\Users\azaoui\source\repos\Expedition Helper\ExpeditionHelper_SOL\obj\Release\ExpeditionHelper_SOL.Resources.Views.Client.Edit.resources
+D:\Users\azaoui\source\repos\Expedition Helper\ExpeditionHelper_SOL\obj\Release\ExpeditionHelper_SOL.Resources.Views.Client.Index.resources
+D:\Users\azaoui\source\repos\Expedition Helper\ExpeditionHelper_SOL\obj\Release\ExpeditionHelper_SOL.Resources.Views.Lien.Create.resources
+D:\Users\azaoui\source\repos\Expedition Helper\ExpeditionHelper_SOL\obj\Release\ExpeditionHelper_SOL.Resources.Views.Lien.Delete.resources
+D:\Users\azaoui\source\repos\Expedition Helper\ExpeditionHelper_SOL\obj\Release\ExpeditionHelper_SOL.Resources.Views.Lien.Edit.resources
+D:\Users\azaoui\source\repos\Expedition Helper\ExpeditionHelper_SOL\obj\Release\ExpeditionHelper_SOL.Resources.Views.Lien.Index.resources
+D:\Users\azaoui\source\repos\Expedition Helper\ExpeditionHelper_SOL\obj\Release\ExpeditionHelper_SOL.Resources.Views.Shared.Access_denied.resources
+D:\Users\azaoui\source\repos\Expedition Helper\ExpeditionHelper_SOL\obj\Release\ExpeditionHelper_SOL.Resources.Views.Shared._Layout.resources
+D:\Users\azaoui\source\repos\Expedition Helper\ExpeditionHelper_SOL\obj\Release\ExpeditionHelper_SOL.Resources.Views.Version.Delete.resources
+D:\Users\azaoui\source\repos\Expedition Helper\ExpeditionHelper_SOL\obj\Release\ExpeditionHelper_SOL.Resources.Views.Version.Create.resources
+D:\Users\azaoui\source\repos\Expedition Helper\ExpeditionHelper_SOL\obj\Release\ExpeditionHelper_SOL.Resources.Views.Version.Edit.resources
+D:\Users\azaoui\source\repos\Expedition Helper\ExpeditionHelper_SOL\obj\Release\ExpeditionHelper_SOL.Resources.Views.Version.Index.resources
+D:\Users\azaoui\source\repos\Expedition Helper\ExpeditionHelper_SOL\obj\Release\ExpeditionHelper_SOL.Resources.Models.User.en.resources
+D:\Users\azaoui\source\repos\Expedition Helper\ExpeditionHelper_SOL\obj\Release\ExpeditionHelper_SOL.Resources.Views.EtapeLecture.Index.en.resources
+D:\Users\azaoui\source\repos\Expedition Helper\ExpeditionHelper_SOL\obj\Release\ExpeditionHelper_SOL.Resources.Views.EtapeParametrage.Index.en.resources
+D:\Users\azaoui\source\repos\Expedition Helper\ExpeditionHelper_SOL\obj\Release\ExpeditionHelper_SOL.Resources.Views.EtapeDefaut.Index.en.resources
+D:\Users\azaoui\source\repos\Expedition Helper\ExpeditionHelper_SOL\obj\Release\ExpeditionHelper_SOL.Resources.Views.Information.Index.en.resources
+D:\Users\azaoui\source\repos\Expedition Helper\ExpeditionHelper_SOL\obj\Release\ExpeditionHelper_SOL.Resources.Views.Incoterm.Create.en.resources
+D:\Users\azaoui\source\repos\Expedition Helper\ExpeditionHelper_SOL\obj\Release\ExpeditionHelper_SOL.Resources.Views.Incoterm.Delete.en.resources
+D:\Users\azaoui\source\repos\Expedition Helper\ExpeditionHelper_SOL\obj\Release\ExpeditionHelper_SOL.Resources.Views.Incoterm.Edit.en.resources
+D:\Users\azaoui\source\repos\Expedition Helper\ExpeditionHelper_SOL\obj\Release\ExpeditionHelper_SOL.Resources.Views.Incoterm.Index.en.resources
+D:\Users\azaoui\source\repos\Expedition Helper\ExpeditionHelper_SOL\obj\Release\ExpeditionHelper_SOL.Resources.Views.Connexion.Connexion.en.resources
+D:\Users\azaoui\source\repos\Expedition Helper\ExpeditionHelper_SOL\obj\Release\ExpeditionHelper_SOL.Resources.Views.Home.Index.en.resources
+D:\Users\azaoui\source\repos\Expedition Helper\ExpeditionHelper_SOL\obj\Release\ExpeditionHelper_SOL.Resources.Views.Client.Create.en.resources
+D:\Users\azaoui\source\repos\Expedition Helper\ExpeditionHelper_SOL\obj\Release\ExpeditionHelper_SOL.Resources.Views.Client.Delete.en.resources
+D:\Users\azaoui\source\repos\Expedition Helper\ExpeditionHelper_SOL\obj\Release\ExpeditionHelper_SOL.Resources.Views.Client.Edit.en.resources
+D:\Users\azaoui\source\repos\Expedition Helper\ExpeditionHelper_SOL\obj\Release\ExpeditionHelper_SOL.Resources.Views.Client.Index.en.resources
+D:\Users\azaoui\source\repos\Expedition Helper\ExpeditionHelper_SOL\obj\Release\ExpeditionHelper_SOL.Resources.Views.Lien.Create.en.resources
+D:\Users\azaoui\source\repos\Expedition Helper\ExpeditionHelper_SOL\obj\Release\ExpeditionHelper_SOL.Resources.Views.Lien.Delete.en.resources
+D:\Users\azaoui\source\repos\Expedition Helper\ExpeditionHelper_SOL\obj\Release\ExpeditionHelper_SOL.Resources.Views.Lien.Edit.en.resources
+D:\Users\azaoui\source\repos\Expedition Helper\ExpeditionHelper_SOL\obj\Release\ExpeditionHelper_SOL.Resources.Views.Lien.Index.en.resources
+D:\Users\azaoui\source\repos\Expedition Helper\ExpeditionHelper_SOL\obj\Release\ExpeditionHelper_SOL.Resources.Views.Shared.Access_denied.en.resources
+D:\Users\azaoui\source\repos\Expedition Helper\ExpeditionHelper_SOL\obj\Release\ExpeditionHelper_SOL.Resources.Views.Shared._Layout.en.resources
+D:\Users\azaoui\source\repos\Expedition Helper\ExpeditionHelper_SOL\obj\Release\ExpeditionHelper_SOL.Resources.Views.Version.Delete.en.resources
+D:\Users\azaoui\source\repos\Expedition Helper\ExpeditionHelper_SOL\obj\Release\ExpeditionHelper_SOL.Resources.Views.Version.Create.en.resources
+D:\Users\azaoui\source\repos\Expedition Helper\ExpeditionHelper_SOL\obj\Release\ExpeditionHelper_SOL.Resources.Views.Version.Edit.en.resources
+D:\Users\azaoui\source\repos\Expedition Helper\ExpeditionHelper_SOL\obj\Release\ExpeditionHelper_SOL.Resources.Views.Version.Index.en.resources
+D:\Users\azaoui\source\repos\Expedition Helper\ExpeditionHelper_SOL\obj\Release\ExpeditionHelper_SOL.csproj.GenerateResource.cache
+D:\Users\azaoui\source\repos\Expedition Helper\ExpeditionHelper_SOL\obj\Release\ExpeditionHelper_SOL.csproj.CoreCompileInputs.cache
+D:\Users\azaoui\source\repos\Expedition Helper\ExpeditionHelper_SOL\obj\Release\en\ExpeditionHelper_SOL.resources.dll
+D:\Users\azaoui\source\repos\Expedition Helper\ExpeditionHelper_SOL\obj\Release\ExpeditionHelper_SOL.csproj.CopyComplete
+D:\Users\azaoui\source\repos\Expedition Helper\ExpeditionHelper_SOL\obj\Release\ExpeditionHelper_SOL.dll
+D:\Users\azaoui\source\repos\Expedition Helper\ExpeditionHelper_SOL\obj\Release\ExpeditionHelper_SOL.pdb
+D:\Users\azaoui\source\repos\Expedition Helper\ExpeditionHelper_SOL\obj\Release\ExpeditionHelper_SOL.Resources.Views.Log.Index.resources
+D:\Users\azaoui\source\repos\Expedition Helper\ExpeditionHelper_SOL\obj\Release\ExpeditionHelper_SOL.Resources.Views.Log.Index.en.resources
+D:\Users\azaoui\source\repos\ExpeditionHelper_SOL\ExpeditionHelper_SOL\bin\ExpeditionHelper_SOL.dll.config
+D:\Users\azaoui\source\repos\ExpeditionHelper_SOL\ExpeditionHelper_SOL\bin\ExpeditionHelper_SOL.dll
+D:\Users\azaoui\source\repos\ExpeditionHelper_SOL\ExpeditionHelper_SOL\bin\ExpeditionHelper_SOL.pdb
+D:\Users\azaoui\source\repos\ExpeditionHelper_SOL\ExpeditionHelper_SOL\bin\en\ExpeditionHelper_SOL.resources.dll
+D:\Users\azaoui\source\repos\ExpeditionHelper_SOL\ExpeditionHelper_SOL\bin\roslyn\csc.exe
+D:\Users\azaoui\source\repos\ExpeditionHelper_SOL\ExpeditionHelper_SOL\bin\roslyn\csc.exe.config
+D:\Users\azaoui\source\repos\ExpeditionHelper_SOL\ExpeditionHelper_SOL\bin\roslyn\csc.rsp
+D:\Users\azaoui\source\repos\ExpeditionHelper_SOL\ExpeditionHelper_SOL\bin\roslyn\csi.exe
+D:\Users\azaoui\source\repos\ExpeditionHelper_SOL\ExpeditionHelper_SOL\bin\roslyn\csi.exe.config
+D:\Users\azaoui\source\repos\ExpeditionHelper_SOL\ExpeditionHelper_SOL\bin\roslyn\csi.rsp
+D:\Users\azaoui\source\repos\ExpeditionHelper_SOL\ExpeditionHelper_SOL\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\Users\azaoui\source\repos\ExpeditionHelper_SOL\ExpeditionHelper_SOL\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\Users\azaoui\source\repos\ExpeditionHelper_SOL\ExpeditionHelper_SOL\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\Users\azaoui\source\repos\ExpeditionHelper_SOL\ExpeditionHelper_SOL\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\Users\azaoui\source\repos\ExpeditionHelper_SOL\ExpeditionHelper_SOL\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+D:\Users\azaoui\source\repos\ExpeditionHelper_SOL\ExpeditionHelper_SOL\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\Users\azaoui\source\repos\ExpeditionHelper_SOL\ExpeditionHelper_SOL\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\Users\azaoui\source\repos\ExpeditionHelper_SOL\ExpeditionHelper_SOL\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+D:\Users\azaoui\source\repos\ExpeditionHelper_SOL\ExpeditionHelper_SOL\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+D:\Users\azaoui\source\repos\ExpeditionHelper_SOL\ExpeditionHelper_SOL\bin\roslyn\Microsoft.Managed.Core.targets
+D:\Users\azaoui\source\repos\ExpeditionHelper_SOL\ExpeditionHelper_SOL\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\Users\azaoui\source\repos\ExpeditionHelper_SOL\ExpeditionHelper_SOL\bin\roslyn\System.AppContext.dll
+D:\Users\azaoui\source\repos\ExpeditionHelper_SOL\ExpeditionHelper_SOL\bin\roslyn\System.Collections.Immutable.dll
+D:\Users\azaoui\source\repos\ExpeditionHelper_SOL\ExpeditionHelper_SOL\bin\roslyn\System.Console.dll
+D:\Users\azaoui\source\repos\ExpeditionHelper_SOL\ExpeditionHelper_SOL\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+D:\Users\azaoui\source\repos\ExpeditionHelper_SOL\ExpeditionHelper_SOL\bin\roslyn\System.Diagnostics.StackTrace.dll
+D:\Users\azaoui\source\repos\ExpeditionHelper_SOL\ExpeditionHelper_SOL\bin\roslyn\System.IO.Compression.dll
+D:\Users\azaoui\source\repos\ExpeditionHelper_SOL\ExpeditionHelper_SOL\bin\roslyn\System.IO.FileSystem.dll
+D:\Users\azaoui\source\repos\ExpeditionHelper_SOL\ExpeditionHelper_SOL\bin\roslyn\System.IO.FileSystem.Primitives.dll
+D:\Users\azaoui\source\repos\ExpeditionHelper_SOL\ExpeditionHelper_SOL\bin\roslyn\System.IO.Pipes.AccessControl.dll
+D:\Users\azaoui\source\repos\ExpeditionHelper_SOL\ExpeditionHelper_SOL\bin\roslyn\System.IO.Pipes.dll
+D:\Users\azaoui\source\repos\ExpeditionHelper_SOL\ExpeditionHelper_SOL\bin\roslyn\System.Reflection.Metadata.dll
+D:\Users\azaoui\source\repos\ExpeditionHelper_SOL\ExpeditionHelper_SOL\bin\roslyn\System.Security.AccessControl.dll
+D:\Users\azaoui\source\repos\ExpeditionHelper_SOL\ExpeditionHelper_SOL\bin\roslyn\System.Security.Claims.dll
+D:\Users\azaoui\source\repos\ExpeditionHelper_SOL\ExpeditionHelper_SOL\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+D:\Users\azaoui\source\repos\ExpeditionHelper_SOL\ExpeditionHelper_SOL\bin\roslyn\System.Security.Cryptography.Encoding.dll
+D:\Users\azaoui\source\repos\ExpeditionHelper_SOL\ExpeditionHelper_SOL\bin\roslyn\System.Security.Cryptography.Primitives.dll
+D:\Users\azaoui\source\repos\ExpeditionHelper_SOL\ExpeditionHelper_SOL\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+D:\Users\azaoui\source\repos\ExpeditionHelper_SOL\ExpeditionHelper_SOL\bin\roslyn\System.Security.Principal.Windows.dll
+D:\Users\azaoui\source\repos\ExpeditionHelper_SOL\ExpeditionHelper_SOL\bin\roslyn\System.Text.Encoding.CodePages.dll
+D:\Users\azaoui\source\repos\ExpeditionHelper_SOL\ExpeditionHelper_SOL\bin\roslyn\System.ValueTuple.dll
+D:\Users\azaoui\source\repos\ExpeditionHelper_SOL\ExpeditionHelper_SOL\bin\roslyn\System.Xml.ReaderWriter.dll
+D:\Users\azaoui\source\repos\ExpeditionHelper_SOL\ExpeditionHelper_SOL\bin\roslyn\System.Xml.XmlDocument.dll
+D:\Users\azaoui\source\repos\ExpeditionHelper_SOL\ExpeditionHelper_SOL\bin\roslyn\System.Xml.XPath.dll
+D:\Users\azaoui\source\repos\ExpeditionHelper_SOL\ExpeditionHelper_SOL\bin\roslyn\System.Xml.XPath.XDocument.dll
+D:\Users\azaoui\source\repos\ExpeditionHelper_SOL\ExpeditionHelper_SOL\bin\roslyn\vbc.exe
+D:\Users\azaoui\source\repos\ExpeditionHelper_SOL\ExpeditionHelper_SOL\bin\roslyn\vbc.exe.config
+D:\Users\azaoui\source\repos\ExpeditionHelper_SOL\ExpeditionHelper_SOL\bin\roslyn\vbc.rsp
+D:\Users\azaoui\source\repos\ExpeditionHelper_SOL\ExpeditionHelper_SOL\bin\roslyn\VBCSCompiler.exe
+D:\Users\azaoui\source\repos\ExpeditionHelper_SOL\ExpeditionHelper_SOL\bin\roslyn\VBCSCompiler.exe.config
+D:\Users\azaoui\source\repos\ExpeditionHelper_SOL\ExpeditionHelper_SOL\bin\Antlr3.Runtime.dll
+D:\Users\azaoui\source\repos\ExpeditionHelper_SOL\ExpeditionHelper_SOL\bin\EntityFramework.dll
+D:\Users\azaoui\source\repos\ExpeditionHelper_SOL\ExpeditionHelper_SOL\bin\EntityFramework.SqlServer.dll
+D:\Users\azaoui\source\repos\ExpeditionHelper_SOL\ExpeditionHelper_SOL\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\Users\azaoui\source\repos\ExpeditionHelper_SOL\ExpeditionHelper_SOL\bin\Microsoft.Web.Infrastructure.dll
+D:\Users\azaoui\source\repos\ExpeditionHelper_SOL\ExpeditionHelper_SOL\bin\Microsoft.Win32.Registry.AccessControl.dll
+D:\Users\azaoui\source\repos\ExpeditionHelper_SOL\ExpeditionHelper_SOL\bin\Microsoft.Win32.Registry.dll
+D:\Users\azaoui\source\repos\ExpeditionHelper_SOL\ExpeditionHelper_SOL\bin\Microsoft.Win32.SystemEvents.dll
+D:\Users\azaoui\source\repos\ExpeditionHelper_SOL\ExpeditionHelper_SOL\bin\Newtonsoft.Json.dll
+D:\Users\azaoui\source\repos\ExpeditionHelper_SOL\ExpeditionHelper_SOL\bin\Notify.dll
+D:\Users\azaoui\source\repos\ExpeditionHelper_SOL\ExpeditionHelper_SOL\bin\PagedList.dll
+D:\Users\azaoui\source\repos\ExpeditionHelper_SOL\ExpeditionHelper_SOL\bin\PagedList.Mvc.dll
+D:\Users\azaoui\source\repos\ExpeditionHelper_SOL\ExpeditionHelper_SOL\bin\System.CodeDom.dll
+D:\Users\azaoui\source\repos\ExpeditionHelper_SOL\ExpeditionHelper_SOL\bin\System.Configuration.ConfigurationManager.dll
+D:\Users\azaoui\source\repos\ExpeditionHelper_SOL\ExpeditionHelper_SOL\bin\System.Data.Odbc.dll
+D:\Users\azaoui\source\repos\ExpeditionHelper_SOL\ExpeditionHelper_SOL\bin\System.Data.OleDb.dll
+D:\Users\azaoui\source\repos\ExpeditionHelper_SOL\ExpeditionHelper_SOL\bin\System.Data.SqlClient.dll
+D:\Users\azaoui\source\repos\ExpeditionHelper_SOL\ExpeditionHelper_SOL\bin\System.Diagnostics.EventLog.dll
+D:\Users\azaoui\source\repos\ExpeditionHelper_SOL\ExpeditionHelper_SOL\bin\System.Diagnostics.PerformanceCounter.dll
+D:\Users\azaoui\source\repos\ExpeditionHelper_SOL\ExpeditionHelper_SOL\bin\System.Drawing.Common.dll
+D:\Users\azaoui\source\repos\ExpeditionHelper_SOL\ExpeditionHelper_SOL\bin\System.IO.FileSystem.AccessControl.dll
+D:\Users\azaoui\source\repos\ExpeditionHelper_SOL\ExpeditionHelper_SOL\bin\System.IO.FileSystem.Primitives.dll
+D:\Users\azaoui\source\repos\ExpeditionHelper_SOL\ExpeditionHelper_SOL\bin\System.IO.Packaging.dll
+D:\Users\azaoui\source\repos\ExpeditionHelper_SOL\ExpeditionHelper_SOL\bin\System.IO.Pipes.AccessControl.dll
+D:\Users\azaoui\source\repos\ExpeditionHelper_SOL\ExpeditionHelper_SOL\bin\System.IO.Ports.dll
+D:\Users\azaoui\source\repos\ExpeditionHelper_SOL\ExpeditionHelper_SOL\bin\System.Net.Http.Formatting.dll
+D:\Users\azaoui\source\repos\ExpeditionHelper_SOL\ExpeditionHelper_SOL\bin\System.Runtime.CompilerServices.Unsafe.dll
+D:\Users\azaoui\source\repos\ExpeditionHelper_SOL\ExpeditionHelper_SOL\bin\System.Security.AccessControl.dll
+D:\Users\azaoui\source\repos\ExpeditionHelper_SOL\ExpeditionHelper_SOL\bin\System.Security.Cryptography.Algorithms.dll
+D:\Users\azaoui\source\repos\ExpeditionHelper_SOL\ExpeditionHelper_SOL\bin\System.Security.Cryptography.Cng.dll
+D:\Users\azaoui\source\repos\ExpeditionHelper_SOL\ExpeditionHelper_SOL\bin\System.Security.Cryptography.Pkcs.dll
+D:\Users\azaoui\source\repos\ExpeditionHelper_SOL\ExpeditionHelper_SOL\bin\System.Security.Cryptography.Primitives.dll
+D:\Users\azaoui\source\repos\ExpeditionHelper_SOL\ExpeditionHelper_SOL\bin\System.Security.Cryptography.ProtectedData.dll
+D:\Users\azaoui\source\repos\ExpeditionHelper_SOL\ExpeditionHelper_SOL\bin\System.Security.Cryptography.Xml.dll
+D:\Users\azaoui\source\repos\ExpeditionHelper_SOL\ExpeditionHelper_SOL\bin\System.Security.Permissions.dll
+D:\Users\azaoui\source\repos\ExpeditionHelper_SOL\ExpeditionHelper_SOL\bin\System.Security.Principal.Windows.dll
+D:\Users\azaoui\source\repos\ExpeditionHelper_SOL\ExpeditionHelper_SOL\bin\System.ServiceModel.Duplex.dll
+D:\Users\azaoui\source\repos\ExpeditionHelper_SOL\ExpeditionHelper_SOL\bin\System.ServiceModel.Http.dll
+D:\Users\azaoui\source\repos\ExpeditionHelper_SOL\ExpeditionHelper_SOL\bin\System.ServiceModel.NetTcp.dll
+D:\Users\azaoui\source\repos\ExpeditionHelper_SOL\ExpeditionHelper_SOL\bin\System.ServiceModel.Primitives.dll
+D:\Users\azaoui\source\repos\ExpeditionHelper_SOL\ExpeditionHelper_SOL\bin\System.ServiceModel.Security.dll
+D:\Users\azaoui\source\repos\ExpeditionHelper_SOL\ExpeditionHelper_SOL\bin\System.ServiceModel.Syndication.dll
+D:\Users\azaoui\source\repos\ExpeditionHelper_SOL\ExpeditionHelper_SOL\bin\System.ServiceProcess.ServiceController.dll
+D:\Users\azaoui\source\repos\ExpeditionHelper_SOL\ExpeditionHelper_SOL\bin\System.Text.Encoding.CodePages.dll
+D:\Users\azaoui\source\repos\ExpeditionHelper_SOL\ExpeditionHelper_SOL\bin\System.Threading.AccessControl.dll
+D:\Users\azaoui\source\repos\ExpeditionHelper_SOL\ExpeditionHelper_SOL\bin\System.Web.Helpers.dll
+D:\Users\azaoui\source\repos\ExpeditionHelper_SOL\ExpeditionHelper_SOL\bin\System.Web.Http.dll
+D:\Users\azaoui\source\repos\ExpeditionHelper_SOL\ExpeditionHelper_SOL\bin\System.Web.Http.WebHost.dll
+D:\Users\azaoui\source\repos\ExpeditionHelper_SOL\ExpeditionHelper_SOL\bin\System.Web.Mvc.dll
+D:\Users\azaoui\source\repos\ExpeditionHelper_SOL\ExpeditionHelper_SOL\bin\System.Web.Optimization.dll
+D:\Users\azaoui\source\repos\ExpeditionHelper_SOL\ExpeditionHelper_SOL\bin\System.Web.Razor.dll
+D:\Users\azaoui\source\repos\ExpeditionHelper_SOL\ExpeditionHelper_SOL\bin\System.Web.WebPages.Deployment.dll
+D:\Users\azaoui\source\repos\ExpeditionHelper_SOL\ExpeditionHelper_SOL\bin\System.Web.WebPages.dll
+D:\Users\azaoui\source\repos\ExpeditionHelper_SOL\ExpeditionHelper_SOL\bin\System.Web.WebPages.Razor.dll
+D:\Users\azaoui\source\repos\ExpeditionHelper_SOL\ExpeditionHelper_SOL\bin\WebGrease.dll
+D:\Users\azaoui\source\repos\ExpeditionHelper_SOL\ExpeditionHelper_SOL\bin\EntityFramework.xml
+D:\Users\azaoui\source\repos\ExpeditionHelper_SOL\ExpeditionHelper_SOL\bin\EntityFramework.SqlServer.xml
+D:\Users\azaoui\source\repos\ExpeditionHelper_SOL\ExpeditionHelper_SOL\bin\Microsoft.Win32.Registry.xml
+D:\Users\azaoui\source\repos\ExpeditionHelper_SOL\ExpeditionHelper_SOL\bin\Microsoft.Win32.Registry.AccessControl.xml
+D:\Users\azaoui\source\repos\ExpeditionHelper_SOL\ExpeditionHelper_SOL\bin\Microsoft.Win32.SystemEvents.xml
+D:\Users\azaoui\source\repos\ExpeditionHelper_SOL\ExpeditionHelper_SOL\bin\PagedList.xml
+D:\Users\azaoui\source\repos\ExpeditionHelper_SOL\ExpeditionHelper_SOL\bin\PagedList.Mvc.xml
+D:\Users\azaoui\source\repos\ExpeditionHelper_SOL\ExpeditionHelper_SOL\bin\System.CodeDom.xml
+D:\Users\azaoui\source\repos\ExpeditionHelper_SOL\ExpeditionHelper_SOL\bin\System.Configuration.ConfigurationManager.xml
+D:\Users\azaoui\source\repos\ExpeditionHelper_SOL\ExpeditionHelper_SOL\bin\System.Data.Odbc.xml
+D:\Users\azaoui\source\repos\ExpeditionHelper_SOL\ExpeditionHelper_SOL\bin\System.Data.OleDb.xml
+D:\Users\azaoui\source\repos\ExpeditionHelper_SOL\ExpeditionHelper_SOL\bin\System.Data.SqlClient.xml
+D:\Users\azaoui\source\repos\ExpeditionHelper_SOL\ExpeditionHelper_SOL\bin\System.Diagnostics.EventLog.xml
+D:\Users\azaoui\source\repos\ExpeditionHelper_SOL\ExpeditionHelper_SOL\bin\System.Diagnostics.PerformanceCounter.xml
+D:\Users\azaoui\source\repos\ExpeditionHelper_SOL\ExpeditionHelper_SOL\bin\System.IO.FileSystem.AccessControl.xml
+D:\Users\azaoui\source\repos\ExpeditionHelper_SOL\ExpeditionHelper_SOL\bin\System.IO.Packaging.xml
+D:\Users\azaoui\source\repos\ExpeditionHelper_SOL\ExpeditionHelper_SOL\bin\System.IO.Ports.xml
+D:\Users\azaoui\source\repos\ExpeditionHelper_SOL\ExpeditionHelper_SOL\bin\System.Net.Http.Formatting.xml
+D:\Users\azaoui\source\repos\ExpeditionHelper_SOL\ExpeditionHelper_SOL\bin\System.Runtime.CompilerServices.Unsafe.xml
+D:\Users\azaoui\source\repos\ExpeditionHelper_SOL\ExpeditionHelper_SOL\bin\System.Security.AccessControl.xml
+D:\Users\azaoui\source\repos\ExpeditionHelper_SOL\ExpeditionHelper_SOL\bin\System.Security.Cryptography.Cng.xml
+D:\Users\azaoui\source\repos\ExpeditionHelper_SOL\ExpeditionHelper_SOL\bin\System.Security.Cryptography.Pkcs.xml
+D:\Users\azaoui\source\repos\ExpeditionHelper_SOL\ExpeditionHelper_SOL\bin\System.Security.Cryptography.ProtectedData.xml
+D:\Users\azaoui\source\repos\ExpeditionHelper_SOL\ExpeditionHelper_SOL\bin\System.Security.Cryptography.Xml.xml
+D:\Users\azaoui\source\repos\ExpeditionHelper_SOL\ExpeditionHelper_SOL\bin\System.Security.Permissions.xml
+D:\Users\azaoui\source\repos\ExpeditionHelper_SOL\ExpeditionHelper_SOL\bin\System.Security.Principal.Windows.xml
+D:\Users\azaoui\source\repos\ExpeditionHelper_SOL\ExpeditionHelper_SOL\bin\System.ServiceModel.Duplex.pdb
+D:\Users\azaoui\source\repos\ExpeditionHelper_SOL\ExpeditionHelper_SOL\bin\System.ServiceModel.Http.pdb
+D:\Users\azaoui\source\repos\ExpeditionHelper_SOL\ExpeditionHelper_SOL\bin\System.ServiceModel.NetTcp.pdb
+D:\Users\azaoui\source\repos\ExpeditionHelper_SOL\ExpeditionHelper_SOL\bin\System.ServiceModel.Primitives.pdb
+D:\Users\azaoui\source\repos\ExpeditionHelper_SOL\ExpeditionHelper_SOL\bin\System.ServiceModel.Security.pdb
+D:\Users\azaoui\source\repos\ExpeditionHelper_SOL\ExpeditionHelper_SOL\bin\System.ServiceModel.Syndication.xml
+D:\Users\azaoui\source\repos\ExpeditionHelper_SOL\ExpeditionHelper_SOL\bin\System.ServiceProcess.ServiceController.xml
+D:\Users\azaoui\source\repos\ExpeditionHelper_SOL\ExpeditionHelper_SOL\bin\System.Text.Encoding.CodePages.xml
+D:\Users\azaoui\source\repos\ExpeditionHelper_SOL\ExpeditionHelper_SOL\bin\System.Threading.AccessControl.xml
+D:\Users\azaoui\source\repos\ExpeditionHelper_SOL\ExpeditionHelper_SOL\bin\System.Web.Http.xml
+D:\Users\azaoui\source\repos\ExpeditionHelper_SOL\ExpeditionHelper_SOL\bin\System.Web.Http.WebHost.xml
+D:\Users\azaoui\source\repos\ExpeditionHelper_SOL\ExpeditionHelper_SOL\bin\System.Web.Helpers.xml
+D:\Users\azaoui\source\repos\ExpeditionHelper_SOL\ExpeditionHelper_SOL\bin\System.Web.Mvc.xml
+D:\Users\azaoui\source\repos\ExpeditionHelper_SOL\ExpeditionHelper_SOL\bin\System.Web.Optimization.xml
+D:\Users\azaoui\source\repos\ExpeditionHelper_SOL\ExpeditionHelper_SOL\bin\System.Web.Razor.xml
+D:\Users\azaoui\source\repos\ExpeditionHelper_SOL\ExpeditionHelper_SOL\bin\System.Web.WebPages.xml
+D:\Users\azaoui\source\repos\ExpeditionHelper_SOL\ExpeditionHelper_SOL\bin\System.Web.WebPages.Deployment.xml
+D:\Users\azaoui\source\repos\ExpeditionHelper_SOL\ExpeditionHelper_SOL\bin\System.Web.WebPages.Razor.xml
+D:\Users\azaoui\source\repos\ExpeditionHelper_SOL\ExpeditionHelper_SOL\bin\Newtonsoft.Json.xml
+D:\Users\azaoui\source\repos\ExpeditionHelper_SOL\ExpeditionHelper_SOL\bin\Antlr3.Runtime.pdb
+D:\Users\azaoui\source\repos\ExpeditionHelper_SOL\ExpeditionHelper_SOL\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\Users\azaoui\source\repos\ExpeditionHelper_SOL\ExpeditionHelper_SOL\bin\fr\EntityFramework.resources.dll
+D:\Users\azaoui\source\repos\ExpeditionHelper_SOL\ExpeditionHelper_SOL\bin\fr\EntityFramework.SqlServer.resources.dll
+D:\Users\azaoui\source\repos\ExpeditionHelper_SOL\ExpeditionHelper_SOL\bin\fr\System.Web.Helpers.resources.dll
+D:\Users\azaoui\source\repos\ExpeditionHelper_SOL\ExpeditionHelper_SOL\bin\fr\System.Web.Mvc.resources.dll
+D:\Users\azaoui\source\repos\ExpeditionHelper_SOL\ExpeditionHelper_SOL\bin\fr\System.Web.Optimization.resources.dll
+D:\Users\azaoui\source\repos\ExpeditionHelper_SOL\ExpeditionHelper_SOL\bin\fr\System.Web.Razor.resources.dll
+D:\Users\azaoui\source\repos\ExpeditionHelper_SOL\ExpeditionHelper_SOL\bin\fr\System.Web.WebPages.resources.dll
+D:\Users\azaoui\source\repos\ExpeditionHelper_SOL\ExpeditionHelper_SOL\bin\fr\System.Web.WebPages.Deployment.resources.dll
+D:\Users\azaoui\source\repos\ExpeditionHelper_SOL\ExpeditionHelper_SOL\bin\fr\System.Web.WebPages.Razor.resources.dll
+D:\Users\azaoui\source\repos\ExpeditionHelper_SOL\ExpeditionHelper_SOL\obj\Release\ExpeditionHelper_SOL.csprojAssemblyReference.cache
+D:\Users\azaoui\source\repos\ExpeditionHelper_SOL\ExpeditionHelper_SOL\obj\Release\ExpeditionHelper_SOL.Resources.Models.User.resources
+D:\Users\azaoui\source\repos\ExpeditionHelper_SOL\ExpeditionHelper_SOL\obj\Release\ExpeditionHelper_SOL.Resources.Views.EtapeLecture.Index.resources
+D:\Users\azaoui\source\repos\ExpeditionHelper_SOL\ExpeditionHelper_SOL\obj\Release\ExpeditionHelper_SOL.Resources.Views.EtapeParametrage.Index.resources
+D:\Users\azaoui\source\repos\ExpeditionHelper_SOL\ExpeditionHelper_SOL\obj\Release\ExpeditionHelper_SOL.Resources.Views.EtapeDefaut.Index.resources
+D:\Users\azaoui\source\repos\ExpeditionHelper_SOL\ExpeditionHelper_SOL\obj\Release\ExpeditionHelper_SOL.Resources.Views.Information.Index.resources
+D:\Users\azaoui\source\repos\ExpeditionHelper_SOL\ExpeditionHelper_SOL\obj\Release\ExpeditionHelper_SOL.Resources.Views.Incoterm.Create.resources
+D:\Users\azaoui\source\repos\ExpeditionHelper_SOL\ExpeditionHelper_SOL\obj\Release\ExpeditionHelper_SOL.Resources.Views.Incoterm.Delete.resources
+D:\Users\azaoui\source\repos\ExpeditionHelper_SOL\ExpeditionHelper_SOL\obj\Release\ExpeditionHelper_SOL.Resources.Views.Incoterm.Edit.resources
+D:\Users\azaoui\source\repos\ExpeditionHelper_SOL\ExpeditionHelper_SOL\obj\Release\ExpeditionHelper_SOL.Resources.Views.Incoterm.Index.resources
+D:\Users\azaoui\source\repos\ExpeditionHelper_SOL\ExpeditionHelper_SOL\obj\Release\ExpeditionHelper_SOL.Resources.Views.Connexion.Connexion.resources
+D:\Users\azaoui\source\repos\ExpeditionHelper_SOL\ExpeditionHelper_SOL\obj\Release\ExpeditionHelper_SOL.Resources.Views.Home.Index.resources
+D:\Users\azaoui\source\repos\ExpeditionHelper_SOL\ExpeditionHelper_SOL\obj\Release\ExpeditionHelper_SOL.Resources.Views.Client.Create.resources
+D:\Users\azaoui\source\repos\ExpeditionHelper_SOL\ExpeditionHelper_SOL\obj\Release\ExpeditionHelper_SOL.Resources.Views.Client.Delete.resources
+D:\Users\azaoui\source\repos\ExpeditionHelper_SOL\ExpeditionHelper_SOL\obj\Release\ExpeditionHelper_SOL.Resources.Views.Client.Edit.resources
+D:\Users\azaoui\source\repos\ExpeditionHelper_SOL\ExpeditionHelper_SOL\obj\Release\ExpeditionHelper_SOL.Resources.Views.Client.Index.resources
+D:\Users\azaoui\source\repos\ExpeditionHelper_SOL\ExpeditionHelper_SOL\obj\Release\ExpeditionHelper_SOL.Resources.Views.Log.Index.resources
+D:\Users\azaoui\source\repos\ExpeditionHelper_SOL\ExpeditionHelper_SOL\obj\Release\ExpeditionHelper_SOL.Resources.Views.Lien.Create.resources
+D:\Users\azaoui\source\repos\ExpeditionHelper_SOL\ExpeditionHelper_SOL\obj\Release\ExpeditionHelper_SOL.Resources.Views.Lien.Delete.resources
+D:\Users\azaoui\source\repos\ExpeditionHelper_SOL\ExpeditionHelper_SOL\obj\Release\ExpeditionHelper_SOL.Resources.Views.Lien.Edit.resources
+D:\Users\azaoui\source\repos\ExpeditionHelper_SOL\ExpeditionHelper_SOL\obj\Release\ExpeditionHelper_SOL.Resources.Views.Lien.Index.resources
+D:\Users\azaoui\source\repos\ExpeditionHelper_SOL\ExpeditionHelper_SOL\obj\Release\ExpeditionHelper_SOL.Resources.Views.Shared.Access_denied.resources
+D:\Users\azaoui\source\repos\ExpeditionHelper_SOL\ExpeditionHelper_SOL\obj\Release\ExpeditionHelper_SOL.Resources.Views.Shared.Error.resources
+D:\Users\azaoui\source\repos\ExpeditionHelper_SOL\ExpeditionHelper_SOL\obj\Release\ExpeditionHelper_SOL.Resources.Views.Shared._Layout.resources
+D:\Users\azaoui\source\repos\ExpeditionHelper_SOL\ExpeditionHelper_SOL\obj\Release\ExpeditionHelper_SOL.Resources.Views.Version.Delete.resources
+D:\Users\azaoui\source\repos\ExpeditionHelper_SOL\ExpeditionHelper_SOL\obj\Release\ExpeditionHelper_SOL.Resources.Views.Version.Create.resources
+D:\Users\azaoui\source\repos\ExpeditionHelper_SOL\ExpeditionHelper_SOL\obj\Release\ExpeditionHelper_SOL.Resources.Views.Version.Edit.resources
+D:\Users\azaoui\source\repos\ExpeditionHelper_SOL\ExpeditionHelper_SOL\obj\Release\ExpeditionHelper_SOL.Resources.Views.Version.Index.resources
+D:\Users\azaoui\source\repos\ExpeditionHelper_SOL\ExpeditionHelper_SOL\obj\Release\ExpeditionHelper_SOL.Resources.Models.User.en.resources
+D:\Users\azaoui\source\repos\ExpeditionHelper_SOL\ExpeditionHelper_SOL\obj\Release\ExpeditionHelper_SOL.Resources.Views.EtapeLecture.Index.en.resources
+D:\Users\azaoui\source\repos\ExpeditionHelper_SOL\ExpeditionHelper_SOL\obj\Release\ExpeditionHelper_SOL.Resources.Views.EtapeParametrage.Index.en.resources
+D:\Users\azaoui\source\repos\ExpeditionHelper_SOL\ExpeditionHelper_SOL\obj\Release\ExpeditionHelper_SOL.Resources.Views.EtapeDefaut.Index.en.resources
+D:\Users\azaoui\source\repos\ExpeditionHelper_SOL\ExpeditionHelper_SOL\obj\Release\ExpeditionHelper_SOL.Resources.Views.Information.Index.en.resources
+D:\Users\azaoui\source\repos\ExpeditionHelper_SOL\ExpeditionHelper_SOL\obj\Release\ExpeditionHelper_SOL.Resources.Views.Incoterm.Create.en.resources
+D:\Users\azaoui\source\repos\ExpeditionHelper_SOL\ExpeditionHelper_SOL\obj\Release\ExpeditionHelper_SOL.Resources.Views.Incoterm.Delete.en.resources
+D:\Users\azaoui\source\repos\ExpeditionHelper_SOL\ExpeditionHelper_SOL\obj\Release\ExpeditionHelper_SOL.Resources.Views.Incoterm.Edit.en.resources
+D:\Users\azaoui\source\repos\ExpeditionHelper_SOL\ExpeditionHelper_SOL\obj\Release\ExpeditionHelper_SOL.Resources.Views.Incoterm.Index.en.resources
+D:\Users\azaoui\source\repos\ExpeditionHelper_SOL\ExpeditionHelper_SOL\obj\Release\ExpeditionHelper_SOL.Resources.Views.Connexion.Connexion.en.resources
+D:\Users\azaoui\source\repos\ExpeditionHelper_SOL\ExpeditionHelper_SOL\obj\Release\ExpeditionHelper_SOL.Resources.Views.Home.Index.en.resources
+D:\Users\azaoui\source\repos\ExpeditionHelper_SOL\ExpeditionHelper_SOL\obj\Release\ExpeditionHelper_SOL.Resources.Views.Client.Create.en.resources
+D:\Users\azaoui\source\repos\ExpeditionHelper_SOL\ExpeditionHelper_SOL\obj\Release\ExpeditionHelper_SOL.Resources.Views.Client.Delete.en.resources
+D:\Users\azaoui\source\repos\ExpeditionHelper_SOL\ExpeditionHelper_SOL\obj\Release\ExpeditionHelper_SOL.Resources.Views.Client.Edit.en.resources
+D:\Users\azaoui\source\repos\ExpeditionHelper_SOL\ExpeditionHelper_SOL\obj\Release\ExpeditionHelper_SOL.Resources.Views.Client.Index.en.resources
+D:\Users\azaoui\source\repos\ExpeditionHelper_SOL\ExpeditionHelper_SOL\obj\Release\ExpeditionHelper_SOL.Resources.Views.Log.Index.en.resources
+D:\Users\azaoui\source\repos\ExpeditionHelper_SOL\ExpeditionHelper_SOL\obj\Release\ExpeditionHelper_SOL.Resources.Views.Lien.Create.en.resources
+D:\Users\azaoui\source\repos\ExpeditionHelper_SOL\ExpeditionHelper_SOL\obj\Release\ExpeditionHelper_SOL.Resources.Views.Lien.Delete.en.resources
+D:\Users\azaoui\source\repos\ExpeditionHelper_SOL\ExpeditionHelper_SOL\obj\Release\ExpeditionHelper_SOL.Resources.Views.Lien.Edit.en.resources
+D:\Users\azaoui\source\repos\ExpeditionHelper_SOL\ExpeditionHelper_SOL\obj\Release\ExpeditionHelper_SOL.Resources.Views.Lien.Index.en.resources
+D:\Users\azaoui\source\repos\ExpeditionHelper_SOL\ExpeditionHelper_SOL\obj\Release\ExpeditionHelper_SOL.Resources.Views.Shared.Access_denied.en.resources
+D:\Users\azaoui\source\repos\ExpeditionHelper_SOL\ExpeditionHelper_SOL\obj\Release\ExpeditionHelper_SOL.Resources.Views.Shared.Error.en.resources
+D:\Users\azaoui\source\repos\ExpeditionHelper_SOL\ExpeditionHelper_SOL\obj\Release\ExpeditionHelper_SOL.Resources.Views.Shared._Layout.en.resources
+D:\Users\azaoui\source\repos\ExpeditionHelper_SOL\ExpeditionHelper_SOL\obj\Release\ExpeditionHelper_SOL.Resources.Views.Version.Delete.en.resources
+D:\Users\azaoui\source\repos\ExpeditionHelper_SOL\ExpeditionHelper_SOL\obj\Release\ExpeditionHelper_SOL.Resources.Views.Version.Create.en.resources
+D:\Users\azaoui\source\repos\ExpeditionHelper_SOL\ExpeditionHelper_SOL\obj\Release\ExpeditionHelper_SOL.Resources.Views.Version.Edit.en.resources
+D:\Users\azaoui\source\repos\ExpeditionHelper_SOL\ExpeditionHelper_SOL\obj\Release\ExpeditionHelper_SOL.Resources.Views.Version.Index.en.resources
+D:\Users\azaoui\source\repos\ExpeditionHelper_SOL\ExpeditionHelper_SOL\obj\Release\ExpeditionHelper_SOL.csproj.GenerateResource.cache
+D:\Users\azaoui\source\repos\ExpeditionHelper_SOL\ExpeditionHelper_SOL\obj\Release\ExpeditionHelper_SOL.csproj.CoreCompileInputs.cache
+D:\Users\azaoui\source\repos\ExpeditionHelper_SOL\ExpeditionHelper_SOL\obj\Release\en\ExpeditionHelper_SOL.resources.dll
+D:\Users\azaoui\source\repos\ExpeditionHelper_SOL\ExpeditionHelper_SOL\obj\Release\ExpeditionHelper_SOL.csproj.CopyComplete
+D:\Users\azaoui\source\repos\ExpeditionHelper_SOL\ExpeditionHelper_SOL\obj\Release\ExpeditionHelper_SOL.dll
+D:\Users\azaoui\source\repos\ExpeditionHelper_SOL\ExpeditionHelper_SOL\obj\Release\ExpeditionHelper_SOL.pdb

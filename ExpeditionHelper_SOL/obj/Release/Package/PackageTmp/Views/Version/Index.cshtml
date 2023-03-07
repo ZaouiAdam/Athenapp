@@ -1,0 +1,96 @@
+﻿@model PagedList.IPagedList<ExpeditionHelper_SOL.Models.TB_VERSION>
+@using PagedList.Mvc;
+
+@{
+    ViewBag.Title = "Index version";
+}
+
+<div class="container body-content" style="background-color:white;border-radius:5px;">
+    <br /><br />
+    <h2>Version</h2>
+
+    @if ((Session["Type_Connexion"] == "Acces_Digitalisation") || (Session["Type_Connexion"] == "Acces_Admin")) {
+        <a href="@Url.Action("Create", "Version")" class="btn btn-primary"> <span class="fa fa-plus" aria-hidden="true"></span> @ExpeditionHelper_SOL.Resources.Views.Version.Index.BtnAdd </a> <br /><br /><br />
+    }
+
+    <div class="row">
+        <div class="col-lg-3">
+            @using (Html.BeginForm("Index", "Version", FormMethod.Get, new { @class = "form-inline" }))
+            {
+                <p>
+                    @ExpeditionHelper_SOL.Resources.Views.Shared._Layout.SearchByName <br /> @Html.TextBox("SearchString", ViewBag.CurrentFilter as string, new { @class = "form-control text-box" })
+                    <button type="submit" class="btn btn-default">
+                        <i class="fa fa-search" aria-hidden="true"></i>
+                    </button>
+                </p>
+            }
+        </div>
+    </div>
+
+    <table class="table table-bordered">
+        <tr>
+            <th>
+                @ExpeditionHelper_SOL.Resources.Views.Version.Index.Version
+            </th>
+            <th>
+                @ExpeditionHelper_SOL.Resources.Views.Version.Index.Auteur
+            </th>
+            <th>
+                @ExpeditionHelper_SOL.Resources.Views.Version.Index.Descriptif
+            </th>
+            <th>
+                @ExpeditionHelper_SOL.Resources.Views.Version.Index.Date_Mise_En_Prod
+            </th>
+            <th>
+                @ExpeditionHelper_SOL.Resources.Views.Version.Index.En_Prod
+            </th>
+            @if ((Session["Type_Connexion"] == "Acces_Digitalisation") || (Session["Type_Connexion"] == "Acces_Admin"))
+            {
+                <th>
+                    @ExpeditionHelper_SOL.Resources.Views.Version.Index.Action
+                </th>
+            }
+        </tr>
+
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Nom)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Auteur)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Description)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Date_Prod)
+                </td>
+                <td>
+                    @if (item.prod == "1")
+                    {
+                        <label> @ExpeditionHelper_SOL.Resources.Views.Version.Index.Oui </label>
+                    }
+                    @if (item.prod == "0")
+                    {
+                        <label> @ExpeditionHelper_SOL.Resources.Views.Version.Index.Non </label>
+                    }
+                </td>
+                @if ((Session["Type_Connexion"] == "Acces_Digitalisation") || (Session["Type_Connexion"] == "Acces_Admin"))
+                {
+                    <td>
+                        <a href="@Url.Action("Edit" , "Version" , new { id = item.Id })" class="btn btn-primary"> <i class="fa fa-pencil"></i> </a>
+                        <a href="@Url.Action("Delete" , "Version" , new { id = item.Id })" class="btn btn-danger"> <i class="fa fa-trash"></i> </a>
+                    </td>
+                }
+            </tr>
+        }
+
+    </table>
+
+    @ExpeditionHelper_SOL.Resources.Views.Shared._Layout.Page @(Model.PageCount < Model.PageNumber ? 0 : Model.PageNumber) / @Model.PageCount
+
+    @Html.PagedListPager(Model, page => Url.Action("Index",
+        new { page, sortOrder = ViewBag.CurrentSort, currentFilter = ViewBag.CurrentFilter }))
+</div>

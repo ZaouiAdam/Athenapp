@@ -1,0 +1,190 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="ExpeditionHelper_SOLModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="TB_ADRESSE">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Nom" Type="varchar" MaxLength="200" />
+    <Property Name="CodeAdresse" Type="varchar" MaxLength="50" />
+    <Property Name="IdClient" Type="int" />
+    <Property Name="GroupId" Type="varchar" MaxLength="10" />
+  </EntityType>
+  <EntityType Name="TB_CLIENT">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Code" Type="varchar" MaxLength="50" />
+    <Property Name="Nom" Type="varchar" MaxLength="100" />
+  </EntityType>
+  <EntityType Name="TB_ETAPE">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Texte" Type="varchar" MaxLength="500" />
+    <Property Name="Ordre" Type="float" />
+    <Property Name="IdClient" Type="int" />
+    <Property Name="IdIncoterm" Type="int" />
+    <Property Name="IdAdresse" Type="int" />
+  </EntityType>
+  <EntityType Name="TB_EXPEDITION">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Date" Type="varchar" MaxLength="50" />
+    <Property Name="Avancement" Type="int" />
+    <Property Name="Incoterm" Type="varchar" MaxLength="50" />
+    <Property Name="NumeroBonDeLivraison" Type="varchar" MaxLength="100" />
+  </EntityType>
+  <EntityType Name="TB_INCOTERM">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Nom" Type="varchar" MaxLength="100" />
+    <Property Name="Description" Type="varchar" MaxLength="100" />
+    <Property Name="Defaut" Type="varchar" MaxLength="2" />
+  </EntityType>
+  <EntityType Name="TB_Liaison">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="IdEtape" Type="int" />
+    <Property Name="IdLien" Type="int" />
+  </EntityType>
+  <EntityType Name="TB_LIEN">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Url" Type="varchar" MaxLength="250" />
+    <Property Name="Nom" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="TB_LOG">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Action" Type="varchar" MaxLength="250" />
+    <Property Name="Date" Type="varchar" MaxLength="100" />
+    <Property Name="Login" Type="varchar" MaxLength="100" />
+    <Property Name="Texte" Type="varchar" MaxLength="1000" />
+  </EntityType>
+  <EntityType Name="TB_PROCEDURE_EXPEDITION">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Etat" Type="int" />
+    <Property Name="TexteLog" Type="varchar" MaxLength="500" />
+    <Property Name="DefautLog" Type="int" />
+    <Property Name="IdExpedition" Type="int" />
+  </EntityType>
+  <EntityType Name="TB_VERSION">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Nom" Type="nchar" MaxLength="10" />
+    <Property Name="Auteur" Type="nchar" MaxLength="50" />
+    <Property Name="Description" Type="nchar" MaxLength="500" />
+    <Property Name="Date_Prod" Type="nchar" MaxLength="10" />
+    <Property Name="prod" Type="nchar" MaxLength="1" />
+  </EntityType>
+  <Association Name="FK_TB_ADRESSE_TB_CLIENT">
+    <End Role="TB_CLIENT" Type="Self.TB_CLIENT" Multiplicity="0..1" />
+    <End Role="TB_ADRESSE" Type="Self.TB_ADRESSE" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TB_CLIENT">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="TB_ADRESSE">
+        <PropertyRef Name="IdClient" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TB_ADRESSE_TB_ETAPE">
+    <End Role="TB_ADRESSE" Type="Self.TB_ADRESSE" Multiplicity="0..1" />
+    <End Role="TB_ETAPE" Type="Self.TB_ETAPE" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TB_ADRESSE">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="TB_ETAPE">
+        <PropertyRef Name="IdAdresse" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TB_Liaison_TB_ETAPE">
+    <End Role="TB_ETAPE" Type="Self.TB_ETAPE" Multiplicity="0..1" />
+    <End Role="TB_Liaison" Type="Self.TB_Liaison" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TB_ETAPE">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="TB_Liaison">
+        <PropertyRef Name="IdEtape" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TB_Liaison_TB_LIEN">
+    <End Role="TB_LIEN" Type="Self.TB_LIEN" Multiplicity="0..1" />
+    <End Role="TB_Liaison" Type="Self.TB_Liaison" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TB_LIEN">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="TB_Liaison">
+        <PropertyRef Name="IdLien" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TB_PROCEDURE_EXPEDITION_TB_EXPEDITION">
+    <End Role="TB_EXPEDITION" Type="Self.TB_EXPEDITION" Multiplicity="0..1" />
+    <End Role="TB_PROCEDURE_EXPEDITION" Type="Self.TB_PROCEDURE_EXPEDITION" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TB_EXPEDITION">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="TB_PROCEDURE_EXPEDITION">
+        <PropertyRef Name="IdExpedition" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="ExpeditionHelper_SOLModelStoreContainer">
+    <EntitySet Name="TB_ADRESSE" EntityType="Self.TB_ADRESSE" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TB_CLIENT" EntityType="Self.TB_CLIENT" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TB_ETAPE" EntityType="Self.TB_ETAPE" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TB_EXPEDITION" EntityType="Self.TB_EXPEDITION" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TB_INCOTERM" EntityType="Self.TB_INCOTERM" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TB_Liaison" EntityType="Self.TB_Liaison" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TB_LIEN" EntityType="Self.TB_LIEN" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TB_LOG" EntityType="Self.TB_LOG" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TB_PROCEDURE_EXPEDITION" EntityType="Self.TB_PROCEDURE_EXPEDITION" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TB_VERSION" EntityType="Self.TB_VERSION" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK_TB_ADRESSE_TB_CLIENT" Association="Self.FK_TB_ADRESSE_TB_CLIENT">
+      <End Role="TB_CLIENT" EntitySet="TB_CLIENT" />
+      <End Role="TB_ADRESSE" EntitySet="TB_ADRESSE" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TB_ADRESSE_TB_ETAPE" Association="Self.FK_TB_ADRESSE_TB_ETAPE">
+      <End Role="TB_ADRESSE" EntitySet="TB_ADRESSE" />
+      <End Role="TB_ETAPE" EntitySet="TB_ETAPE" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TB_Liaison_TB_ETAPE" Association="Self.FK_TB_Liaison_TB_ETAPE">
+      <End Role="TB_ETAPE" EntitySet="TB_ETAPE" />
+      <End Role="TB_Liaison" EntitySet="TB_Liaison" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TB_Liaison_TB_LIEN" Association="Self.FK_TB_Liaison_TB_LIEN">
+      <End Role="TB_LIEN" EntitySet="TB_LIEN" />
+      <End Role="TB_Liaison" EntitySet="TB_Liaison" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TB_PROCEDURE_EXPEDITION_TB_EXPEDITION" Association="Self.FK_TB_PROCEDURE_EXPEDITION_TB_EXPEDITION">
+      <End Role="TB_EXPEDITION" EntitySet="TB_EXPEDITION" />
+      <End Role="TB_PROCEDURE_EXPEDITION" EntitySet="TB_PROCEDURE_EXPEDITION" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

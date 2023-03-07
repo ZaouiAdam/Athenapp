@@ -1,0 +1,74 @@
+﻿@model ExpeditionHelper_SOL.Models.TB_VERSION
+
+<div class="container body-content" style="background-color:white;border-radius:5px;">
+    <br /><br />
+          <h3>@ExpeditionHelper_SOL.Resources.Views.Version.Delete.Titre</h3>
+    <div>
+        <hr />
+        <a href="@Url.Action("Index" , "Version")" class="btn btn-primary"><i class="fa fa-arrow-circle-left"></i> @ExpeditionHelper_SOL.Resources.Views.Version.Delete.BtnRetour </a>
+        <br /><br />
+        <dl class="dl-horizontal">
+            <dt>
+                @ExpeditionHelper_SOL.Resources.Views.Version.Delete.Version
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.Nom)
+            </dd>
+
+            <dt>
+                @ExpeditionHelper_SOL.Resources.Views.Version.Delete.Auteur
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.Auteur)
+            </dd>
+
+            <dt>
+                @ExpeditionHelper_SOL.Resources.Views.Version.Delete.Description
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.Description)
+            </dd>
+
+            <dt>
+                @ExpeditionHelper_SOL.Resources.Views.Version.Delete.Date
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.Date_Prod)
+            </dd>
+
+            <dt>
+                @ExpeditionHelper_SOL.Resources.Views.Version.Delete.Prod
+            </dt>
+
+            <dd>
+                @foreach (var item in ViewBag.VersionLinq)
+                {
+                    if (item.prod == "1")
+                    {
+                        <label>@ExpeditionHelper_SOL.Resources.Views.Version.Delete.Oui</label>
+                    }
+                    if (item.prod == "0")
+                    {
+                        <label>@ExpeditionHelper_SOL.Resources.Views.Version.Delete.Non</label>
+                    }
+                }
+            </dd>
+
+        </dl>
+
+        @using (Html.BeginForm())
+        {
+            @Html.AntiForgeryToken()
+
+            <div class="form-group">
+                <div class="col-md-offset-2 col-md-10">
+                    <input type="submit" value="@ExpeditionHelper_SOL.Resources.Views.Version.Delete.BtnSupp" class="btn btn-danger" />
+                </div>
+            </div>
+        }
+    </div>
+</div>

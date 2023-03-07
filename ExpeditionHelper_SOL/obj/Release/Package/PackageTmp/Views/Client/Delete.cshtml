@@ -1,0 +1,40 @@
+﻿@model ExpeditionHelper_SOL.Models.TB_CLIENT
+
+<div class="container body-content" style="background-color:white;border-radius:5px;">
+    <br />
+    <br />
+    <h2>@ExpeditionHelper_SOL.Resources.Views.Client.Delete.Titre</h2>
+    <h4 style="color:darkred;">@ExpeditionHelper_SOL.Resources.Views.Client.Delete.Warning</h4>
+    <div>
+        <hr />
+        <a href="@Url.Action("Index" , "Client")" class="btn btn-primary"><i class="fa fa-arrow-circle-left"></i> @ExpeditionHelper_SOL.Resources.Views.Client.Delete.BtnRetour </a>
+        <br /><br />
+        <dl class="dl-horizontal">
+            <dt>
+                @ExpeditionHelper_SOL.Resources.Views.Client.Delete.Code
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.Code)
+            </dd>
+            <dt>
+                @ExpeditionHelper_SOL.Resources.Views.Client.Delete.Nom
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.Nom)
+            </dd>
+        </dl>
+
+        @using (Html.BeginForm())
+        {
+            @Html.AntiForgeryToken()
+
+            <div class="form-group">
+                <div class="col-md-offset-2 col-md-10">
+                    <input type="submit" value="@ExpeditionHelper_SOL.Resources.Views.Client.Delete.BtnSupprimer" class="btn btn-danger" />
+                </div>
+            </div>
+        }
+    </div>
+</div>

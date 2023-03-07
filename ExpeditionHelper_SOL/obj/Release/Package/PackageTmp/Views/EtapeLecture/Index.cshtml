@@ -1,0 +1,872 @@
+﻿
+@{
+    ViewBag.Title = "Step Reading";
+}
+<h2 style="margin-top:5%;">@ExpeditionHelper_SOL.Resources.Views.EtapeLecture.Index.Titre</h2><br />
+
+<div class="row">
+    <div class="col-lg-6">
+        <div class="card card-default">
+            <div class="card-header"> @ExpeditionHelper_SOL.Resources.Views.EtapeLecture.Index.ChoixClient</div>
+            <div class="card-body">
+                @* Select Code CLient *@
+                <div class="col-lg-1"></div>
+                <div class="col-lg-10 form-group">
+                    <p style="text-decoration: underline;">@ExpeditionHelper_SOL.Resources.Views.EtapeLecture.Index.CodeClient</p>
+                    <select id="SelectCodeClient" class="form-control selectpicker" data-live-search="true" onchange="ListIncoterm(); AppendClient(); ListCodeAdresseClient();ListGroup()" style="width:100%;">
+                        <option value="0">@ExpeditionHelper_SOL.Resources.Views.EtapeLecture.Index.SelectCodeClient</option>
+                        @foreach (var item in ViewBag.Client)
+                        {
+                            string[] stringSeparators = new string[] { "ClientItem" };
+                            var ArrayCodeClient = item.Value.Split(stringSeparators, StringSplitOptions.None);
+                            <option value="@ArrayCodeClient[2]">@ArrayCodeClient[0] / @ArrayCodeClient[1]</option>
+                        }
+                    </select>
+                    <div style="text-align:right;">
+                        1/4
+                    </div>
+                </div>
+                <div class="col-lg-12"></div>
+                <br />
+                @* Select Code Adresse CLient *@
+                <div class="col-lg-1"></div>
+                <div class="col-lg-10 form-group" id="BlockSelectCodeAdresseClient" style="visibility:hidden;display:none;">
+                    <p style="text-decoration: underline;">@ExpeditionHelper_SOL.Resources.Views.EtapeLecture.Index.CodeAdresseClient</p>
+                    <select id="SelectCodeAdresseClient" class="form-control" onchange="AppendClient(); ListStep(); ListNomClient();" style="width:100%;">
+                        <option value="0">@ExpeditionHelper_SOL.Resources.Views.EtapeLecture.Index.SelectCodeAdresseClient</option>
+                    </select>
+                    <div style="text-align:right;">
+                        2/4
+                    </div>
+                </div>
+                <div class="col-lg-12"></div>
+                <br />
+                @* Select Adresse CLient *@
+                <div class="col-lg-1"></div>
+                <div class="col-lg-10 form-group" id="BlockSelectNomClient" style="visibility:hidden;display:none;">
+                    <p style="text-decoration: underline;">@ExpeditionHelper_SOL.Resources.Views.EtapeLecture.Index.AdresseClient</p>
+                    <div class="row">
+                        <div class="col-lg-11">
+                            <div id="InputNomClient" style="text-decoration: underline;"></div>
+                        </div>
+                    </div>
+                    <input type="hidden" id="SelectNomClient" value="0" />
+                    <div style="text-align:right;">
+                        3/4
+                    </div>
+                </div>
+                <div class="col-lg-12"></div>
+                <br />
+                @* Select Incoterm *@
+                <div class="col-lg-1"></div>
+                <div class="col-lg-10 form-group" id="BlockSelectIncoterm" style="visibility:hidden;display:none;">
+                    <p style="text-decoration: underline;">@ExpeditionHelper_SOL.Resources.Views.EtapeLecture.Index.IncotermSimple</p>
+                    <select class="form-control" id="SelectIncoterm" onchange="ListStep(); AppendInsertStep();">
+                        <option value="0">@ExpeditionHelper_SOL.Resources.Views.EtapeLecture.Index.SelectIncoterm</option>
+                    </select>
+                    <div style="text-align:right;">
+                        4/4
+                    </div>
+                </div>
+                <div class="col-lg-1"></div>
+            </div>
+        </div>
+    </div>
+    <div class="col-lg-4">
+        <div class="card card-default">
+            <div class="card-header"> @ExpeditionHelper_SOL.Resources.Views.EtapeLecture.Index.Filtre</div>
+            <div class="card-body">
+                @* Select Mode difficulté  *@
+
+                <div class="col-lg-1"></div>
+                <div class="col-lg-10 form-group">
+                    <p style="text-decoration: underline;">@ExpeditionHelper_SOL.Resources.Views.EtapeLecture.Index.VueUtilisateur</p>
+                    <div style="text-align:center;">
+                        <label>
+                            <input type="checkbox" id="Maitrise" onchange="ListStep();" data-toggle="toggle" data-on="<i class='fa fa-star' aria-hidden='true'></i> @ExpeditionHelper_SOL.Resources.Views.EtapeLecture.Index.Expert" data-off="<i class='fa fa-star-o' aria-hidden='true'></i> @ExpeditionHelper_SOL.Resources.Views.EtapeLecture.Index.Novice">
+                        </label>
+                    </div>
+                </div>
+                <div class="col-lg-12"></div>
+                <br />
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="card card-default">
+                    <div class="card-header">@ExpeditionHelper_SOL.Resources.Views.EtapeDefaut.Index.Profil</div>
+                    <div class="card-body">
+                        <div class="col-lg-12 form-group">
+                            <div id="BlockSelectGroup">
+                                <div id="RemoveBlockAddGroup">
+                                    <input type="hidden" id="SelectGroup" value="0" />
+                                    <p style="text-decoration: underline;"> Groupe :</p>
+                                    <div class="row">
+                                        <div class="col-lg-11">
+                                            <div id="NameGroup"><p id="LabelNameGroup"></p></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-12"></div>
+                        <br />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<br />
+<br />
+
+@* Affichage Etape *@
+<div class="row">
+    <div class="col-lg-10">
+        <div class="card card-default">
+            <div class="card-header">@ExpeditionHelper_SOL.Resources.Views.EtapeLecture.Index.TitreCard</div>
+            <div class="card-body" style="text-align:center;">
+                <table class="table table-hover" id="BlockTableEtape">
+                    <tr>
+                        <th style="text-align:center;">Do</th>
+                        <th style="text-align:center;">@ExpeditionHelper_SOL.Resources.Views.EtapeLecture.Index.Numero</th>
+                        <th style="text-align:center;">@ExpeditionHelper_SOL.Resources.Views.EtapeLecture.Index.Explication</th>
+                        <th style="text-align:center;">@ExpeditionHelper_SOL.Resources.Views.EtapeLecture.Index.Incoterm</th>
+                    </tr>
+                    <tbody id="TableEtape"></tbody>
+                </table>
+                <br />
+            </div>
+        </div>
+    </div>
+</div>
+<div style="margin-bottom:250px;"></div>
+
+@* Modal Lien *@
+<div class="modal fade" id="ModalLink" role="dialog">
+    <div class="modal-dialog modal-lg">
+        <div style="margin-top:25%;"></div>
+        <div class="modal-content" style="text-align:center;">
+            <div class="modal-header" style="background-color:#337AB7;border-color:#0080CD;color:white;">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">@ExpeditionHelper_SOL.Resources.Views.EtapeLecture.Index.ModalLinkReadTitre</h4>
+            </div>
+            <div class="modal-body" style="text-align:center;">
+                @* Contenu de a fonction ListLinkHelper *@
+                <div id="TableBodyLink">
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@* Modal Ajout Lien *@
+<div class="modal fade" id="ModalAddLink" role="dialog">
+    <div class="modal-dialog modal-lg">
+        <div style="margin-top:25%;"></div>
+        <div class="modal-content" style="text-align:center;">
+            <div class="modal-header" style="background-color:#337AB7;border-color:#0080CD;color:white;">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">@ExpeditionHelper_SOL.Resources.Views.EtapeLecture.Index.ModalLinkWriteTitre</h4>
+            </div>
+            <div class="modal-body" style="text-align:center;">
+                @* Contenu de a fonction ListLinkHelper *@
+                <div id="TableAddLink">
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+@* Modal Update *@
+<div class="modal fade" id="ModalUpdateStep" role="dialog">
+    <div class="modal-dialog modal-lg">
+        <div style="margin-top:25%;"></div>
+        <div class="modal-content" style="text-align:center;">
+            <div class="modal-header" style="background-color:#337AB7;border-color:#0080CD;color:white;">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">@ExpeditionHelper_SOL.Resources.Views.EtapeLecture.Index.ModalUpdateStepTitre</h4>
+            </div>
+            <div class="modal-body" id="BlockBodyUpdateStep" style="text-align:center;">
+                @* Contenu de a fonction ListLinkHelper *@
+            </div>
+            <div class="modal-footer" style="text-align:center;">
+                <button type="button" class="btn btn-warning" onclick="UpdateStep();" aria-hidden="true"> @ExpeditionHelper_SOL.Resources.Views.EtapeLecture.Index.ModalUpdateStepBtnEditer</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+@* Modal Delete *@
+<div class="modal fade" id="ModalDeleteStep" role="dialog">
+    <div class="modal-dialog modal-lg">
+        <div style="margin-top:25%;"></div>
+        <div class="modal-content" style="text-align:center;">
+            <div class="modal-header" style="background-color:#337AB7;border-color:#0080CD;color:white;">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">@ExpeditionHelper_SOL.Resources.Views.EtapeLecture.Index.ModalDeleteStepTitre</h4>
+            </div>
+            <div id="BlockBodyDeleteStep" style="text-align:center;">
+                @* Contenu de a fonction ListLinkHelper *@
+            </div>
+        </div>
+    </div>
+</div>
+
+<input type="hidden" id="GardenMaxStep" value="0" />
+<input type="hidden" id="GardenMaxNom" value="0" />
+<input type="hidden" id="GardenMaxCodeClient" value="0" />
+<input type="hidden" id="GardenMaxStepDefaut" value="0" />
+<input type="hidden" id="GardenIdStep" value="0" />
+<input type="hidden" id="GardenIdStepTable" value="0" />
+
+<script>
+    // List
+    $(document).ready(function () {
+        ListGroup();
+        ListStep();
+        AppendInsertStep();
+        ListIncoterm();
+    });
+
+    function decode(str) {
+        var textArea = document.createElement('textarea');
+        textArea.innerHTML = str;
+        return textArea.value;
+    }
+
+    // Gestion du menu des client
+    function AppendClient() {
+        var CodeClient = document.getElementById("SelectCodeClient").value;
+        var CodeAdresseClient = document.getElementById("SelectCodeAdresseClient").value;
+        if (CodeClient == "0") {
+            HideAdresseClient();
+            HideNomClient();
+            HideIncoterm();
+        }
+        if ((CodeClient == "0") || (CodeAdresseClient == "0")) {
+            HideNomClient();
+            HideIncoterm();
+        }
+        if (CodeClient != "0") {
+            ShowAdresseClient()
+        }
+        if ((CodeClient != "0") && (CodeAdresseClient != "0")) {
+            ShowNomClient();
+            ShowIncoterm();
+        }
+    }
+
+    function HideAdresseClient() {
+        document.getElementById("BlockSelectCodeAdresseClient").style.visibility = "hidden";
+        document.getElementById("BlockSelectCodeAdresseClient").style.display = "none";
+        TruncateSelectCodeClient();
+    }
+    function HideNomClient() {
+        document.getElementById("BlockSelectNomClient").style.visibility = "hidden";
+        document.getElementById("BlockSelectNomClient").style.display = "none";
+        document.getElementById("SelectNomClient").value = 0;
+
+    }
+    function HideIncoterm() {
+        document.getElementById("BlockSelectIncoterm").style.visibility = "hidden";
+        document.getElementById("BlockSelectIncoterm").style.display = "none";
+        ListIncoterm();
+    }
+    function ShowAdresseClient() {
+        document.getElementById("BlockSelectCodeAdresseClient").style.visibility = "visible";
+        document.getElementById("BlockSelectCodeAdresseClient").style.display = "block";
+    }
+    function ShowNomClient() {
+        document.getElementById("BlockSelectNomClient").style.visibility = "visible";
+        document.getElementById("BlockSelectNomClient").style.display = "block";
+    }
+    function ShowIncoterm() {
+        document.getElementById("BlockSelectIncoterm").style.visibility = "visible";
+        document.getElementById("BlockSelectIncoterm").style.display = "block";
+        ListIncoterm();
+    }
+
+
+    // Videge du select Code Adresse du client
+    function TruncateSelectCodeClient() {
+        var GardenMaxCodeClient = document.getElementById("GardenMaxCodeClient").value;
+        for (var i = 1; i <= GardenMaxCodeClient; i++) {
+            $('#NewCodeAdresseClient' + i).remove();
+        }
+    }
+
+    // Vidage du select Nom du client
+    function TruncateSelectNom() {
+        var GardenMaxNom = document.getElementById("GardenMaxNom").value;
+        for (var i = 1; i <= GardenMaxNom; i++) {
+            $('#NewAdresseClient' + i).remove();
+        }
+    }
+    
+    // Liste Code Adresse Client
+    function ListCodeAdresseClient() {
+        var CodeAdresseClient = document.getElementById("SelectCodeClient").value;
+        $.ajax({
+            url: 'EtapeLecture/ListCodeAdresseClient',
+            type: "POST",
+            data: { CodeAdresseClient: CodeAdresseClient },
+            success: successFunc,
+            error: errorFunc
+        });
+
+        function successFunc(data, status) {
+            TruncateSelectCodeClient();
+            TruncateSelectNom();
+            var iNom = 0;
+            $(data).each(function (Index, emp) {
+                var ArrayCodeClientClient = emp.Value.split('SeparateurString');
+                iNom++;
+                if (CodeAdresseClient != "") {
+                    $('#SelectCodeAdresseClient').append('<option value="' + ArrayCodeClientClient[1] + '" id="NewCodeAdresseClient' + iNom + '">' + ArrayCodeClientClient[1] + '</option>');
+                }
+            });
+            document.getElementById("GardenMaxCodeClient").value = iNom;
+            HideNomClient();
+            HideIncoterm();
+            ListStep();
+        }
+
+        function errorFunc() {
+            $("body").overhang({
+                type: "Error",
+                message: decode("@ExpeditionHelper_SOL.Resources.Views.EtapeLecture.Index.ErrorFunction"),
+            });
+        }
+    }
+
+    // Liste Nom Client
+    function ListNomClient() {
+        var CodeClient = document.getElementById("SelectCodeClient").value;
+        var CodeAdresseClient = document.getElementById("SelectCodeAdresseClient").value;
+        $.ajax({
+            url: 'EtapeLecture/ListNomClient',
+            type: "POST",
+            data: { CodeClient: CodeClient, CodeAdresseClient: CodeAdresseClient },
+            success: successFunc,
+            error: errorFunc
+        });
+
+        function successFunc(data, status) {
+            $('#NomAdresseClient').remove();
+
+            TruncateSelectNom();
+            var iNom = 0;
+            $(data).each(function (Index, emp) {
+                var ArrayNomClient = emp.Value.split('SeparateurString');
+                iNom++;
+                if (CodeClient != "") {
+                    $('#InputNomClient').append('<label id="NomAdresseClient">' + ArrayNomClient[1] + '</label>');
+                    document.getElementById("SelectNomClient").value = ArrayNomClient[0];
+                }
+            });
+            document.getElementById("GardenMaxNom").value = iNom;
+            ListGroup();
+        }
+
+        function errorFunc() {
+            $("body").overhang({
+                type: "Error",
+                message: decode("@ExpeditionHelper_SOL.Resources.Views.EtapeLecture.Index.ErrorFunction"),
+            });
+        }
+    }
+
+    // List Group Select
+    function ListGroup() {
+
+        var IdAdresse = document.getElementById("SelectNomClient").value;
+
+        $.ajax({
+            url: 'EtapeLecture/ListGroup',
+            type: "POST",
+            data: { IdAdresse: IdAdresse},
+            success: successFunc,
+            error: errorFunc
+        });
+
+        function successFunc(data, status) {
+            $('#LabelNameGroup').remove();
+            document.getElementById('SelectGroup').value = "0";
+            var ArrayGroup = data.split('SeparateurString');
+            if (data != "0/0") {
+                $('#NameGroup').append('<label id="LabelNameGroup">' + ArrayGroup[1] + '</label>');
+                document.getElementById('SelectGroup').value = ArrayGroup[0];
+            } else {
+                $('#NameGroup').append('<label id="LabelNameGroup">@ExpeditionHelper_SOL.Resources.Views.EtapeLecture.Index.SelectItemTitle</label>');
+                document.getElementById('SelectGroup').value = "0";
+            }
+        }
+
+        function errorFunc() {
+            $("body").overhang({
+                type: "Error",
+                message: decode("@ExpeditionHelper_SOL.Resources.Views.EtapeDefaut.Index.ErrorFunction"),
+            });
+        }
+    }
+
+    // Liste Etape
+    function ListStep() {
+
+        var IdGroup = document.getElementById("SelectGroup").value;
+        var IdClient = document.getElementById("SelectNomClient").value;
+        var CodeClient = document.getElementById("SelectCodeClient").value;
+        var Incoterm = document.getElementById("SelectIncoterm").value;
+        var IdAdresse = document.getElementById("SelectNomClient").value;
+
+        $.ajax({
+            url: 'EtapeLecture/ListStep',
+            type: "POST",
+            data: { IdClientSelected: IdClient, IncotermId: Incoterm, IdGroup: IdGroup, IdAdresse: IdAdresse },
+            success: successFunc,
+            error: errorFunc
+        });
+
+        function successFunc(data, status) {
+            // Rechargement du tableau
+            $('#TableEtape').remove();
+            $('#BlockTableEtape').append('<tbody id="TableEtape"></tbody>');
+
+            // Si la selection du client est vide ou inachever
+            if ((IdClient == 0) || (CodeClient == 0) || (Incoterm == 0)) {
+                $('#TableEtape').append('<tr id="NoneStep"><td>#</td><td><label>@ExpeditionHelper_SOL.Resources.Views.EtapeLecture.Index.NoClient</label></td>' +
+                    '<td><label>@ExpeditionHelper_SOL.Resources.Views.EtapeLecture.Index.None</label></td><td><label>@ExpeditionHelper_SOL.Resources.Views.EtapeLecture.Index.None</label></td></tr>');
+            } else {
+                var iStepCheck = 0;
+                $(data).each(function (Index, emp) {
+                    // Split des information des applications
+                    var ArrayStep = emp.Value.split('EtapeValue');
+
+                    // Si il s'agit d'une étape par défaut et que le filtre de maitrise est desactiver ou que c'est une étape spécifique
+                    if (((ArrayStep[4] == "1") && (document.getElementById("Maitrise").checked == false)) || (ArrayStep[4] == "0")) {
+                        // Si l'étape contient un lien
+                        if (ArrayStep[3]) {
+                            iStepCheck++;
+                            $('#TableEtape').append('<tr><td><input type="checkbox" id="CheckboxBox' + iStepCheck + '" onclick="BlurCheckbox(' + iStepCheck + ')"></td><td>' + iStepCheck + '</td><td><label style="font-weight: normal;" id="CheckboxLabel' + iStepCheck + '">' + ArrayStep[0] + '</label> ' +
+                                '<a href="#" onclick="ListLinkRead(' + ArrayStep[2] + ');" style="font-weight: bold;" data-toggle="modal" data-target="#ModalLink" data-backdrop="static" data-keyboard="false">@ExpeditionHelper_SOL.Resources.Views.EtapeLecture.Index.BtnDocument</a></td>' +
+                                '<td><label>' + ArrayStep[1] + '</label></td></tr>');
+                        } else {
+                            iStepCheck++;
+                            $('#TableEtape').append('<tr><td><input type="checkbox" id="CheckboxBox' + iStepCheck + '" onclick="BlurCheckbox(' + iStepCheck + ')"></td><td>' + iStepCheck + '</td><td><label style="font-weight: normal;" id="CheckboxLabel' + iStepCheck + '">' + ArrayStep[0] + '</label></td><td><label>' + ArrayStep[1] + '</label></td></tr>');
+                        }
+                    }
+                    // Etape Titre
+                    if (ArrayStep[4] == "2") {
+                        $('#TableEtape').append('<tr style="background-color:#BFBFBF;"><td></td><td></td><td><label style="text-decoration: underline;">' + ArrayStep[0] + '</label></td><td></td></tr>');
+                    }
+                });
+            }
+        }
+
+        function errorFunc() {
+            $("body").overhang({
+                type: "Error",
+                message: decode("@ExpeditionHelper_SOL.Resources.Views.EtapeLecture.Index.ErrorFunction"),
+            });
+        }
+    }
+    
+    // Checkbox blur
+    function BlurCheckbox(iStepCheck) {
+        //alert(iStepCheck);
+        if (document.getElementById('CheckboxBox' + iStepCheck).checked) {
+            document.getElementById('CheckboxLabel' + iStepCheck).style.textDecoration = "line-through";
+        } else {
+            document.getElementById('CheckboxLabel' + iStepCheck).style.textDecoration = "none";
+        }
+    }
+
+    // Liste Incoterm
+    function ListIncoterm() {
+        $.ajax({
+            url: 'EtapeLecture/ListIncoterm',
+            type: "POST",
+            success: successFunc,
+            error: errorFunc
+        });
+
+        function successFunc(data, status) {
+            var iIncoterm = 0;
+            $(data).each(function (Index, emp) {
+                var ArrayIncoterm = emp.Value.split('SeparateurString');
+                if (ArrayIncoterm[1] != "Defaut") {
+                    iIncoterm++;
+                    $('#NewIncoterm' + iIncoterm).remove();
+                    $('#SelectIncoterm').append('<option value="' + ArrayIncoterm[0] + '" id="NewIncoterm' + iIncoterm + '">' + ArrayIncoterm[1] + ' / ' + ArrayIncoterm[2] + '</option>');
+                }
+            });
+        }
+
+        function errorFunc() {
+            $("body").overhang({
+                type: "Error",
+                message: decode("@ExpeditionHelper_SOL.Resources.Views.EtapeLecture.Index.ErrorFunction"),
+            });
+        }
+    }
+
+    // Liste Mise à jour Etape
+    function UpdateStepModal(UpdateId) {
+        $.ajax({
+            url: 'EtapeLecture/ListStepUpdate',
+            type: "POST",
+            data: { UpdateId: UpdateId },
+            success: successFunc,
+            error: errorFunc
+        });
+
+        function successFunc(data, status) {
+            $(data).each(function (Index, emp) {
+                var ArrayIncoterm = emp.Value.split('SeparateurString');
+                $('#BlockBodyUpdateStepOld').remove();
+                $('#BlockBodyUpdateStep').append('<div id="BlockBodyUpdateStepOld"><input type="text" class="form-control" id="EditStepName" value="' + ArrayIncoterm[1] + '"/>' +
+                    '<input type="hidden" id="EditStepId" value="' + ArrayIncoterm[0] + '"/><br />');
+            });
+        }
+
+        function errorFunc() {
+            $("body").overhang({
+                type: "Error",
+                message: decode("@ExpeditionHelper_SOL.Resources.Views.EtapeLecture.Index.ErrorFunction"),
+            });
+        }
+    }
+
+    // Mise à jour Etape
+    function UpdateStep() {
+        var UpdateName = document.getElementById("EditStepName").value;
+        var UpdateId = document.getElementById("EditStepId").value;
+        $.ajax({
+            url: 'EtapeLecture/UpdateStep',
+            type: "POST",
+            data: { UpdateId: UpdateId, UpdateName: UpdateName },
+            success: successFunc,
+            error: errorFunc
+        });
+
+        function successFunc(data, status) {
+            $("body").overhang({
+                type: "Success",
+                message: decode("@ExpeditionHelper_SOL.Resources.Views.EtapeLecture.Index.UpdateStep"),
+            });
+            $('.modal').modal('hide').data('bs.modal', null);
+            ListStep();
+        }
+
+        function errorFunc() {
+            $("body").overhang({
+                type: "Error",
+                message: decode("@ExpeditionHelper_SOL.Resources.Views.EtapeLecture.Index.FailUpdateStep"),
+            });
+        }
+    }
+
+    // Liste Suppression Étape
+    function DeleteStepModal(DeleteId) {
+        $.ajax({
+            url: 'EtapeLecture/ListStepDelete',
+            type: "POST",
+            data: { DeleteId: DeleteId },
+            success: successFunc,
+            error: errorFunc
+        });
+
+        function successFunc(data, status) {
+            $(data).each(function (Index, emp) {
+                var ArrayStepDelete = emp.Value.split('InfoStep:');
+                $('#BlockBodyUpdateStepOld').remove();
+                $('#BlockBodyDeleteStep').append('<div id="BlockBodyUpdateStepOld"><div class="modal-body" style="text-align:center;"><label>@ExpeditionHelper_SOL.Resources.Views.EtapeLecture.Index.ModalDeleteTexte</label></div>' +
+                    '<div class="modal-footer" style="text-align:center;"> <button class="btn btn-danger" onclick="DeleteStep(' + ArrayStepDelete[0] + ');"> ' +
+                    '@ExpeditionHelper_SOL.Resources.Views.EtapeLecture.Index.ModalDeleteStepBtnDelete</button> </div>');
+            });
+        }
+
+        function errorFunc() {
+            $("body").overhang({
+                type: "Error",
+                message: decode("@ExpeditionHelper_SOL.Resources.Views.EtapeLecture.Index.FailUpdateStep"),
+            });
+        }
+    }
+
+    // Suppression Etape
+    function DeleteStep(DeleteId) {
+        $.ajax({
+            url: 'EtapeLecture/DeleteStep',
+            type: "POST",
+            data: { DeleteId: DeleteId },
+            success: successFunc,
+            error: errorFunc
+        });
+
+        function successFunc(data, status) {
+            if (data == "Success") {
+                $("body").overhang({
+                    type: "Success",
+                    message: decode("@ExpeditionHelper_SOL.Resources.Views.EtapeLecture.Index.DeleteFunction"),
+                });
+                $('.modal').modal('hide').data('bs.modal', null);
+            } else {
+                $("body").overhang({
+                    type: "Error",
+                    message: decode("@ExpeditionHelper_SOL.Resources.Views.EtapeLecture.Index.FailDeleteFunction"),
+                });
+            }
+            ListStep();
+        }
+
+        function errorFunc() {
+            $("body").overhang({
+                type: "Error",
+                message: decode("@ExpeditionHelper_SOL.Resources.Views.EtapeLecture.Index.ErrorFunction"),
+            });
+        }
+    }
+
+    // Ajout Liste Etape
+    function AppendInsertStep() {
+        var Incoterm = document.getElementById("SelectIncoterm").value;
+        if (Incoterm != 0) {
+            $('#InsertView').remove();
+            $('#BlockInsertStep').append('<div id="InsertView"><div class="col-lg-1"></div><div class="col-lg-8"><input type="text" class="form-control" id="NouvelleEtapeText" placeholder="@ExpeditionHelper_SOL.Resources.Views.EtapeLecture.Index.TitreCard" /></div>' +
+                '<div class="col-lg-3"><button class="btn btn-success" onclick="InsertStep();">@ExpeditionHelper_SOL.Resources.Views.EtapeLecture.Index.BtnAjouter</button></div></div>');
+        } else {
+            $('#InsertView').remove();
+            $('#BlockInsertStep').append('<div id="InsertView"><div class="col-lg-1"></div><div class="col-lg-8">' +
+                '<input type="text" class="form-control" id="NouvelleEtapeText" placeholder="@ExpeditionHelper_SOL.Resources.Views.EtapeLecture.Index.PlaceholderAddStepFake" disabled/></div>' +
+                '<div class="col-lg-3"><button class="btn btn-success" disabled>@ExpeditionHelper_SOL.Resources.Views.EtapeLecture.Index.BtnAjouter</button></div></div>');
+        }
+    }
+
+    // Ajout Etape
+    function InsertStep() {
+        var CodeClient = document.getElementById("SelectCodeClient").value;
+        var IdAdresse = document.getElementById("SelectNomClient").value;
+        var AdresseClient = document.getElementById("SelectCodeAdresseClient").value;
+        var Incoterm = document.getElementById("SelectIncoterm").value;
+        var NouvelleEtapeText = document.getElementById("NouvelleEtapeText").value;
+        $.ajax({
+            url: 'EtapeLecture/InsertStep',
+            type: "POST",
+            data: { CodeClient: CodeClient, Incoterm: Incoterm, NouvelleEtapeText: NouvelleEtapeText, AdresseClient: AdresseClient, IdAdresse: IdAdresse },
+            success: successFunc,
+            error: errorFunc
+        });
+
+        function successFunc(data, status) {
+            switch (data) {
+                case 'Success':
+                    $("body").overhang({
+                        type: "Success",
+                        message: decode("@ExpeditionHelper_SOL.Resources.Views.EtapeLecture.Index.AddStepFunction"),
+                    });
+                    break;
+                case 'Error':
+                    $("body").overhang({
+                        type: "Warn",
+                        message: decode("@ExpeditionHelper_SOL.Resources.Views.EtapeLecture.Index.FailAddStepFunction"),
+                    });
+                    break;
+                case 'ErrorTextEmpty':
+                    $("body").overhang({
+                        type: "Warn",
+                        message: decode("@ExpeditionHelper_SOL.Resources.Views.EtapeLecture.Index.EmptyTexte"),
+                    });
+                    document.getElementById("NouvelleEtapeText").style.border = "1px solid red";
+                    break;
+            }
+            ListStep();
+        }
+
+        function errorFunc() {
+            $("body").overhang({
+                type: "Error",
+                message: decode("@ExpeditionHelper_SOL.Resources.Views.EtapeLecture.Index.ErrorFunction"),
+            });
+        }
+    }
+
+    // Liste Lien Lecture
+    function ListLinkRead(StepId) {
+        $.ajax({
+            url: 'EtapeLecture/ListLinkRead',
+            type: "POST",
+            data: { StepId: StepId },
+            success: successFunc,
+            error: errorFunc
+        });
+
+        function successFunc(data, status) {
+            var ArrayStepLink = data.split('LienStringNom:');
+            var iLink = 0;
+            var donnees = [];
+            $(ArrayStepLink).each(function (Index, ArrayLink) {
+                var ArrayStepURL = ArrayStepLink[iLink].split('LienStringURL:');
+                donnees[iLink] = [ArrayStepURL[0], ArrayStepURL[1], '<a href="' + ArrayStepURL[1] + '" target="_blank"><i class="fa fa-external-link"></i></a>'];
+                iLink++;
+            });
+            $('#BlockBodyLink').remove();
+            $('#BlockBodyLink_wrapper').remove();
+
+            $('#TableBodyLink').append('<table id="BlockBodyLink" class="table table-striped table-bordered" width="100%">' +
+                '<thead>' +
+                '   <tr>' +
+                '       <td><label> @ExpeditionHelper_SOL.Resources.Views.EtapeLecture.Index.ModalLinkNom </label></td>' +
+                '       <td><label> @ExpeditionHelper_SOL.Resources.Views.EtapeLecture.Index.ModalLinkURL </label></td>' +
+                '       <td><label> @ExpeditionHelper_SOL.Resources.Views.EtapeLecture.Index.ModalLinkLien </label></td>' +
+                '   </tr>' +
+                '</thead>' +
+                '<tbody id="trtable"></tbody>' +
+                '</table>');
+
+            $('#BlockBodyLink').DataTable({
+                data: donnees
+            });
+        }
+
+        function errorFunc() {
+            $("body").overhang({
+                type: "Error",
+                message: decode("@ExpeditionHelper_SOL.Resources.Views.EtapeLecture.Index.ErrorFunction"),
+            });
+        }
+    }
+
+    // Ajout lien Ecriture
+    function ListLinkWrite(StepId) {
+        $.ajax({
+            url: 'EtapeLecture/ListLinkWrite',
+            type: "POST",
+            data: { StepId: StepId },
+            success: successFunc,
+            error: errorFunc
+        });
+
+        function successFunc(data, status) {
+            var iLink = 0;
+            var donnees = [];
+            $(data).each(function (Index, emp) {
+                var ArrayLink = emp.Value.split('LienStringUrl:');
+                if (ArrayLink[3] == 0) {
+                    donnees[iLink] = [ArrayLink[0], ArrayLink[1], '<button class="btn btn-info" onclick="AddLink(' + ArrayLink[2] + ')"> <i class="fa fa-plus"></i> </button>'];
+                } else {
+                    donnees[iLink] = [ArrayLink[0], ArrayLink[1], '<button class="btn btn-danger" onclick="RemoveLink(' + ArrayLink[2] + ')"> <i class="fa fa-times"></i> </button>'];
+                }
+                iLink++;
+            });
+            document.getElementById("GardenIdStep").value = StepId;
+
+            $('#BlockAddLink').remove();
+            $('#BlockAddLink_wrapper').remove();
+
+            $('#TableAddLink').append('<table id="BlockAddLink" class="table table-striped table-bordered" width="100%">' +
+                '<thead>' +
+                '   <tr>' +
+                '       <td><label> @ExpeditionHelper_SOL.Resources.Views.EtapeLecture.Index.ModalLinkNom </label></td>' +
+                '       <td><label> @ExpeditionHelper_SOL.Resources.Views.EtapeLecture.Index.ModalLinkURL </label></td>' +
+                '       <td><label> @ExpeditionHelper_SOL.Resources.Views.EtapeLecture.Index.Action </label></td>' +
+                '   </tr>' +
+                '</thead>' +
+                '<tbody id="trtable"></tbody>' +
+                '</table>');
+
+            $('#BlockAddLink').DataTable({
+                data: donnees
+            });
+        }
+
+        function errorFunc() {
+            $("body").overhang({
+                type: "Error",
+                message: decode("@ExpeditionHelper_SOL.Resources.Views.EtapeLecture.Index.ErrorFunction"),
+            });
+        }
+    }
+
+    // Ajout lien
+    function AddLink(LinkId) {
+        var StepIdModal = document.getElementById("GardenIdStep").value;
+        $.ajax({
+            url: 'EtapeLecture/AddLink',
+            type: "POST",
+            data: { LinkId: LinkId, StepIdModal: StepIdModal },
+            success: successFunc,
+            error: errorFunc
+        });
+
+        function successFunc(data, status) {
+            switch (data) {
+                case 'Success':
+                    $("body").overhang({
+                        type: "Success",
+                        message: decode("@ExpeditionHelper_SOL.Resources.Views.EtapeLecture.Index.AddLinkFunction"),
+                    });
+                    break;
+                case 'Error':
+                    $("body").overhang({
+                        type: "Error",
+                        message: decode("@ExpeditionHelper_SOL.Resources.Views.EtapeLecture.Index.FailAddLinkFunction"),
+                    });
+                    break;
+            }
+            ListStep();
+            ListLinkWrite(StepIdModal);
+        }
+
+        function errorFunc() {
+            $("body").overhang({
+                type: "Error",
+                message: decode("@ExpeditionHelper_SOL.Resources.Views.EtapeLecture.Index.ErrorFunction"),
+            });
+        }
+    }
+
+    // Suppression lien
+    function RemoveLink(LinkId) {
+        var StepIdModal = document.getElementById("GardenIdStep").value;
+        $.ajax({
+            url: 'EtapeLecture/RemoveLink',
+            type: "POST",
+            data: { LinkId: LinkId, StepIdModal: StepIdModal },
+            success: successFunc,
+            error: errorFunc
+        });
+
+        function successFunc(data, status) {
+            switch (data) {
+                case 'Success':
+                    $("body").overhang({
+                        type: "Success",
+                        message: decode("@ExpeditionHelper_SOL.Resources.Views.EtapeLecture.Index.DeleteLinkFunction"),
+                    });
+                    break;
+                case 'Error':
+                    $("body").overhang({
+                        type: "Error",
+                        message: decode("@ExpeditionHelper_SOL.Resources.Views.EtapeLecture.Index.FailDeleteLinkFunction"),
+                    });
+                    break;
+            }
+            ListStep();
+            ListLinkWrite(StepIdModal);
+        }
+
+        function errorFunc() {
+            $("body").overhang({
+                type: "Error",
+                message: decode("@ExpeditionHelper_SOL.Resources.Views.EtapeLecture.Index.ErrorFunction"),
+            });
+        }
+    }
+
+</script>

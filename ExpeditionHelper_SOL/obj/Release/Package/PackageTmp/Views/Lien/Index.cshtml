@@ -1,0 +1,66 @@
+﻿@model PagedList.IPagedList<ExpeditionHelper_SOL.Models.TB_LIEN>
+@using PagedList.Mvc;
+
+@{
+    ViewBag.Title = "Index Lien";
+}
+
+<div class="container body-content" style="background-color:white;border-radius:5px;">
+    <br /><br />
+    <h2> @ExpeditionHelper_SOL.Resources.Views.Lien.Index.Titre </h2>
+    <a href="@Url.Action("Create", "Lien")" class="btn btn-primary"> <span class="fa fa-plus" aria-hidden="true"></span> @ExpeditionHelper_SOL.Resources.Views.Lien.Index.BtnAdd </a> <br /><br /><br />
+
+    <div class="row">
+        <div class="col-lg-3">
+            @using (Html.BeginForm("Index", "Lien", FormMethod.Get, new { @class = "form-inline" }))
+            {
+            <p>
+                @ExpeditionHelper_SOL.Resources.Views.Shared._Layout.SearchByName <br /> @Html.TextBox("SearchString", ViewBag.CurrentFilter as string, new { @class = "form-control text-box" })
+                <button type="submit" class="btn btn-default">
+                    <i class="fa fa-search" aria-hidden="true"></i>
+                </button>
+            </p>
+            }
+        </div>
+    </div>
+
+    <table class="table table-bordered">
+        <tr>
+            <th>
+                @ExpeditionHelper_SOL.Resources.Views.Lien.Index.Nom
+            </th>
+            <th>
+                @ExpeditionHelper_SOL.Resources.Views.Lien.Index.Url
+            </th>
+            <th>
+                @ExpeditionHelper_SOL.Resources.Views.Lien.Index.Action
+            </th>
+        </tr>
+
+        @foreach (var item in Model)
+        {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Nom)
+            </td>
+            <td>
+                <a href="@item.Url" target="_blank">
+                    @Html.DisplayFor(modelItem => item.Url)
+                </a>
+            </td>
+            <td>
+                <a href="@Url.Action("Edit" , "Lien" , new { id = item.Id })" class="btn btn-primary"> <i class="fa fa-pencil"></i> </a>
+                <a href="@Url.Action("Delete" , "Lien" , new { id = item.Id })" class="btn btn-danger"> <i class="fa fa-trash"></i> </a>
+            </td>
+        </tr>
+        }
+
+    </table>
+
+    @ExpeditionHelper_SOL.Resources.Views.Shared._Layout.Page @(Model.PageCount < Model.PageNumber ? 0 : Model.PageNumber) / @Model.PageCount
+
+    @Html.PagedListPager(Model, page => Url.Action("Index",
+        new { page, sortOrder = ViewBag.CurrentSort, currentFilter = ViewBag.CurrentFilter }))
+</div>
+
+

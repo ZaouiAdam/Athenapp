@@ -1,0 +1,110 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="ExpeditionHelper_SOLModelStoreContainer" CdmEntityContainer="ExpeditionHelper_SOLEntities">
+    <EntitySetMapping Name="TB_ADRESSE">
+      <EntityTypeMapping TypeName="ExpeditionHelper_SOLModel.TB_ADRESSE">
+        <MappingFragment StoreEntitySet="TB_ADRESSE">
+          <ScalarProperty Name="GroupId" ColumnName="GroupId" />
+          <ScalarProperty Name="IdClient" ColumnName="IdClient" />
+          <ScalarProperty Name="CodeAdresse" ColumnName="CodeAdresse" />
+          <ScalarProperty Name="Nom" ColumnName="Nom" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TB_CLIENT">
+      <EntityTypeMapping TypeName="ExpeditionHelper_SOLModel.TB_CLIENT">
+        <MappingFragment StoreEntitySet="TB_CLIENT">
+          <ScalarProperty Name="Nom" ColumnName="Nom" />
+          <ScalarProperty Name="Code" ColumnName="Code" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TB_ETAPE">
+      <EntityTypeMapping TypeName="ExpeditionHelper_SOLModel.TB_ETAPE">
+        <MappingFragment StoreEntitySet="TB_ETAPE">
+          <ScalarProperty Name="IdAdresse" ColumnName="IdAdresse" />
+          <ScalarProperty Name="IdIncoterm" ColumnName="IdIncoterm" />
+          <ScalarProperty Name="IdClient" ColumnName="IdClient" />
+          <ScalarProperty Name="Ordre" ColumnName="Ordre" />
+          <ScalarProperty Name="Texte" ColumnName="Texte" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TB_EXPEDITION">
+      <EntityTypeMapping TypeName="ExpeditionHelper_SOLModel.TB_EXPEDITION">
+        <MappingFragment StoreEntitySet="TB_EXPEDITION">
+          <ScalarProperty Name="NumeroBonDeLivraison" ColumnName="NumeroBonDeLivraison" />
+          <ScalarProperty Name="Incoterm" ColumnName="Incoterm" />
+          <ScalarProperty Name="Avancement" ColumnName="Avancement" />
+          <ScalarProperty Name="Date" ColumnName="Date" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TB_INCOTERM">
+      <EntityTypeMapping TypeName="ExpeditionHelper_SOLModel.TB_INCOTERM">
+        <MappingFragment StoreEntitySet="TB_INCOTERM">
+          <ScalarProperty Name="Defaut" ColumnName="Defaut" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="Nom" ColumnName="Nom" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TB_Liaison">
+      <EntityTypeMapping TypeName="ExpeditionHelper_SOLModel.TB_Liaison">
+        <MappingFragment StoreEntitySet="TB_Liaison">
+          <ScalarProperty Name="IdLien" ColumnName="IdLien" />
+          <ScalarProperty Name="IdEtape" ColumnName="IdEtape" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TB_LIEN">
+      <EntityTypeMapping TypeName="ExpeditionHelper_SOLModel.TB_LIEN">
+        <MappingFragment StoreEntitySet="TB_LIEN">
+          <ScalarProperty Name="Nom" ColumnName="Nom" />
+          <ScalarProperty Name="Url" ColumnName="Url" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TB_LOG">
+      <EntityTypeMapping TypeName="ExpeditionHelper_SOLModel.TB_LOG">
+        <MappingFragment StoreEntitySet="TB_LOG">
+          <ScalarProperty Name="Texte" ColumnName="Texte" />
+          <ScalarProperty Name="Login" ColumnName="Login" />
+          <ScalarProperty Name="Date" ColumnName="Date" />
+          <ScalarProperty Name="Action" ColumnName="Action" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TB_PROCEDURE_EXPEDITION">
+      <EntityTypeMapping TypeName="ExpeditionHelper_SOLModel.TB_PROCEDURE_EXPEDITION">
+        <MappingFragment StoreEntitySet="TB_PROCEDURE_EXPEDITION">
+          <ScalarProperty Name="IdExpedition" ColumnName="IdExpedition" />
+          <ScalarProperty Name="DefautLog" ColumnName="DefautLog" />
+          <ScalarProperty Name="TexteLog" ColumnName="TexteLog" />
+          <ScalarProperty Name="Etat" ColumnName="Etat" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TB_VERSION">
+      <EntityTypeMapping TypeName="ExpeditionHelper_SOLModel.TB_VERSION">
+        <MappingFragment StoreEntitySet="TB_VERSION">
+          <ScalarProperty Name="prod" ColumnName="prod" />
+          <ScalarProperty Name="Date_Prod" ColumnName="Date_Prod" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="Auteur" ColumnName="Auteur" />
+          <ScalarProperty Name="Nom" ColumnName="Nom" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

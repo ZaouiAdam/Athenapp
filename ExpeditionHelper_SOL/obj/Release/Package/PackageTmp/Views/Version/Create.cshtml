@@ -1,0 +1,63 @@
+﻿@model ExpeditionHelper_SOL.Models.TB_VERSION
+
+<div class="container body-content" style="background-color:white;border-radius:5px;">
+    @using (Html.BeginForm())
+    {
+        @Html.AntiForgeryToken()
+
+    <div class="form-horizontal">
+        <br /><br />
+              <h4>@ExpeditionHelper_SOL.Resources.Views.Version.Create.Title</h4>
+        <hr />
+        <a href="@Url.Action("Index" , "Version")" class="btn btn-primary"><i class="fa fa-arrow-circle-left"></i> @ExpeditionHelper_SOL.Resources.Views.Version.Create.BtnRetour </a>
+        <br /><br />
+        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+        <div class="form-group">
+            <label class="control-label col-md-2">@ExpeditionHelper_SOL.Resources.Views.Version.Create.Version</label>
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.Nom, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.Nom, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label class="control-label col-md-2">@ExpeditionHelper_SOL.Resources.Views.Version.Create.Auteur</label>
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.Auteur, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.Auteur, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label class="control-label col-md-2">@ExpeditionHelper_SOL.Resources.Views.Version.Create.Description</label>
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.Description, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.Description, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label class="control-label col-md-2">Date</label>
+            <div class="col-md-10">
+                <input type="date" class="form-control" name="Date_Prod" value="" />
+                @Html.ValidationMessageFor(model => model.Date_Prod, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label class="control-label col-md-2">@ExpeditionHelper_SOL.Resources.Views.Version.Create.Version_Prod</label>
+            <div class="col-md-10">
+                <label> <input type="radio" name="prod" value="1" /> @ExpeditionHelper_SOL.Resources.Views.Version.Create.Oui </label>
+                <label> <input type="radio" name="prod" value="0" /> @ExpeditionHelper_SOL.Resources.Views.Version.Create.Non </label>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <input type="submit" value="@ExpeditionHelper_SOL.Resources.Views.Version.Create.BtnValider" class="btn btn-success" />
+            </div>
+        </div>
+    </div>
+    }
+
+</div>
